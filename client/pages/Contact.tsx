@@ -19,6 +19,7 @@ import {
   Globe,
   Download,
   Calendar,
+  Youtube,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -86,19 +87,23 @@ const Contact = () => {
 
   // Working button functions
   const handleSendEmail = () => {
-    const subject = encodeURIComponent("Inquiry from Tabasamu Website");
+    const subject = encodeURIComponent("Inquiry from Cheptugeniot Initiative");
     const body = encodeURIComponent(
-      "Hello Tabasamu Team,\n\nI would like to get in touch regarding...",
+      "Hello Cheptugeniot Initiative Team,\n\nI would like to get in touch regarding...",
     );
-    window.location.href = `mailto:tabasamucharity@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:notify@cheptugeniotinitiative.co.ke?subject=${subject}&body=${body}`;
   };
 
   const handleCallNow = () => {
-    window.open("https://wa.me/254112459483", "_blank");
+    window.open("https://wa.me/254704268226", "_blank");
+  };
+
+  const handleWhatsApp = () => {
+    window.open("https://wa.me/254704268226", "_blank");
   };
 
   const handleGetDirections = () => {
-    const address = encodeURIComponent("Westlands, Nairobi, Kenya");
+    const address = encodeURIComponent("Embakasi East, Nairobi, Kenya");
     window.open(
       `https://www.google.com/maps/search/?api=1&query=${address}`,
       "_blank",
@@ -166,7 +171,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       subtitle: "Drop us a line anytime",
-      info: "tabasamucharity@gmail.com",
+      info: "notify@cheptugeniotinitiative.co.ke\nvivian@cheptugeniotinitiative.co.ke",
       action: "Send Email",
       handler: handleSendEmail,
       gradient: "from-blue-500 to-cyan-500",
@@ -175,11 +180,11 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      title: "Call Us",
-      subtitle: "Chat or call via WhatsApp",
-      info: "+254 112 459 483",
+      title: "Call / WhatsApp",
+      subtitle: "Chat or call us directly",
+      info: "+254 704 268 226",
       action: "WhatsApp Us",
-      handler: handleCallNow,
+      handler: handleWhatsApp,
       gradient: "from-green-500 to-emerald-500",
       bgGradient: "from-green-50 to-emerald-50",
       delay: 100,
@@ -187,8 +192,8 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      subtitle: "Come see our impact firsthand",
-      info: "Westlands, Nairobi, Kenya",
+      subtitle: "Head Office & Branches",
+      info: "Nairobi, Embakasi East",
       action: "Get Directions",
       handler: handleGetDirections,
       gradient: "from-purple-500 to-pink-500",
@@ -205,22 +210,22 @@ const Contact = () => {
       handler: () => handleSocialShare("facebook"),
     },
     {
-      icon: Twitter,
-      label: "Twitter",
-      color: "bg-sky-500 hover:bg-sky-600",
-      handler: () => handleSocialShare("twitter"),
-    },
-    {
       icon: Instagram,
       label: "Instagram",
       color: "bg-pink-600 hover:bg-pink-700",
       handler: () => handleSocialShare("instagram"),
     },
     {
-      icon: Linkedin,
-      label: "LinkedIn",
-      color: "bg-blue-800 hover:bg-blue-900",
-      handler: () => handleSocialShare("linkedin"),
+      icon: Twitter,
+      label: "Twitter",
+      color: "bg-sky-500 hover:bg-sky-600",
+      handler: () => handleSocialShare("twitter"),
+    },
+    {
+      icon: Youtube,
+      label: "YouTube",
+      color: "bg-red-600 hover:bg-red-700",
+      handler: () => window.open("https://youtube.com", "_blank"),
     },
   ];
 
@@ -249,9 +254,16 @@ const Contact = () => {
   ];
 
   const officeHours = [
-    { day: "Mon - Fri", hours: "8:00 AM - 6:00 PM", open: true },
-    { day: "Saturday", hours: "Closed", open: false },
-    { day: "Sunday", hours: "9:00 AM - 2:00 PM", open: true },
+    { day: "Mon - Fri", hours: "8:00 AM - 5:00 PM", open: true },
+    { day: "Saturday", hours: "9:00 AM - 2:00 PM", open: true },
+    { day: "Sunday", hours: "Closed", open: false },
+  ];
+
+  const branches = [
+    { location: "Head Office", address: "Nairobi, Embakasi East" },
+    { location: "Bomet Branch", address: "Bomet, Kenya" },
+    { location: "Mulot Branch", address: "Mulot, Kenya" },
+    { location: "Eldoret Branch", address: "Eldoret, Kenya" },
   ];
 
   const kenyaTime = new Date().toLocaleString("en-US", {
@@ -270,7 +282,7 @@ const Contact = () => {
           title="Map"
           className="absolute inset-0 w-full h-full"
           style={{ filter: "grayscale(50%) brightness(0.7)" }}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.857930370166!2d36.80649407504936!3d-1.268155035602021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10f8d9e1f3a5%3A0x9b1a4d3f4f1bbf0!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000000"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.857930370166!2d36.80649407504936!3d-1.268155035602021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1737a3f3f3f3%3A0x9b1a4d3f4f1bbf0!2sEmbakasi%20East%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000000"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
@@ -411,9 +423,11 @@ const Contact = () => {
                       {method.subtitle}
                     </p>
 
-                    <p className="text-charity-neutral-800 font-semibold mb-6 text-lg">
-                      {method.info}
-                    </p>
+                    <div className="text-charity-neutral-800 font-semibold mb-6 text-lg">
+                      {method.info.split('\n').map((line, i) => (
+                        <p key={i}>{line}</p>
+                      ))}
+                    </div>
 
                     <button
                       onClick={method.handler}
@@ -627,31 +641,47 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Quick Actions */}
+                {/* Branches */}
                 <div className="bg-white p-8 rounded-3xl shadow-xl">
                   <h3 className="text-2xl font-bold text-charity-neutral-800 mb-6">
-                    Quick Actions
+                    Our Locations
                   </h3>
                   <div className="space-y-4">
-                    {quickActions.map((action, index) => (
-                      <button
+                    {branches.map((branch, index) => (
+                      <div
                         key={index}
-                        onClick={action.handler}
-                        className={`w-full p-4 rounded-2xl bg-gradient-to-r ${action.gradient} text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl`}
+                        className="p-4 border-2 border-charity-neutral-200 rounded-xl hover:border-charity-purple-300 transition-colors duration-300"
                       >
-                        <div className="text-left">
-                          <h4 className="font-bold text-lg mb-1">
-                            {action.title}
-                          </h4>
-                          <p className="text-white/90 text-sm mb-2">
-                            {action.description}
-                          </p>
-                          <span className="text-sm font-medium">
-                            {action.action} →
-                          </span>
-                        </div>
-                      </button>
+                        <h4 className="font-bold text-charity-neutral-800 mb-1">
+                          {branch.location}
+                        </h4>
+                        <p className="text-charity-neutral-600 text-sm">
+                          {branch.address}
+                        </p>
+                      </div>
                     ))}
+                  </div>
+                </div>
+
+                {/* WhatsApp Link */}
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl shadow-xl">
+                  <div className="text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center">
+                      <Phone className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-charity-neutral-800 mb-3">
+                      Chat with Us
+                    </h3>
+                    <p className="text-charity-neutral-600 mb-6">
+                      Reach us instantly on WhatsApp
+                    </p>
+                    <button
+                      onClick={handleWhatsApp}
+                      className="w-full px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center"
+                    >
+                      <MessageCircle className="h-5 w-5 mr-2" />
+                      Open WhatsApp
+                    </button>
                   </div>
                 </div>
 

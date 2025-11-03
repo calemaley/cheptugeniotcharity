@@ -92,11 +92,16 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center group">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fde779a14d1ab4ec09cf8fa4e9c38ad5e%2F1c5373d728e64db5ab1f1f166fe14982?format=webp&width=800"
-                alt="Tabasamu Logo"
-                className="h-36 w-auto"
+                src="/cheptugeniot-logo.png"
+                alt="Cheptugeniot Initiative"
+                className="h-20 md:h-24 lg:h-28 xl:h-32 w-auto transition-all duration-300 group-hover:scale-105 object-contain"
+                style={{
+                  filter: isScrolled || isMenuOpen 
+                    ? 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))' 
+                    : 'drop-shadow(0 2px 12px rgba(0, 0, 0, 0.2))',
+                }}
               />
             </Link>
           </div>
@@ -113,8 +118,8 @@ const Navigation = () => {
                         className={cn(
                           "flex items-center space-x-1.5 transition-all duration-300 font-medium px-2 py-1.5 rounded-lg group",
                           isScrolled || isMenuOpen
-                            ? "text-charity-neutral-800 hover:text-charity-orange-600 hover:bg-charity-orange-50"
-                            : "text-white hover:text-charity-orange-200 hover:bg-white/10",
+                            ? "text-charity-neutral-800 hover:text-charity-purple-600 hover:bg-charity-purple-50"
+                            : "text-white hover:text-charity-purple-200 hover:bg-white/10",
                         )}
                         onClick={() => toggleDropdown(item.label)}
                       >
@@ -149,7 +154,7 @@ const Navigation = () => {
                                   });
                                   setActiveDropdown(null);
                                 }}
-                                className="block w-full text-left px-4 py-3 text-charity-neutral-600 hover:text-charity-orange-600 hover:bg-charity-orange-50 hover:translate-x-1 transition-all duration-200 mx-2 rounded-lg"
+                                className="block w-full text-left px-4 py-3 text-charity-neutral-600 hover:text-charity-purple-600 hover:bg-charity-purple-50 hover:translate-x-1 transition-all duration-200 mx-2 rounded-lg"
                               >
                                 {subItem.label}
                               </button>

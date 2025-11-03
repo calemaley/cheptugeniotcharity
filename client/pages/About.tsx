@@ -16,9 +16,12 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
 import { redirectToPayment, CAMPAIGN_SOURCES } from "@/lib/payment";
+import { cn } from "@/lib/utils";
 
 const About = () => {
   const [selectedMember, setSelectedMember] = useState<any>(null);
+  const [isFounderLiked, setIsFounderLiked] = useState(false);
+  const [founderLikeCount, setFounderLikeCount] = useState(0);
 
  const teamMembers = [
   {
@@ -125,11 +128,11 @@ const About = () => {
           <AnimatedSection animation="slideUp">
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-charity-neutral-800 mb-6">
-                About Tabasamu
+                About Cheptugeniot Initiative
               </h1>
               <p className="text-xl md:text-2xl max-w-3xl mx-auto text-charity-neutral-600">
-                Building brighter futures through education, healthcare, and
-                community development since 2021
+                Building stronger communities through education, empowerment, and
+                sustainable development since 2019
               </p>
             </div>
           </AnimatedSection>
@@ -147,14 +150,33 @@ const About = () => {
                   <div className="bg-gradient-to-br from-charity-orange-100 to-charity-green-100 p-8 rounded-3xl shadow-2xl">
                     <div className="transform -rotate-2">
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F1621da4a27844381af3e9ee9867abbdf%2F44c32d1cc5014f039d98cddadbcab10b?format=webp&width=800"
-                        alt="A.O.Suleiman Kagwe - Founder"
+                        src="/vivian3.jpg"
+                        alt="Vivian Kurui - Founder"
                         className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                        style={{ objectPosition: 'center 30%' }}
                       />
                     </div>
-                    <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-full shadow-xl">
-                      <Heart className="h-8 w-8 text-charity-orange-600" />
-                    </div>
+                    <button
+                      onClick={() => {
+                        setIsFounderLiked(!isFounderLiked);
+                        setFounderLikeCount(prev => isFounderLiked ? prev - 1 : prev + 1);
+                      }}
+                      className="absolute -bottom-4 -right-4 bg-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer group"
+                      aria-label="Like founder photo"
+                    >
+                      <Heart 
+                        className={`h-8 w-8 transition-all duration-300 ${
+                          isFounderLiked 
+                            ? 'text-red-500 fill-current' 
+                            : 'text-charity-orange-600 group-hover:text-red-400'
+                        }`}
+                      />
+                      {founderLikeCount > 0 && (
+                        <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                          {founderLikeCount}
+                        </span>
+                      )}
+                    </button>
                     <div className="absolute -top-4 -left-4 bg-charity-green-500 text-white px-4 py-2 rounded-full text-sm font-bold transform -rotate-12">
                       Founder
                     </div>
@@ -169,42 +191,53 @@ const About = () => {
                     A Message from Our Founder
                   </h2>
                   <div className="text-lg text-charity-neutral-600 leading-relaxed space-y-4">
-                    <p className="italic text-charity-orange-700 text-xl">
-                      "Every child has a dream, and every smile holds a promise.
-                      As I journey through life, my story unfolds with a simple
-                      yet profound purpose: to ignite sparks of joy and fuel the
-                      dreams of those around me."
+                    <p>
+                      Welcome to the Cheptugeniot Initiative, a movement born from compassion and faith. What began in 2019 with a simple act of kindness—helping a blind man acquire a posho mill—has grown into a mission to uplift the vulnerable and transform lives.
                     </p>
                     <p>
-                      In nurturing the needy and spreading love, I believe we
-                      embody the truest essence of humanity. Every act of
-                      kindness creates ripples that extend far beyond what we
-                      can see, touching lives and transforming communities in
-                      ways we may never fully comprehend.
+                      Our focus is to support women, children, and marginalized communities through:
+                    </p>
+                    <ul className="list-disc list-inside space-y-2 ml-4">
+                      <li>Feeding 1,000 families annually</li>
+                      <li>Educating 10 children every year</li>
+                      <li>Building homes for the needy</li>
+                      <li>Setting up 10 posho mills yearly for economic empowerment</li>
+                      <li>Equipping youth and widows with skills</li>
+                      <li>Promoting sustainable farming and tree planting</li>
+                    </ul>
+                    <p>
+                      Together, we can bring hope, dignity, and opportunity to those in need. Join us in making a lasting impact—one act of kindness at a time.
                     </p>
                   </div>
                 </div>
 
                 {/* Signature Section */}
                 <div className="border-t border-charity-neutral-200 pt-8">
-                  <div className="flex items-center space-x-6">
-                    <div>
-                      <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2F1621da4a27844381af3e9ee9867abbdf%2F7770cebdcca846749404ed197d79d32c?format=webp&width=800"
-                        alt="A.O.Suleiman Kagwe Signature"
-                        className="h-16 w-auto"
-                      />
-                      <div className="mt-2">
-                        <p className="font-bold text-charity-neutral-800">
-                          A.O.Suleiman Kagwe
-                        </p>
-                        <p className="text-charity-orange-600 font-medium">
-                          Founder & CEO
-                        </p>
-                        <p className="text-sm text-charity-neutral-500">
-                          Tabasamu Charity
-                        </p>
+                  <div className="space-y-4">
+                    {/* Professional Signature */}
+                    <div className="mb-6">
+                      <div 
+                        className="text-4xl font-bold text-charity-primary-900 mb-2"
+                        style={{ 
+                          fontFamily: 'serif',
+                          letterSpacing: '0.05em',
+                          fontStyle: 'italic'
+                        }}
+                      >
+                        Vivian Kurui
                       </div>
+                      <div className="h-1 w-32 bg-gradient-to-r from-charity-purple-500 via-charity-orange-500 to-charity-green-500 mb-3"></div>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-bold text-charity-neutral-800 text-lg">
+                        Vivian Kurui
+                      </p>
+                      <p className="text-charity-primary-700 font-semibold">
+                        Chairperson and Founder
+                      </p>
+                      <p className="text-sm text-charity-neutral-600">
+                        Cheptugeniot Initiative
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -256,7 +289,7 @@ const About = () => {
             </AnimatedSection>
 
             <AnimatedSection animation="slideLeft" delay={200}>
-              <div className="bg-charity-orange-50 p-8 rounded-2xl">
+              <div className="bg-gradient-to-br from-charity-purple-50 via-charity-orange-50 to-charity-green-50 p-8 rounded-2xl">
                 <h2 className="text-4xl font-bold text-charity-neutral-800 mb-6">
                   Our Vision
                 </h2>
@@ -301,8 +334,20 @@ const About = () => {
                   delay={index * 100}
                 >
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-charity-orange-100 rounded-full flex items-center justify-center group-hover:bg-charity-orange-200 transition-colors duration-300">
-                      <IconComponent className="h-8 w-8 text-charity-orange-600 group-hover:scale-110 transition-transform duration-300" />
+                    <div className={cn(
+                      "w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-colors duration-300",
+                      index % 4 === 0 ? "bg-charity-orange-100 group-hover:bg-charity-orange-200" :
+                      index % 4 === 1 ? "bg-charity-purple-100 group-hover:bg-charity-purple-200" :
+                      index % 4 === 2 ? "bg-charity-green-100 group-hover:bg-charity-green-200" :
+                      "bg-charity-primary-100 group-hover:bg-charity-primary-200"
+                    )}>
+                      <IconComponent className={cn(
+                        "h-8 w-8 group-hover:scale-110 transition-transform duration-300",
+                        index % 4 === 0 ? "text-charity-orange-600" :
+                        index % 4 === 1 ? "text-charity-purple-600" :
+                        index % 4 === 2 ? "text-charity-green-600" :
+                        "text-charity-primary-600"
+                      )} />
                     </div>
                     <h3 className="text-xl font-bold text-charity-neutral-800 mb-3">
                       {value.title}
@@ -559,3 +604,4 @@ const About = () => {
 };
 
 export default About;
+

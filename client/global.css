@@ -9,8 +9,8 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 96%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -18,17 +18,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 211 79% 22%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 185 100% 31%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 358 100% 68%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -48,39 +48,63 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Tabasamu Charity Colors */
-    --charity-orange-50: 39 100% 97%;
-    --charity-orange-100: 37 100% 93%;
-    --charity-orange-200: 36 100% 87%;
-    --charity-orange-300: 33 100% 78%;
-    --charity-orange-400: 29 100% 67%;
-    --charity-orange-500: 25 95% 57%;
-    --charity-orange-600: 21 90% 48%;
-    --charity-orange-700: 17 88% 40%;
-    --charity-orange-800: 15 79% 34%;
-    --charity-orange-900: 15 75% 28%;
+    /* Brand Colors - Primary: Deep Blue (#0D3B66), Secondary: Turquoise (#008E9B), Accent: Coral (#FF5A5F) */
+    --charity-orange-50: 358 100% 95%;
+    --charity-orange-100: 358 100% 90%;
+    --charity-orange-200: 358 100% 85%;
+    --charity-orange-300: 358 100% 78%;
+    --charity-orange-400: 358 100% 72%;
+    --charity-orange-500: 358 100% 68%;
+    --charity-orange-600: 358 100% 60%;
+    --charity-orange-700: 358 90% 55%;
+    --charity-orange-800: 358 85% 48%;
+    --charity-orange-900: 358 80% 42%;
 
-    --charity-green-50: 120 60% 97%;
-    --charity-green-100: 120 60% 93%;
-    --charity-green-200: 122 55% 84%;
-    --charity-green-300: 124 52% 72%;
-    --charity-green-400: 125 48% 58%;
-    --charity-green-500: 125 44% 45%;
-    --charity-green-600: 125 43% 36%;
-    --charity-green-700: 125 45% 29%;
-    --charity-green-800: 125 44% 24%;
-    --charity-green-900: 125 43% 20%;
+    --charity-green-50: 185 60% 97%;
+    --charity-green-100: 185 70% 90%;
+    --charity-green-200: 185 80% 75%;
+    --charity-green-300: 185 90% 55%;
+    --charity-green-400: 185 95% 43%;
+    --charity-green-500: 185 100% 31%;
+    --charity-green-600: 185 95% 27%;
+    --charity-green-700: 185 90% 23%;
+    --charity-green-800: 185 85% 20%;
+    --charity-green-900: 185 80% 17%;
 
-    --charity-neutral-50: 60 9% 98%;
-    --charity-neutral-100: 30 9% 95%;
-    --charity-neutral-200: 24 6% 90%;
-    --charity-neutral-300: 24 5% 82%;
-    --charity-neutral-400: 24 5% 64%;
-    --charity-neutral-500: 25 5% 45%;
-    --charity-neutral-600: 33 5% 32%;
-    --charity-neutral-700: 30 6% 25%;
-    --charity-neutral-800: 12 6% 15%;
-    --charity-neutral-900: 24 10% 10%;
+    --charity-neutral-50: 0 0% 98%;
+    --charity-neutral-100: 0 0% 96%;
+    --charity-neutral-200: 0 0% 93%;
+    --charity-neutral-300: 0 0% 88%;
+    --charity-neutral-400: 0 0% 74%;
+    --charity-neutral-500: 0 0% 50%;
+    --charity-neutral-600: 0 0% 38%;
+    --charity-neutral-700: 0 0% 28%;
+    --charity-neutral-800: 0 0% 20%;
+    --charity-neutral-900: 0 0% 12%;
+
+    /* Primary Color - Deep Blue (#0D3B66) */
+    --charity-primary-50: 211 60% 95%;
+    --charity-primary-100: 211 65% 88%;
+    --charity-primary-200: 211 70% 75%;
+    --charity-primary-300: 211 75% 60%;
+    --charity-primary-400: 211 78% 45%;
+    --charity-primary-500: 211 79% 22%;
+    --charity-primary-600: 211 85% 18%;
+    --charity-primary-700: 211 90% 15%;
+    --charity-primary-800: 211 95% 12%;
+    --charity-primary-900: 211 98% 10%;
+
+    /* Indigo/Purple Colors - For accents and highlights */
+    --charity-purple-50: 262 60% 97%;
+    --charity-purple-100: 262 65% 92%;
+    --charity-purple-200: 262 70% 82%;
+    --charity-purple-300: 262 75% 68%;
+    --charity-purple-400: 262 80% 55%;
+    --charity-purple-500: 262 85% 45%;
+    --charity-purple-600: 262 90% 38%;
+    --charity-purple-700: 262 85% 32%;
+    --charity-purple-800: 262 80% 26%;
+    --charity-purple-900: 262 75% 22%;
   }
 
   .dark {
@@ -147,4 +171,42 @@
 
 .prose-charity li {
   @apply mb-2 list-disc;
+}
+
+/* Hero Section Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes patternMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200px 200px;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-progress {
+  animation: progress linear forwards;
 }

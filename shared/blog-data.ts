@@ -14,32 +14,35 @@ export interface BlogPost {
 }
 
 export const featuredPost: BlogPost = {
-  id: "charity-fueling-dreams",
-  title: "Charity: Fueling the Dreams of Children",
+  id: "building-stronger-communities",
+  title: "Building Stronger Communities: The Cheptugeniot Initiative Journey",
   excerpt:
-    "Every child is born with a dream. Some imagine themselves as doctors saving lives, others see classrooms where they will one day stand as teachers. Discover how charity unlocks possibilities and builds futures.",
+    "From humble beginnings to transforming lives across Kenya, discover how Cheptugeniot Initiative is creating lasting change through education, community empowerment, and sustainable development programs.",
   content: [
-    "Every child is born with a dream. Some imagine themselves as doctors saving lives, others see classrooms where they will one day stand as teachers, and many envision flying planes, painting canvases, or leading communities. Children dream without fear, without limits. Yet, for millions, these bright hopes are dimmed by realities beyond their control: poverty, lack of access to education, hunger, and limited opportunities.",
+    "In the heart of Kenya, where vibrant communities thrive with resilience and hope, the Cheptugeniot Initiative has been quietly making a profound difference in the lives of children and families. What started as a vision to bridge educational gaps has evolved into a comprehensive movement focused on building stronger, more self-reliant communities.",
 
-    "This is where charity becomes powerful. Charity is more than giving money or material things. It is about believing in potential and unlocking possibilities. When you pay school fees for a child, you are not just covering costs: you are giving that child a chance to sit in a classroom and imagine a better tomorrow. When you donate a pair of shoes, you are not just covering tiny feet: you are enabling those feet to walk boldly into the future.",
+    "Our journey began with a simple observation: every child, regardless of their circumstances, deserves access to quality education and the opportunity to reach their full potential. But we quickly realized that education alone wasn't enough. True transformation requires a holistic approach that addresses not just academic needs, but also health, nutrition, family support, and community infrastructure.",
 
-    "Every act of kindness is a push forward. That book you donate may inspire the next author, that scholarship may raise the next leader, that meal may keep a child in school one more day, long enough to discover their hidden talents. The truth is, children need us. They cannot reach their dreams alone. They require our hands, our hearts, and our willingness to believe in them.",
+    "Through our community-centered programs, we've witnessed remarkable stories of transformation. Children who once walked barefoot to school now confidently pursue their dreams with proper uniforms and books. Families who struggled to afford a single meal a day now have access to nutrition programs that ensure children can focus on learning. Communities that lacked basic infrastructure are now coming together to build classrooms, water wells, and health facilities.",
 
-    "And the beauty of charity is this: no effort is ever too small. A coin, a smile, a visit to encourage a child—all of these become seeds of hope. Seeds that, when nurtured, grow into towering trees of success and change.",
+    "One of our most impactful programs focuses on empowering local volunteers and community leaders. We believe that sustainable change comes from within communities themselves. By training and supporting local volunteers, we're creating a ripple effect of positive change that extends far beyond our direct programs. These community champions understand local needs, speak the language of their neighbors, and can implement solutions that truly resonate.",
 
-    "When we give, we don't just transform one life, we touch generations. A child whose dream comes true goes on to impact their family, their community, and even the world. That is the power of charity.",
+    "Education remains at the core of everything we do. We support children from primary school through secondary education, ensuring they have the resources, mentorship, and encouragement needed to excel. But education in the Cheptugeniot Initiative goes beyond the classroom walls—we teach life skills, leadership, and the value of giving back to one's community.",
 
-    "At the end of the day, charity is not just about what we give away; it is about what we build together. When we invest in children's dreams, we invest in the future of humanity itself.",
+    "Perhaps what makes our approach unique is our commitment to listening. We don't impose solutions from outside; we work hand-in-hand with communities to identify their priorities and co-create programs that address their specific challenges. This participatory approach ensures that every initiative we launch has deep community buy-in and long-term sustainability.",
+
+    "As we look to the future, we're excited about expanding our reach while maintaining our grassroots connection. Every new community we serve, every child we support, and every volunteer we train adds to a growing network of positive change. Together, we're not just building schools or providing resources—we're building a legacy of empowered communities that will continue to thrive for generations to come.",
+
+    "The Cheptugeniot Initiative is more than an organization; it's a movement of hope, powered by the collective belief that every child matters, every community can thrive, and together, we can create a brighter future for all.",
   ],
-  image:
-    "https://cdn.builder.io/api/v1/image/assets%2Fb84e9a4b35c7429a9cad0d14a2532c7b%2F8d3b260b1280420d84ed09e849db9b9b?format=webp&width=1600",
+  image: "/children/blog.jpg",
   category: "Inspiration",
-  author: "A.O.Suleiman Kagwe",
-  date: "January 15, 2025",
+  author: "Vivian Kurui",
+  date: "January 22, 2025",
   readTime: "6 min read",
-  slug: "charity-fueling-dreams-of-children",
+  slug: "building-stronger-communities-cheptugeniot-journey",
   likes: 42,
-  tags: ["charity", "children", "dreams", "education", "hope", "community"],
+  tags: ["community", "education", "empowerment", "sustainable development", "volunteer", "kenya", "transformation"],
 };
 
 // For homepage - recent blogs (showing the main featured post)
