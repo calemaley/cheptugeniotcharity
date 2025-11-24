@@ -24,8 +24,8 @@ const Programs = () => {
   // Mock data for upcoming events (can be moved to shared data later)
   const upcomingEvents: any[] = [];
 
-  // Mock data for past events
-  const pastEvents: any[] = [];
+  // Past events from shared data
+  const pastEvents = pastProjects;
 
   const EventCard = ({
     event,
