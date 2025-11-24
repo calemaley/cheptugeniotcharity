@@ -19,7 +19,8 @@ export const featuredEvent: FeaturedEvent = {
   subtitle: "Coming Soon",
   date: "TBD",
   venue: "TBD",
-  image: "https://via.placeholder.com/800x600?text=Featured+Program+Coming+Soon",
+  image:
+    "https://via.placeholder.com/800x600?text=Featured+Program+Coming+Soon",
   theme: "Building a Better Future Together",
   message: "Stay tuned for our next featured program announcement!",
   itemsNeeded: [],
@@ -54,7 +55,8 @@ export const pastProjects = [
     description:
       "A heartfelt journey to visit Simion Kosgei, a community member fighting cancer, where our team built a shelter for his family and provided a posho mill to empower the community.",
     contact: "+254794107724",
-    impact: "Supported multiple family members and community members with housing and livelihood",
+    impact:
+      "Supported multiple family members and community members with housing and livelihood",
     fullDescription:
       "The Kimuchul Compassion Project began with a simple yet profound mission: to visit Simion Kosgei at his home in Kimuchul, Bomet East, and discover how we could truly make a difference in his life and his community.\n\nLed by Pastor Terer and guided by the spirit of compassion, our team traveled to meet Simion, a courageous individual battling cancer. Upon visiting, we witnessed the challenging living conditions and realized the urgent need for intervention.\n\nWhat started as a visit transformed into a comprehensive community project. We immediately began construction of a sturdy shelter for Simion's family, providing them with safe housing. Recognizing that true empowerment goes beyond shelter, we further blessed the community by providing a posho mill—a vital livelihood tool that would help many families grind maize and earn income.\n\nThis project exemplifies our belief that compassion is not just about meeting immediate physical needs, but about restoring dignity and creating sustainable pathways to self-sufficiency. Every nail hammered, every brick laid, and every community member trained represents our commitment to standing with those who face life's greatest challenges.",
     gallery: [
@@ -131,7 +133,8 @@ export const pastProjects = [
     description:
       "Supporting Beatrice, a community member facing health challenges, with a posho mill for livelihood and sponsoring her children's education at AIC Chebisas Girls.",
     contact: "+254794107724",
-    impact: "Supported Beatrice's family with livelihood tools and educational opportunities for children",
+    impact:
+      "Supported Beatrice's family with livelihood tools and educational opportunities for children",
     fullDescription:
       "Beatrice's Hope Initiative represents our commitment to holistic community support. When we learned about Beatrice's struggle with a liver condition in Ndurio, Nandi County, we knew we had to act comprehensively.\n\nThis initiative combines three essential pillars of support:\n\n**Healthcare & Dignity**: Recognizing Beatrice's health challenges, we provided compassionate support and resources to help her maintain dignity during her health journey.\n\n**Livelihood Empowerment**: We delivered a posho mill to Beatrice's family, providing a sustainable income-generating opportunity. This tool enables her family to serve their community while securing their economic future.\n\n**Educational Excellence**: Perhaps most importantly, we sponsored her children's education. Her daughter Sharon received a sponsorship to attend AIC Chebisas Girls as a boarding student—a life-changing opportunity that transforms not just one child, but an entire family's trajectory.\n\nThis project demonstrates that true compassion isn't one-dimensional. It addresses immediate needs while creating sustainable pathways for long-term improvement. By supporting Beatrice, we're investing in her children's futures and her family's independence.",
     gallery: [
