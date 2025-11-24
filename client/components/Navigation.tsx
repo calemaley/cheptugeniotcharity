@@ -261,16 +261,27 @@ const Navigation = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={cn(
-                "p-2 rounded-md transition-colors duration-200",
+                "p-2.5 rounded-xl transition-all duration-300 relative group overflow-hidden",
                 isScrolled || isMenuOpen
-                  ? "text-charity-neutral-800 hover:text-charity-orange-600 hover:bg-charity-orange-50"
-                  : "text-white hover:text-charity-orange-200 hover:bg-white/10",
+                  ? "text-charity-neutral-800"
+                  : "text-white",
               )}
             >
+              {/* Animated background */}
+              <div className={cn(
+                "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                isScrolled || isMenuOpen
+                  ? "bg-charity-orange-100 group-hover:bg-charity-orange-150"
+                  : "bg-white/10 group-hover:bg-white/20"
+              )}></div>
+
+              {/* Animated underline */}
+              <div className="absolute bottom-1 left-2 right-2 h-0.5 bg-gradient-to-r from-charity-orange-400 to-charity-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+
               {isMenuOpen ? (
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 transition-all duration-500 rotate-90" />
               ) : (
-                <Menu className="h-5 w-5" />
+                <Menu className="h-5 w-5 transition-all duration-500" />
               )}
             </button>
           </div>
