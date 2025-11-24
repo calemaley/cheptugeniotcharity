@@ -363,7 +363,7 @@ const Sponsor = () => {
                       <img
                         src={child.image}
                         alt={child.name}
-                        className="w-full h-56 object-cover group-hover:scale-125 transition-transform duration-1000"
+                        className="w-full h-40 object-cover group-hover:scale-115 transition-transform duration-700"
                       />
 
                       {/* Multiple overlays for depth */}
