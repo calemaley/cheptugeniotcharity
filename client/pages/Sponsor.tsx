@@ -403,21 +403,21 @@ const Sponsor = () => {
                       </div>
 
                       {/* Enhanced info grid */}
-                      <div className="grid grid-cols-1 gap-3 mb-4">
+                      <div className="grid grid-cols-2 gap-2 mb-3">
                         <div className="flex items-center p-2 rounded-lg bg-charity-orange-50 group-hover:bg-charity-orange-100 transition-colors duration-300">
-                          <div className="w-8 h-8 rounded-full bg-charity-orange-500 flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform duration-300">
-                            <Calendar className="h-4 w-4 text-white" />
+                          <div className="w-6 h-6 rounded-full bg-charity-orange-500 flex items-center justify-center mr-2 flex-shrink-0">
+                            <Calendar className="h-3 w-3 text-white" />
                           </div>
-                          <span className="text-charity-neutral-700 font-medium">
-                            {child.age} years old
+                          <span className="text-charity-neutral-700 font-medium text-sm">
+                            {child.age}yrs
                           </span>
                         </div>
 
                         <div className="flex items-center p-2 rounded-lg bg-charity-green-50 group-hover:bg-charity-green-100 transition-colors duration-300">
-                          <div className="w-8 h-8 rounded-full bg-charity-green-500 flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform duration-300">
-                            <MapPin className="h-4 w-4 text-white" />
+                          <div className="w-6 h-6 rounded-full bg-charity-green-500 flex items-center justify-center mr-2 flex-shrink-0">
+                            <MapPin className="h-3 w-3 text-white" />
                           </div>
-                          <span className="text-charity-neutral-700 font-medium text-sm">
+                          <span className="text-charity-neutral-700 font-medium text-xs line-clamp-1">
                             {child.location}
                           </span>
                         </div>
