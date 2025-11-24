@@ -335,7 +335,7 @@ const Sponsor = () => {
               >
                 <div
                   id={`child-${child.id}`}
-                  className="relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 h-full flex flex-col group transform hover:-translate-y-4 hover:scale-105 cursor-pointer"
+                  className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 h-full flex flex-col group transform hover:-translate-y-2 cursor-pointer"
                 >
                   {/* Animated border gradient */}
                   <div className="absolute inset-0 bg-gradient-to-r from-charity-orange-400 via-charity-green-400 to-charity-orange-400 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-pulse"></div>
