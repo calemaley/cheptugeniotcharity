@@ -95,7 +95,8 @@ const Index = () => {
       src: "/hero-community-gathering.jpg",
       title: "Unity in Action",
       subtitle: "Strong communities, brighter futures",
-      description: "Together we build stronger foundations for generations to come",
+      description:
+        "Together we build stronger foundations for generations to come",
       objectPosition: "center 45%", // Position to show speakers' faces
     },
     {
@@ -177,14 +178,13 @@ const Index = () => {
     return () => clearInterval(timer);
   }, [heroImages.length, isTransitioning]);
 
-
   return (
     <>
       {/* Hero Background Carousel */}
       <SectionReveal>
         <section className="relative h-screen overflow-hidden">
           <Navigation />
-          
+
           {/* Background Image Carousel */}
           <div className="absolute inset-0">
             {heroImages.map((image, index) => (
@@ -208,7 +208,8 @@ const Index = () => {
                     className="w-full h-full object-cover"
                     style={{
                       objectPosition: image.objectPosition || "center center",
-                      transform: index === currentSlide ? "scale(1.05)" : "scale(1.08)",
+                      transform:
+                        index === currentSlide ? "scale(1.05)" : "scale(1.08)",
                       transition: "transform 20s ease-out",
                     }}
                   />
@@ -222,12 +223,15 @@ const Index = () => {
                 </div>
 
                 {/* Animated Pattern Overlay */}
-                <div 
+                <div
                   className="absolute inset-0 opacity-10"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-                    backgroundSize: '200px 200px',
-                    animation: index === currentSlide ? 'patternMove 30s linear infinite' : 'none',
+                    backgroundSize: "200px 200px",
+                    animation:
+                      index === currentSlide
+                        ? "patternMove 30s linear infinite"
+                        : "none",
                   }}
                 />
               </div>
@@ -250,33 +254,37 @@ const Index = () => {
                 {/* Main Title with Animation */}
                 <div className="space-y-4">
                   <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight min-h-[1.2em] drop-shadow-2xl">
-                    <span 
+                    <span
                       key={currentSlide}
                       className="block animate-fade-in-up"
-                      style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.7)' }}
+                      style={{
+                        textShadow:
+                          "0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.7)",
+                      }}
                     >
                       {heroImages[currentSlide].title}
                     </span>
                   </h1>
                   <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium max-w-3xl mx-auto min-h-[1.5em] drop-shadow-lg">
-                    <span 
+                    <span
                       key={`subtitle-${currentSlide}`}
                       className="inline-block animate-fade-in-up"
-                      style={{ 
-                        animationDelay: '0.2s',
-                        textShadow: '0 2px 12px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.8)' 
+                      style={{
+                        animationDelay: "0.2s",
+                        textShadow:
+                          "0 2px 12px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.8)",
                       }}
                     >
                       {heroImages[currentSlide].subtitle}
                     </span>
                   </p>
                   <p className="text-base md:text-lg text-white/95 max-w-2xl mx-auto pt-2 min-h-[2.5em] drop-shadow-md">
-                    <span 
+                    <span
                       key={`desc-${currentSlide}`}
                       className="inline-block animate-fade-in-up px-4 py-2 bg-black/20 backdrop-blur-sm rounded-lg"
-                      style={{ 
-                        animationDelay: '0.4s',
-                        textShadow: '0 1px 6px rgba(0,0,0,0.7)' 
+                      style={{
+                        animationDelay: "0.4s",
+                        textShadow: "0 1px 6px rgba(0,0,0,0.7)",
                       }}
                     >
                       {heroImages[currentSlide].description}
@@ -290,7 +298,7 @@ const Index = () => {
                     to="/get-involved/volunteer"
                     key={`btn1-${currentSlide}`}
                     className="px-8 py-4 bg-charity-orange-500 hover:bg-charity-orange-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-2xl hover:shadow-charity-orange-500/50 hover:scale-105 flex items-center justify-center group backdrop-blur-sm animate-fade-in-up"
-                    style={{ animationDelay: '0.6s' }}
+                    style={{ animationDelay: "0.6s" }}
                   >
                     Join Us Today
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -304,7 +312,7 @@ const Index = () => {
                     }
                     key={`btn2-${currentSlide}`}
                     className="px-8 py-4 border-2 border-white/90 text-white hover:bg-white/10 hover:border-white rounded-xl transition-all duration-300 font-semibold text-lg backdrop-blur-sm hover:scale-105 animate-fade-in-up"
-                    style={{ animationDelay: '0.7s' }}
+                    style={{ animationDelay: "0.7s" }}
                   >
                     Donate Now
                   </button>
@@ -328,16 +336,16 @@ const Index = () => {
                   }}
                   className={cn(
                     "relative transition-all duration-500",
-                    index === currentSlide ? "w-12" : "w-3"
+                    index === currentSlide ? "w-12" : "w-3",
                   )}
                 >
                   <div
-                      className={cn(
-                        "h-3 rounded-full transition-all duration-500",
-                        index === currentSlide
-                          ? "bg-gradient-to-r from-charity-purple-500 to-charity-orange-400 shadow-lg shadow-charity-purple-500/50"
-                          : "bg-white/50 hover:bg-charity-purple-200/70"
-                      )}
+                    className={cn(
+                      "h-3 rounded-full transition-all duration-500",
+                      index === currentSlide
+                        ? "bg-gradient-to-r from-charity-purple-500 to-charity-orange-400 shadow-lg shadow-charity-purple-500/50"
+                        : "bg-white/50 hover:bg-charity-purple-200/70",
+                    )}
                   />
                   {index === currentSlide && (
                     <div className="absolute inset-0 bg-gradient-to-r from-charity-purple-400 to-charity-orange-400 rounded-full animate-ping opacity-20" />
@@ -349,35 +357,34 @@ const Index = () => {
 
           {/* Auto-play Progress Bar */}
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10 z-20">
-            <div 
+            <div
               key={currentSlide}
               className="h-full bg-gradient-to-r from-charity-purple-500 via-charity-orange-400 to-charity-green-400 animate-progress"
-              style={{ animationDuration: "6s", animationTimingFunction: "linear" }}
+              style={{
+                animationDuration: "6s",
+                animationTimingFunction: "linear",
+              }}
             />
           </div>
         </section>
       </SectionReveal>
 
-      {/* About Us Snippet */}
+      {/* About Us Snippet - Reordered */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-24 bg-gradient-to-br from-white to-charity-orange-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                  <img
-                    src="/children-school-group.jpg"
-                    alt="Cheptugeniot Initiative - Children in School"
-                    className="w-full h-96 object-cover"
-                    style={{ objectPosition: 'center 50%' }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charity-primary-500/20 via-transparent to-transparent" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="space-y-8 lg:order-2">
+                <div>
+                  <div className="inline-block mb-4 px-4 py-2 bg-charity-orange-100 rounded-full">
+                    <span className="text-charity-orange-700 font-semibold text-sm tracking-wider">
+                      ABOUT US
+                    </span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                    Building Stronger Communities
+                  </h2>
                 </div>
-              </div>
-              <div className="space-y-6">
-                <h2 className="text-4xl font-bold text-charity-neutral-800">
-                  About Tabasamu Charity
-                </h2>
                 <p className="text-lg text-charity-neutral-600 leading-relaxed">
                   Tabasamu Charity is dedicated to transforming lives and
                   building stronger communities through education, healthcare,
@@ -385,7 +392,7 @@ const Index = () => {
                   committed to creating lasting positive change for children and
                   families across Kenya.
                 </p>
-                <p className="text-charity-neutral-600">
+                <p className="text-charity-neutral-600 leading-relaxed">
                   Our comprehensive programs focus on providing quality
                   education, essential healthcare services, and opportunities
                   for community development. Together with our volunteers and
@@ -394,11 +401,22 @@ const Index = () => {
                 </p>
                 <Link
                   to="/about"
-                  className="inline-flex items-center px-6 py-3 bg-charity-orange-600 hover:bg-charity-orange-700 text-white rounded-lg transition-colors duration-200 font-medium"
+                  className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 hover:from-charity-orange-700 hover:to-charity-orange-600 text-white rounded-xl transition-all duration-300 font-bold transform hover:scale-105 shadow-lg"
                 >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
+              </div>
+              <div className="relative lg:order-1">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
+                  <img
+                    src="/children-school-group.jpg"
+                    alt="Cheptugeniot Initiative - Children in School"
+                    className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
+                    style={{ objectPosition: "center 50%" }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent group-hover:from-black/40 transition-all duration-300" />
+                </div>
               </div>
             </div>
           </div>
@@ -415,7 +433,7 @@ const Index = () => {
                 src="/children-school-group.jpg"
                 alt="Children in School - Volunteer with Us"
                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
-                style={{ objectPosition: 'center 50%' }}
+                style={{ objectPosition: "center 50%" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-charity-orange-600/80 to-charity-orange-500/80 group-hover:from-charity-orange-700/90 group-hover:to-charity-orange-600/90 transition-all duration-500" />
               <div className="relative text-center text-white px-8 group-hover:scale-105 transition-transform duration-500">
@@ -442,7 +460,7 @@ const Index = () => {
                 src="/children-school-group.jpg"
                 alt="Children in School - Support Our Cause"
                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
-                style={{ objectPosition: 'center 50%' }}
+                style={{ objectPosition: "center 50%" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-charity-green-700/80 to-charity-green-600/80 group-hover:from-charity-green-800/90 group-hover:to-charity-green-700/90 transition-all duration-500" />
               <div className="relative text-center text-white px-8 group-hover:scale-105 transition-transform duration-500">
@@ -473,24 +491,29 @@ const Index = () => {
 
       {/* Popular Projects */}
       <SectionReveal>
-        <section className="py-20 bg-charity-neutral-50">
+        <section className="py-28 bg-gradient-to-b from-white to-charity-neutral-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-sm uppercase tracking-wide bg-gradient-to-r from-charity-purple-600 to-charity-orange-600 bg-clip-text text-transparent font-semibold mb-2">
-                OUR BEST FEATURES
-              </h2>
-              <h3 className="text-4xl font-bold text-charity-neutral-800">
-                We're Popular To Provide Best Projects
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-charity-purple-100 to-charity-orange-100 rounded-full">
+                <span className="text-sm font-semibold bg-gradient-to-r from-charity-purple-700 to-charity-orange-700 bg-clip-text text-transparent tracking-wider">
+                  WAYS TO MAKE AN IMPACT
+                </span>
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold text-charity-neutral-800">
+                How You Can Help
               </h3>
+              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto mt-4">
+                Choose how you'd like to support our mission and transform lives
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
               {popularProjects.map((project, index) => {
                 const IconComponent = project.icon;
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 text-center cursor-pointer group border-2 border-transparent hover:border-charity-purple-200"
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-500 text-center cursor-pointer group border-2 border-transparent hover:border-charity-orange-200"
                   >
                     <div
                       className={cn(
@@ -505,10 +528,16 @@ const Index = () => {
                         )}
                       />
                     </div>
-                    <h4 className={cn(
-                      "text-xl font-bold text-charity-neutral-800 mb-4 group-hover:scale-105 transition-all duration-300",
-                      index === 0 ? "group-hover:text-charity-orange-600" : index === 1 ? "group-hover:text-charity-purple-600" : "group-hover:text-charity-green-600"
-                    )}>
+                    <h4
+                      className={cn(
+                        "text-xl font-bold text-charity-neutral-800 mb-4 group-hover:scale-105 transition-all duration-300",
+                        index === 0
+                          ? "group-hover:text-charity-orange-600"
+                          : index === 1
+                            ? "group-hover:text-charity-purple-600"
+                            : "group-hover:text-charity-green-600",
+                      )}
+                    >
                       {project.title}
                     </h4>
                     <p className="text-charity-neutral-600 group-hover:text-charity-neutral-700 transition-colors duration-300">
@@ -553,16 +582,21 @@ const Index = () => {
 
       {/* Meet Our Children */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-28 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Meet Our Children
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-green-100 rounded-full">
+                <span className="text-charity-green-700 font-semibold text-sm tracking-wider">
+                  MEET OUR BENEFICIARIES
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Children Making a Difference
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
                 Every child has a unique story and dreams waiting to be
-                fulfilled. Meet some of the amazing children who need your
-                support to achieve their goals.
+                fulfilled. Meet some of the amazing children who are
+                transforming their lives through our programs.
               </p>
             </div>
 
@@ -613,9 +647,9 @@ const Index = () => {
                             key={i}
                             className={cn(
                               "px-3 py-1 text-sm rounded-full font-medium transition-all duration-300",
-                              i % 2 === 0 
+                              i % 2 === 0
                                 ? "bg-charity-green-100 text-charity-green-700 hover:bg-charity-green-200"
-                                : "bg-charity-purple-100 text-charity-purple-700 hover:bg-charity-purple-200"
+                                : "bg-charity-purple-100 text-charity-purple-700 hover:bg-charity-purple-200",
                             )}
                           >
                             {interest}
@@ -665,21 +699,26 @@ const Index = () => {
 
       {/* How You Can Help Us */}
       <SectionReveal>
-        <section className="py-20 relative overflow-hidden">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F8d975f746acc4941bfe12ec3f1c5138a?alt=media&token=2e1e0384-83fc-4b15-ae49-a302f7da8126&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="absolute inset-0 bg-charity-orange-600/85" />
+        <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-600 via-charity-orange-600 to-charity-orange-700">
+          <div className="absolute inset-0 opacity-20">
+            <div
+              style={{
+                backgroundImage:
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q30,30 50,30 T80,50" fill="none" stroke="white" stroke-width="1"/><path d="M20,70 Q30,50 50,50 T80,70" fill="none" stroke="white" stroke-width="1"/></svg>\')',
+                backgroundSize: "100px 100px",
+              }}
+              className="absolute inset-0"
+            ></div>
+          </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
-                How You Can Help Us?
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ways to Support Our Mission
               </h2>
+              <p className="text-lg text-white/90 max-w-3xl mx-auto">
+                Whether you donate, volunteer, or simply share our story, every
+                action creates lasting change
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -712,35 +751,44 @@ const Index = () => {
 
       {/* Featured Events */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-28 bg-gradient-to-br from-white to-charity-green-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center mb-12">
-              <h2 className="text-4xl font-bold text-charity-neutral-800">
-                Featured Events
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-green-100 rounded-full">
+                <span className="text-charity-green-700 font-semibold text-sm tracking-wider">
+                  TRANSFORMATIVE INITIATIVES
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Spotlight Programs
               </h2>
+              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto mb-10">
+                Discover the programs making the greatest impact in our
+                communities
+              </p>
               <Link
-                to="/programs#featured-event"
-                className="flex items-center text-charity-orange-600 hover:text-charity-orange-700 font-medium group"
+                to="/programs"
+                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-charity-green-600 to-charity-green-500 hover:from-charity-green-700 hover:to-charity-green-600 text-white rounded-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                View All Programs
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                Explore All Programs
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
               {recentPrograms.map((program, index) => (
                 <Link
                   key={index}
-                  to="/programs#featured-event"
-                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group block"
+                  to="/programs"
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer group block border border-green-100 hover:border-charity-green-300"
                 >
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden h-64">
                     <img
                       src={program.image}
                       alt={program.title}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg font-bold transform rotate-3">
+                    <div className="absolute top-6 right-6 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg transform group-hover:scale-110 transition-all duration-300">
                       {program.date}
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
@@ -772,23 +820,24 @@ const Index = () => {
 
       {/* Impact Statistics */}
       <SectionReveal>
-        <section className="py-20 relative overflow-hidden">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F5ab93ce551fe442ba1ad6d5cb267b689?alt=media&token=6c7413b8-90dc-43b0-94ba-f01de3392756&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="absolute inset-0 bg-charity-green-700/85" />
+        <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-700 via-charity-green-600 to-charity-green-800">
+          <div className="absolute inset-0 opacity-20">
+            <div
+              style={{
+                backgroundImage:
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white"/></svg>\')',
+                backgroundSize: "40px 40px",
+              }}
+            ></div>
+          </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
-                LET'S SUPPORT US TO HELP THEM
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Our Impact by the Numbers
               </h2>
-              <p className="text-xl text-white/90">
-                Join your hands with us for a better life and future
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+                Join hands with us to create a better future for generations to
+                come
               </p>
             </div>
 
