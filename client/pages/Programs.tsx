@@ -312,40 +312,40 @@ const Programs = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 relative overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F6e6cd1f699bd474291819d0e39e4b2f7?alt=media&token=048d505d-fefc-43f7-b7e2-23a554802fa6&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-        <div className="absolute inset-0 bg-charity-orange-600/85" />
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-600 to-charity-orange-600">
+        <div className="absolute inset-0 opacity-10">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q30,30 50,30 T80,50" fill="none" stroke="white" stroke-width="1"/><path d="M20,70 Q30,50 50,50 T80,70" fill="none" stroke="white" stroke-width="1"/></svg>\')',
+              backgroundSize: "100px 100px",
+            }}
+          ></div>
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
             <div className="text-center text-white">
-              <h2 className="text-4xl font-bold mb-6">
-                Ready to Join Our Next Event?
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Be Part of Our Mission
               </h2>
-              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Whether you want to volunteer, donate, or partner with us,
-                there's a place for you in our mission.
+              <p className="text-lg md:text-xl mb-10 opacity-95 max-w-2xl mx-auto leading-relaxed">
+                Every contribution—whether time, resources, or expertise—helps us create lasting change in communities across Kenya. Join us today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/get-involved/volunteer"
-                  className="inline-flex items-center px-8 py-3 bg-white text-charity-orange-600 hover:bg-charity-neutral-100 rounded-lg font-bold transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-10 py-4 bg-white text-charity-green-600 hover:bg-charity-neutral-50 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
                   Volunteer With Us
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-charity-orange-600 rounded-lg font-bold transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-charity-orange-600 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
-                  Contact Us
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  Get Involved
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </div>
             </div>
