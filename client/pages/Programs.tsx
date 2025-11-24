@@ -61,72 +61,34 @@ const Programs = () => {
     type?: "featured" | "upcoming" | "past";
   }) => (
     <div
-      className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 group cursor-pointer transform hover:-translate-y-2"
+      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-400 group cursor-pointer h-full hover:-translate-y-1 transform"
       onClick={() => {
         setSelectedEvent(event);
         setShowEventModal(true);
       }}
     >
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden h-32">
         <img
           src={event.image}
           alt={event.title}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-4 left-4 text-white">
-            <span className="text-sm font-medium">
-              {type === "past" ? "View Impact" : "Learn More"}
-            </span>
-          </div>
-        </div>
-        <div
-          className={`absolute top-4 right-4 px-4 py-2 rounded-lg font-bold transform rotate-3 ${
-            type === "past"
-              ? "bg-gray-500"
-              : type === "upcoming"
-                ? "bg-blue-500"
-                : "bg-red-500"
-          } text-white`}
-        >
-          {event.date}
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
       </div>
 
-      <div className="p-6">
-        <h3 className="text-2xl font-bold text-charity-neutral-800 mb-2 group-hover:text-charity-orange-600 transition-colors duration-200">
+      <div className="p-4">
+        <h3 className="text-base font-bold text-charity-neutral-800 line-clamp-2 group-hover:text-charity-orange-600 transition-colors duration-200">
           {event.title}
         </h3>
-        <p className="text-charity-orange-600 font-semibold mb-3 text-lg italic">
+        <p className="text-charity-orange-600 font-semibold text-sm italic mt-2 line-clamp-1">
           {event.subtitle}
         </p>
 
-        <div className="space-y-2 mb-4">
-          <div className="flex items-center text-charity-neutral-600">
-            <Phone className="h-4 w-4 mr-2 text-charity-orange-500" />
-            <span className="text-sm">{event.contact}</span>
+        <div className="mt-3 pt-3 border-t border-charity-neutral-200">
+          <div className="text-charity-orange-600 font-medium text-xs flex items-center group-hover:translate-x-0.5 transition-transform duration-200">
+            View Details
+            <ArrowRight className="ml-1 h-3 w-3" />
           </div>
-          {event.impact && (
-            <div className="flex items-center text-charity-neutral-600">
-              <Users className="h-4 w-4 mr-2 text-charity-green-500" />
-              <span className="text-sm font-medium">{event.impact}</span>
-            </div>
-          )}
-        </div>
-
-        <p className="text-charity-neutral-600 mb-4 text-sm leading-relaxed">
-          {event.description}
-        </p>
-
-        <div className="bg-charity-green-50 p-3 rounded-xl border-l-4 border-charity-green-500 mb-4">
-          <p className="text-charity-green-700 italic font-medium text-sm">
-            "{event.theme}"
-          </p>
-        </div>
-
-        <div className="text-charity-orange-600 font-medium flex items-center group-hover:translate-x-1 transition-transform duration-200">
-          {type === "past" ? "View Impact Story" : "Learn More"}
-          <ArrowRight className="ml-2 h-4 w-4" />
         </div>
       </div>
     </div>
@@ -156,13 +118,18 @@ const Programs = () => {
         ></div>
 
         <Navigation />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <AnimatedSection animation="slideUp">
             <div className="text-center text-white">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <div className="mb-8 inline-block px-5 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                <span className="text-sm md:text-base font-semibold">
+                  OUR INITIATIVES
+                </span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Our Programs
               </h1>
-              <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
+              <p className="text-lg md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
                 Creating lasting change through community events and initiatives
                 across Kenya
               </p>
@@ -186,17 +153,22 @@ const Programs = () => {
       {/* Featured Events */}
       <section
         id="featured-events"
-        className="py-20 bg-gradient-to-br from-charity-orange-50 to-charity-green-50"
+        className="py-24 bg-gradient-to-br from-white via-charity-orange-50 to-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Featured Events
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-orange-100 rounded-full">
+                <span className="text-charity-orange-700 font-semibold text-sm tracking-wider">
+                  FEATURED PROGRAMS
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Spotlight on Impact
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Our spotlight events making the biggest impact in communities
-                across Kenya
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Discover the transformative programs making real change in
+                communities across Kenya
               </p>
             </div>
           </AnimatedSection>
@@ -205,14 +177,14 @@ const Programs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Main Featured Event - Full Layout */}
               <div className="md:col-span-2">
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
-                  <div className="relative">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:shadow-3xl hover:scale-[1.02] transition-all duration-500 border border-charity-orange-100">
+                  <div className="relative group overflow-hidden">
                     <img
                       src={featuredEvent.image}
                       alt={featuredEvent.title}
-                      className="w-full h-80 object-cover"
+                      className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-6 right-6 bg-red-500 text-white px-4 py-2 rounded-lg font-bold transform rotate-3">
+                    <div className="absolute top-8 right-8 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                       {featuredEvent.date}
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
@@ -321,54 +293,32 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Upcoming Events
-              </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Mark your calendars for these exciting upcoming community events
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {upcomingEvents.map((event, index) => (
-              <AnimatedSection
-                key={index}
-                animation="scaleIn"
-                delay={index * 100}
-              >
-                <EventCard event={event} type="upcoming" />
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Past Events */}
-      <section className="py-20 bg-charity-neutral-50">
+      <section className="py-28 bg-gradient-to-b from-white to-charity-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Past Events
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-green-100 rounded-full">
+                <span className="text-charity-green-700 font-semibold text-sm tracking-wider">
+                  OUR LEGACY
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Stories of Transformation
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Celebrating the success and impact of our previous initiatives
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Celebrating the transformative work and lasting impact of our
+                community initiatives
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 auto-rows-max">
             {pastEvents.map((event, index) => (
               <AnimatedSection
                 key={index}
                 animation="scaleIn"
-                delay={index * 100}
+                delay={index * 80}
               >
                 <EventCard event={event} type="past" />
               </AnimatedSection>
@@ -378,40 +328,42 @@ const Programs = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 relative overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F6e6cd1f699bd474291819d0e39e4b2f7?alt=media&token=048d505d-fefc-43f7-b7e2-23a554802fa6&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-        <div className="absolute inset-0 bg-charity-orange-600/85" />
+      <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-600 to-charity-orange-600">
+        <div className="absolute inset-0 opacity-10">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q30,30 50,30 T80,50" fill="none" stroke="white" stroke-width="1"/><path d="M20,70 Q30,50 50,50 T80,70" fill="none" stroke="white" stroke-width="1"/></svg>\')',
+              backgroundSize: "100px 100px",
+            }}
+          ></div>
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
             <div className="text-center text-white">
-              <h2 className="text-4xl font-bold mb-6">
-                Ready to Join Our Next Event?
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Be Part of Our Mission
               </h2>
-              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                Whether you want to volunteer, donate, or partner with us,
-                there's a place for you in our mission.
+              <p className="text-lg md:text-xl mb-10 opacity-95 max-w-2xl mx-auto leading-relaxed">
+                Every contribution—whether time, resources, or expertise—helps
+                us create lasting change in communities across Kenya. Join us
+                today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/get-involved/volunteer"
-                  className="inline-flex items-center px-8 py-3 bg-white text-charity-orange-600 hover:bg-charity-neutral-100 rounded-lg font-bold transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-10 py-4 bg-white text-charity-green-600 hover:bg-charity-neutral-50 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
                   Volunteer With Us
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-charity-orange-600 rounded-lg font-bold transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-charity-orange-600 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                 >
-                  Contact Us
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  Get Involved
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </div>
             </div>
@@ -421,8 +373,8 @@ const Programs = () => {
 
       {/* Event Details Modal */}
       {showEventModal && selectedEvent && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in-smooth">
+          <div className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300 scale-100">
             <div className="relative">
               <button
                 onClick={() => {

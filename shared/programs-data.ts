@@ -11,7 +11,9 @@ export interface FeaturedEvent {
   paymentLink: string;
   fullDescription: string;
   schedule: Array<{ time: string; activity: string }>;
-  impactGoals: string[];
+  impactGoals?: string[];
+  expectedImpact?: string[];
+  gallery?: string[];
 }
 
 export const featuredEvent: FeaturedEvent = {
@@ -56,12 +58,27 @@ export const featuredEvent: FeaturedEvent = {
       activity: "Prayers and community celebration",
     },
   ],
-  impactGoals: [
+  expectedImpact: [
     "Enable Elias to reach larger audiences with his gospel ministry",
     "Support a cancer survivor in pursuing his calling",
     "Demonstrate inclusive community care for people with disabilities",
     "Empower gospel music as a tool for spiritual transformation",
     "Partner with businesses in community development initiatives",
+  ],
+  gallery: [
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F5bfbb2d8c15e4e59b9d529f5d7b4d46e?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F069be1e90a3049ea8fc6cbc8b0964b38?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Fc5a0af6f7b4942ecafab94407218a6bc?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Fb5a22fbb01124567ace44ca8a4ba7a79?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F0e91c74d676a48a6910aaaa2dbe62519?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Fbb0d976850104f95b60fbb4d6e314b1f?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Fb113f1e2f67a4cca8dd353f17319a2f4?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F5135f3f3bd3e413a81ad5c5a90c3e6ff?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Ff0b0d441fbda41de948f253c39cca7f8?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2Ffb509b6c62ee4d63b4799de6cf7516bd?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F08a02e3c73764cc58f26f7501cbb3f11?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F46a324e45eb0448aaa925ac69c243a1c?format=webp&width=800",
+    "https://cdn.builder.io/api/v1/image/assets%2F54434518360340b19abc312eaf938014%2F7c4a41ea9d43427dbb6946bdd9a63493?format=webp&width=800",
   ],
 };
 
@@ -72,7 +89,15 @@ export const recentPrograms: Array<{
   description: string;
   date: string;
   venue: string;
-}> = [];
+}> = [
+  {
+    image: featuredEvent.image,
+    title: featuredEvent.title,
+    description: featuredEvent.fullDescription.substring(0, 200) + "...",
+    date: featuredEvent.date,
+    venue: featuredEvent.venue,
+  },
+];
 
 // Past Projects Data
 export const pastProjects = [
