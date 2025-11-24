@@ -58,7 +58,7 @@ export const featuredEvent: FeaturedEvent = {
       activity: "Prayers and community celebration",
     },
   ],
-  impactGoals: [
+  expectedImpact: [
     "Enable Elias to reach larger audiences with his gospel ministry",
     "Support a cancer survivor in pursuing his calling",
     "Demonstrate inclusive community care for people with disabilities",
