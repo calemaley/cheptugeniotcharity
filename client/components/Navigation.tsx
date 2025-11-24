@@ -303,30 +303,41 @@ const Navigation = () => {
 
               {/* Navigation items */}
               <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-2">
-                {menuItems.map((item) => {
+                {menuItems.map((item, index) => {
                   const IconComponent = item.icon;
                   return (
-                    <div key={item.label}>
+                    <div
+                      key={item.label}
+                      style={{
+                        animation: `slideInLeft 0.5s ease-out ${index * 50}ms both`
+                      }}
+                    >
                       {item.subItems ? (
                         <>
                           <button
-                            className="flex items-center justify-between w-full text-left text-charity-neutral-700 hover:text-charity-orange-600 transition-all duration-200 font-medium px-3 py-2 rounded-lg hover:bg-charity-orange-50"
+                            className="flex items-center justify-between w-full text-left text-charity-neutral-800 hover:text-charity-orange-700 transition-all duration-300 font-medium px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-charity-orange-100 to-transparent group relative overflow-hidden"
                             onClick={() => toggleDropdown(item.label)}
                           >
-                            <div className="flex items-center space-x-2">
-                              <IconComponent className="h-4 w-4" />
-                              <span>{item.label}</span>
+                            {/* Left accent bar */}
+                            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+
+                            <div className="flex items-center space-x-3">
+                              <IconComponent className={cn(
+                                "h-4 w-4 transition-all duration-300",
+                                activeDropdown === item.label ? "scale-110 text-charity-orange-600" : "group-hover:scale-110"
+                              )} />
+                              <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
                             </div>
                             <ChevronDown
                               className={cn(
-                                "h-4 w-4 transition-transform duration-200",
-                                activeDropdown === item.label && "rotate-180",
+                                "h-4 w-4 transition-transform duration-300",
+                                activeDropdown === item.label && "rotate-180 text-charity-orange-600",
                               )}
                             />
                           </button>
                           {activeDropdown === item.label && (
-                            <div className="mt-2 pl-8 space-y-1">
-                              {item.subItems.map((subItem) =>
+                            <div className="mt-2 pl-4 space-y-1 animate-in slide-in-from-top duration-300">
+                              {item.subItems.map((subItem, subIndex) =>
                                 subItem.isPayment ? (
                                   <button
                                     key={subItem.label}
@@ -340,21 +351,35 @@ const Navigation = () => {
                                       setIsMenuOpen(false);
                                       setActiveDropdown(null);
                                     }}
-                                    className="block w-full text-left text-charity-neutral-600 hover:text-charity-orange-600 transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-charity-orange-50"
+                                    className="block w-full text-left text-charity-neutral-700 hover:text-charity-orange-700 transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-charity-orange-100 group/sub relative overflow-hidden font-medium"
+                                    style={{
+                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`
+                                    }}
                                   >
-                                    {subItem.label}
+                                    <div className="absolute left-0 top-0 h-full w-0.5 bg-charity-orange-500 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
+                                    <span className="flex items-center group-hover/sub:translate-x-1 transition-transform duration-300">
+                                      <ArrowRight className="h-3 w-3 mr-2 opacity-50" />
+                                      {subItem.label}
+                                    </span>
                                   </button>
                                 ) : (
                                   <Link
                                     key={subItem.label}
                                     to={subItem.href}
-                                    className="block text-charity-neutral-600 hover:text-charity-orange-600 transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-charity-orange-50"
+                                    className="block text-charity-neutral-700 hover:text-charity-orange-700 transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-charity-orange-100 group/sub relative overflow-hidden font-medium"
                                     onClick={() => {
                                       setIsMenuOpen(false);
                                       setActiveDropdown(null);
                                     }}
+                                    style={{
+                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`
+                                    }}
                                   >
-                                    {subItem.label}
+                                    <div className="absolute left-0 top-0 h-full w-0.5 bg-charity-orange-500 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
+                                    <span className="flex items-center group-hover/sub:translate-x-1 transition-transform duration-300">
+                                      <ArrowRight className="h-3 w-3 mr-2 opacity-50" />
+                                      {subItem.label}
+                                    </span>
                                   </Link>
                                 ),
                               )}
@@ -364,11 +389,14 @@ const Navigation = () => {
                       ) : (
                         <Link
                           to={item.href}
-                          className="flex items-center space-x-2 text-charity-neutral-700 hover:text-charity-orange-600 transition-all duration-200 font-medium px-3 py-2 rounded-lg hover:bg-charity-orange-50"
+                          className="flex items-center space-x-3 text-charity-neutral-800 hover:text-charity-orange-700 transition-all duration-300 font-medium px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-charity-orange-100 to-transparent group relative overflow-hidden"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          <IconComponent className="h-4 w-4" />
-                          <span>{item.label}</span>
+                          {/* Left accent bar */}
+                          <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+
+                          <IconComponent className="h-4 w-4 transition-all duration-300 group-hover:scale-110" />
+                          <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
                         </Link>
                       )}
                     </div>
