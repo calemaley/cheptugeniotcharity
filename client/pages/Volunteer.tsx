@@ -1036,14 +1036,11 @@ const Volunteer = () => {
                   {/* Overlay - Dark background */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  {/* Name and subtitle - slides up on hover */}
+                  {/* Name - slides up on hover */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className="text-2xl font-bold text-white">
                       {volunteer.name}
                     </h3>
-                    <p className="text-charity-orange-300 font-medium text-sm">
-                      {volunteer.subtitle}
-                    </p>
                   </div>
                 </div>
               </AnimatedSection>
