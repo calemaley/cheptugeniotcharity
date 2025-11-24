@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -11,185 +11,47 @@ import {
   Gift,
   CheckCircle,
   Users,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
-import { featuredEvent } from "@shared/programs-data";
+import { featuredEvent, pastProjects } from "@shared/programs-data";
 
 const Programs = () => {
   const [showEventModal, setShowEventModal] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState<any>(null);
+  const [showImageLightbox, setShowImageLightbox] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!showImageLightbox || !selectedEvent) return;
+
+      if (e.key === "Escape") {
+        setShowImageLightbox(false);
+      } else if (e.key === "ArrowLeft") {
+        setSelectedImageIndex((prev) =>
+          prev > 0 ? prev - 1 : selectedEvent.gallery.length - 1,
+        );
+      } else if (e.key === "ArrowRight") {
+        setSelectedImageIndex((prev) =>
+          prev < selectedEvent.gallery.length - 1 ? prev + 1 : 0,
+        );
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [showImageLightbox, selectedEvent, selectedImageIndex]);
 
   // Mock data for upcoming events (can be moved to shared data later)
-  const upcomingEvents = [
-    {
-      id: "mombasa-2025",
-      title: "MOMBASA Edition",
-      subtitle: "Building bridges of hope",
-      date: "15TH DEC 2025",
-      venue: "COAST CHILDREN'S CENTER - MOMBASA",
-      image:
-        "https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      theme: "Unity in diversity",
-      description:
-        "Join us for our coastal edition as we bring hope and resources to children in Mombasa. This event focuses on educational support and community development.",
-      contact: "+254794107724",
-      fullDescription:
-        "The Mombasa Edition represents our commitment to coastal communities, where education and opportunity often face unique challenges. This event will bring together volunteers, educators, and community leaders to create lasting change along Kenya's beautiful coast.\n\nOur coastal edition focuses on maritime education, environmental conservation, and providing essential educational resources to children who dream of futures beyond their current circumstances.",
-      schedule: [
-        { time: "8:00 AM", activity: "Registration & Welcome" },
-        { time: "9:30 AM", activity: "Opening Ceremony" },
-        { time: "11:00 AM", activity: "Educational Resource Distribution" },
-        { time: "1:00 PM", activity: "Community Lunch" },
-        { time: "2:30 PM", activity: "Environmental Conservation Workshop" },
-        { time: "4:00 PM", activity: "Cultural Performances" },
-        { time: "5:30 PM", activity: "Closing & Group Photos" },
-      ],
-      expectedImpact: [
-        "Support 200+ children with educational materials",
-        "Establish 3 new community learning centers",
-        "Train 25 local teachers",
-        "Launch environmental conservation program",
-      ],
-      itemsNeeded: [
-        "Books",
-        "Writing materials",
-        "School uniforms",
-        "Solar lamps",
-        "Environmental education materials",
-      ],
-    },
-    {
-      id: "nakuru-2026",
-      title: "NAKURU Edition",
-      subtitle: "Nurturing young minds",
-      date: "22ND JAN 2026",
-      venue: "LAKESIDE CHILDREN'S HOME - NAKURU",
-      image:
-        "https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      theme: "Education is the key to the future",
-      description:
-        "Our Nakuru edition emphasizes educational excellence and providing learning materials to underserved communities around Lake Nakuru.",
-      contact: "+254794107724",
-      fullDescription:
-        "Set against the stunning backdrop of Lake Nakuru, this edition focuses on creating sustainable educational opportunities for children in the Rift Valley region. We're partnering with local schools and community centers to establish long-term educational support systems.\n\nThis event emphasizes STEM education, literacy programs, and providing technological resources to bridge the digital divide in rural communities.",
-      schedule: [
-        { time: "8:30 AM", activity: "Registration & Breakfast" },
-        { time: "10:00 AM", activity: "Opening Presentations" },
-        { time: "11:30 AM", activity: "STEM Workshop Setup" },
-        { time: "1:00 PM", activity: "Lunch & Networking" },
-        { time: "2:00 PM", activity: "Literacy Program Launch" },
-        { time: "3:30 PM", activity: "Technology Distribution" },
-        { time: "4:30 PM", activity: "Community Celebration" },
-      ],
-      expectedImpact: [
-        "Provide STEM education to 300+ students",
-        "Establish 2 technology labs",
-        "Train 30 teachers in digital literacy",
-        "Create sustainable scholarship program",
-      ],
-      itemsNeeded: [
-        "Computers",
-        "Science equipment",
-        "Mathematics textbooks",
-        "Library books",
-        "Educational software",
-      ],
-    },
-  ];
+  const upcomingEvents: any[] = [];
 
-  // Mock data for past events
-  const pastEvents = [
-    {
-      id: "kirinyaga-2024",
-      title: "KIRINYAGA Edition",
-      subtitle: "Free Medical Camp — Ndia Constituency (Kirinyaga County)",
-      date: "14TH JUL 2023",
-      venue: "VICTORIA CHILDREN'S HOME - KISUMU",
-      image:
-        "https://cdn.builder.io/api/v1/image/assets%2F12495c24e4264caea932f0480ae45edc%2F72939ea3440543368bc0ebbfc320b894?format=webp&width=800",
-      theme: "Community health and wellness",
-      description:
-        "A free medical camp serving Ndia Constituency in Kirinyaga County. Hundreds received checkups, medication, and referrals.",
-      contact: "+254794107724",
-      impact: "150 children supported, 50 families assisted",
-      gallery: [
-        "https://cdn.builder.io/api/v1/image/assets%2F12495c24e4264caea932f0480ae45edc%2F72939ea3440543368bc0ebbfc320b894?format=webp&width=800",
-        "https://cdn.builder.io/api/v1/image/assets%2F12495c24e4264caea932f0480ae45edc%2Fc30a66eb6e534bc2957dc40b4a930493?format=webp&width=800",
-        "https://cdn.builder.io/api/v1/image/assets%2F12495c24e4264caea932f0480ae45edc%2Fcf5e5110d5d1468ea1497a5989a33d23?format=webp&width=800",
-      ],
-      fullDescription:
-        "The Kisumu Edition marked a turning point in our community outreach efforts. Located near Lake Victoria, this event brought together hearts and hands from across the region to support children whose potential knows no bounds.\n\nThis successful event created lasting partnerships with local organizations and established sustainable programs that continue to benefit the community today.",
-      actualImpact: [
-        "150 children received full educational support packages",
-        "50 families received nutritional assistance for 6 months",
-        "3 new classrooms were built and equipped",
-        "25 teachers received professional development training",
-        "Community garden project launched, now feeding 200+ people",
-      ],
-      testimonials: [
-        {
-          name: "Mary Achieng",
-          role: "Local Teacher",
-          quote:
-            "This event transformed our school. The children now have hope and resources they never had before.",
-        },
-        {
-          name: "James Ochieng",
-          role: "Parent",
-          quote:
-            "My daughter received a scholarship that changed her life. She's now in university studying medicine.",
-        },
-      ],
-      longTermImpact:
-        "6 months later, 95% of supported children showed improved academic performance, and 3 children received secondary school scholarships.",
-    },
-    {
-      id: "embu-2024",
-      title: "EMBU Edition",
-      subtitle: "Football Tournaments",
-      date: "25TH MAY 2024",
-      venue: "HIGHLANDS ORPHANAGE - ELDORET",
-      image:
-        "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      gallery: [
-        "https://cdn.builder.io/api/v1/image/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F8b4aecfd92534eb3b00f9bac06b116d9?format=webp&width=1200",
-        "https://cdn.builder.io/api/v1/image/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2Feaa517097fb04e0a81fe3713b0f66c39?format=webp&width=1200",
-        "https://cdn.builder.io/api/v1/image/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F7caa038804c84176baeaac551a17aa3a?format=webp&width=1200",
-      ],
-      theme: "Raising champions",
-      description:
-        "A community football tournament bringing together schools and youth teams, promoting sportsmanship and talent development.",
-      contact: "+254794107724",
-      impact: "200 children reached, sports equipment provided",
-      fullDescription:
-        "High in the Kenyan highlands, the Eldoret Edition combined our educational mission with sports and recreational programs. This unique approach recognized that children's development requires both academic support and physical activity.\n\nThe event was a celebration of potential, bringing together athletes, educators, and community members to create an unforgettable experience for children who rarely get such opportunities.",
-      actualImpact: [
-        "200 children participated in sports and educational activities",
-        "Complete sports equipment provided to 5 schools",
-        "20 young athletes identified for special training programs",
-        "Health and nutrition workshops reached 100+ families",
-        "Mobile library service established for 8 remote schools",
-      ],
-      testimonials: [
-        {
-          name: "Peter Kiprotich",
-          role: "Former Olympic Runner",
-          quote:
-            "Seeing these children's joy and potential reminded me why sports can change lives.",
-        },
-        {
-          name: "Grace Chepkemoi",
-          role: "School Principal",
-          quote:
-            "The sports equipment has transformed our PE program. Children are more engaged in all subjects now.",
-        },
-      ],
-      longTermImpact:
-        "The sports program continues with 3 children now training for national competitions and attendance rates improved by 40%.",
-    },
-  ];
+  // Past events from shared data
+  const pastEvents = pastProjects;
 
   const EventCard = ({
     event,
@@ -640,12 +502,25 @@ const Programs = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {selectedEvent.gallery.map(
                         (url: string, index: number) => (
-                          <img
+                          <button
                             key={index}
-                            src={url}
-                            alt={`${selectedEvent.title} photo ${index + 1}`}
-                            className="w-full h-48 object-cover rounded-xl"
-                          />
+                            onClick={() => {
+                              setSelectedImageIndex(index);
+                              setShowImageLightbox(true);
+                            }}
+                            className="relative group cursor-pointer"
+                          >
+                            <img
+                              src={url}
+                              alt={`${selectedEvent.title} photo ${index + 1}`}
+                              className="w-full h-48 object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 rounded-xl transition-all duration-300 flex items-center justify-center">
+                              <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-semibold">
+                                Click to View
+                              </span>
+                            </div>
+                          </button>
                         ),
                       )}
                     </div>
@@ -792,6 +667,77 @@ const Programs = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Image Lightbox Modal */}
+      {showImageLightbox && selectedEvent && selectedEvent.gallery && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4"
+          onClick={() => setShowImageLightbox(false)}
+        >
+          <button
+            onClick={() => setShowImageLightbox(false)}
+            className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full hover:bg-gray-200 transition-colors duration-200"
+          >
+            <X className="h-6 w-6 text-black" />
+          </button>
+
+          <div
+            className="relative max-w-4xl w-full max-h-[90vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Image Container */}
+            <div className="relative flex-1 flex items-center justify-center bg-black rounded-xl overflow-hidden">
+              <img
+                src={selectedEvent.gallery[selectedImageIndex]}
+                alt={`${selectedEvent.title} photo ${selectedImageIndex + 1}`}
+                className="max-w-full max-h-[85vh] object-contain"
+              />
+            </div>
+
+            {/* Navigation and Info */}
+            <div className="mt-4 flex items-center justify-between bg-white p-4 rounded-xl">
+              {/* Previous Button */}
+              <button
+                onClick={() => {
+                  setSelectedImageIndex((prev) =>
+                    prev > 0 ? prev - 1 : selectedEvent.gallery.length - 1,
+                  );
+                }}
+                className="p-2 hover:bg-gray-200 rounded-lg transition-colors duration-200"
+              >
+                <ChevronLeft className="h-6 w-6 text-charity-orange-600" />
+              </button>
+
+              {/* Image Counter */}
+              <div className="text-center flex-1 mx-4">
+                <p className="text-charity-neutral-800 font-semibold">
+                  {selectedImageIndex + 1} of {selectedEvent.gallery.length}
+                </p>
+                <p className="text-charity-neutral-600 text-sm">
+                  {selectedEvent.title}
+                </p>
+              </div>
+
+              {/* Next Button */}
+              <button
+                onClick={() => {
+                  setSelectedImageIndex((prev) =>
+                    prev < selectedEvent.gallery.length - 1 ? prev + 1 : 0,
+                  );
+                }}
+                className="p-2 hover:bg-gray-200 rounded-lg transition-colors duration-200"
+              >
+                <ChevronRight className="h-6 w-6 text-charity-orange-600" />
+              </button>
+            </div>
+
+            {/* Keyboard Navigation Hint */}
+            <p className="text-white text-center text-xs mt-2 opacity-70">
+              Use arrow keys or click buttons to navigate. Press ESC to close.
+            </p>
           </div>
         </div>
       )}
