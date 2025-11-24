@@ -19,7 +19,6 @@ import { redirectToPayment, CAMPAIGN_SOURCES } from "@/lib/payment";
 import { cn } from "@/lib/utils";
 
 const About = () => {
-  const [selectedMember, setSelectedMember] = useState<any>(null);
   const [isFounderLiked, setIsFounderLiked] = useState(false);
   const [founderLikeCount, setFounderLikeCount] = useState(0);
 
