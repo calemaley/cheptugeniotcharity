@@ -557,16 +557,19 @@ const Index = () => {
 
       {/* Meet Our Children */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-28 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Meet Our Children
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-green-100 rounded-full">
+                <span className="text-charity-green-700 font-semibold text-sm tracking-wider">
+                  MEET OUR BENEFICIARIES
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Children Making a Difference
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Every child has a unique story and dreams waiting to be
-                fulfilled. Meet some of the amazing children who need your
-                support to achieve their goals.
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Every child has a unique story and dreams waiting to be fulfilled. Meet some of the amazing children who are transforming their lives through our programs.
               </p>
             </div>
 
