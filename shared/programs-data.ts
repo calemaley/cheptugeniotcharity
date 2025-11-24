@@ -12,6 +12,7 @@ export interface FeaturedEvent {
   fullDescription: string;
   schedule: Array<{ time: string; activity: string }>;
   impactGoals: string[];
+  gallery?: string[];
 }
 
 export const featuredEvent: FeaturedEvent = {
