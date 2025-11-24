@@ -99,16 +99,24 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24 relative">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center group">
+          <div className="flex-shrink-0 relative">
+            <Link to="/" className="flex items-center group relative">
+              {/* Animated background glow */}
+              <div className="absolute -inset-2 bg-gradient-to-r from-charity-orange-400/20 to-charity-green-400/20 rounded-lg blur-lg group-hover:blur-xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+
               <img
                 src="/cheptugeniot-logo.png"
                 alt="Cheptugeniot Initiative"
-                className="h-20 md:h-24 lg:h-28 xl:h-32 w-auto transition-all duration-300 group-hover:scale-105 object-contain"
+                className={cn(
+                  "w-auto transition-all duration-500 object-contain relative",
+                  isScrolled || isMenuOpen
+                    ? "h-16 md:h-20 drop-shadow-md"
+                    : "h-20 md:h-24 drop-shadow-lg group-hover:drop-shadow-2xl"
+                )}
                 style={{
-                  filter: isScrolled || isMenuOpen 
-                    ? 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))' 
-                    : 'drop-shadow(0 2px 12px rgba(0, 0, 0, 0.2))',
+                  filter: isScrolled || isMenuOpen
+                    ? 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08))'
+                    : 'drop-shadow(0 2px 12px rgba(255, 90, 95, 0.15))',
                 }}
               />
             </Link>
