@@ -358,47 +358,46 @@ const Index = () => {
         </section>
       </SectionReveal>
 
-      {/* About Us Snippet */}
+      {/* About Us Snippet - Reordered */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-24 bg-gradient-to-br from-white to-charity-orange-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                  <img
-                    src="/children-school-group.jpg"
-                    alt="Cheptugeniot Initiative - Children in School"
-                    className="w-full h-96 object-cover"
-                    style={{ objectPosition: 'center 50%' }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charity-primary-500/20 via-transparent to-transparent" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="space-y-8 lg:order-2">
+                <div>
+                  <div className="inline-block mb-4 px-4 py-2 bg-charity-orange-100 rounded-full">
+                    <span className="text-charity-orange-700 font-semibold text-sm tracking-wider">
+                      ABOUT US
+                    </span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                    Building Stronger Communities
+                  </h2>
                 </div>
-              </div>
-              <div className="space-y-6">
-                <h2 className="text-4xl font-bold text-charity-neutral-800">
-                  About Tabasamu Charity
-                </h2>
                 <p className="text-lg text-charity-neutral-600 leading-relaxed">
-                  Tabasamu Charity is dedicated to transforming lives and
-                  building stronger communities through education, healthcare,
-                  and sustainable development. Since our founding, we've been
-                  committed to creating lasting positive change for children and
-                  families across Kenya.
+                  Tabasamu Charity is dedicated to transforming lives and building stronger communities through education, healthcare, and sustainable development. Since our founding, we've been committed to creating lasting positive change for children and families across Kenya.
                 </p>
-                <p className="text-charity-neutral-600">
-                  Our comprehensive programs focus on providing quality
-                  education, essential healthcare services, and opportunities
-                  for community development. Together with our volunteers and
-                  supporters, we're building a brighter future for the next
-                  generation.
+                <p className="text-charity-neutral-600 leading-relaxed">
+                  Our comprehensive programs focus on providing quality education, essential healthcare services, and opportunities for community development. Together with our volunteers and supporters, we're building a brighter future for the next generation.
                 </p>
                 <Link
                   to="/about"
-                  className="inline-flex items-center px-6 py-3 bg-charity-orange-600 hover:bg-charity-orange-700 text-white rounded-lg transition-colors duration-200 font-medium"
+                  className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 hover:from-charity-orange-700 hover:to-charity-orange-600 text-white rounded-xl transition-all duration-300 font-bold transform hover:scale-105 shadow-lg"
                 >
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
+              </div>
+              <div className="relative lg:order-1">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
+                  <img
+                    src="/children-school-group.jpg"
+                    alt="Cheptugeniot Initiative - Children in School"
+                    className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
+                    style={{ objectPosition: 'center 50%' }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent group-hover:from-black/40 transition-all duration-300" />
+                </div>
               </div>
             </div>
           </div>
