@@ -29,6 +29,10 @@ const Volunteer = () => {
   const [viewingOpportunity, setViewingOpportunity] = useState<string | null>(
     null,
   );
+  const [selectedVolunteer, setSelectedVolunteer] = useState<{
+    name: string;
+    image: string;
+  } | null>(null);
   const [volunteerData, setVolunteerData] = useState({
     name: "",
     email: "",
