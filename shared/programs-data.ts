@@ -321,6 +321,9 @@ export const pastProjects = [
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F32a256aeab0441a0be06a099c6fc821a?format=webp&width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd07f2d5eac304519a3b2aa2943d55b7a?format=webp&width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F87fe3635655b4047af27d8a5bba8e201?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fdab350cb6fec4fbb97cd1c3bb65dfeba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fe23ff48c9ab6496e9dac4fb006c8c56f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F5eb882ddfd6b4a8693f9f1987f34a4f1?format=webp&width=800",
     ],
     actualImpact: [
       "Provided safe, adequate shelter for vulnerable widow and disabled child",
