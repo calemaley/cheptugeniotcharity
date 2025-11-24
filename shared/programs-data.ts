@@ -432,4 +432,73 @@ export const pastProjects = [
     longTermImpact:
       "Gideon's home provides him with safe, secure shelter specifically designed for his accessibility needs. The house protects him from the elements and reduces daily hazards. Most importantly, it sends a powerful message: people with disabilities are valued members of the community who deserve dignified, accessible housing. This project demonstrates that inclusion requires intentional action and investment. Gideon's home will serve him for years to come, providing stability and security that was previously impossible.",
   },
+  {
+    id: "elias-kurgat-empowerment",
+    title: "Elias Kurgat's Empowerment Initiative",
+    subtitle: "Public Address System & Community Support for a Cancer Survivor",
+    date: "2023",
+    venue: "Nandi County",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F282a44ccd5f747f0b7e8b4f16e76b39f?format=webp&width=800",
+    theme: "Hope, Recovery & Community Support for Survivors",
+    description:
+      "Elias Kurgat, a cancer survivor and amputee from Nandi County, received a public address system to support his livelihood. Pwani Oil sponsored three months of groceries for his family, demonstrating comprehensive community care.",
+    contact: "+254794107724",
+    impact:
+      "Provided livelihood tool and essential support for cancer survivor and amputee, enabling economic activity and family sustenance",
+    fullDescription:
+      "Elias Kurgat's story is one of extraordinary resilience in the face of life's harshest challenges. As a cancer survivor and amputee in Nandi County, Elias has navigated not just the physical and emotional toll of cancer and limb loss, but also the economic struggles that follow when a person's ability to work is fundamentally altered.\n\nCancer is devastating enough—the physical pain, the emotional trauma, the loss of independence. But for Elias, survival brought a new set of challenges. As an amputee, the traditional pathways to earning income were closed to him. He faced the double burden of recovery and survival, not knowing how he would provide for his family.\n\nBut the community of Nandi County, alongside compassionate partners, recognized Elias's need and responded with purpose. A public address system was delivered to him—a tool that would enable him to engage in economic activity suited to his abilities and circumstances. This wasn't just charity; it was recognition that Elias still has gifts to give, skills to offer, and the capacity to contribute.\n\nBeyond the PA system, Pwani Oil stepped forward with three months of groceries for Elias's family. This comprehensive support addressed immediate survival needs while Elias adapted to his new reality and built a sustainable income path.\n\nElias's story reminds us that survivors deserve more than medical care—they deserve community support, livelihood opportunities, and the dignity of being able to provide for their families. When we invest in survivors, we invest in restoration and hope.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F282a44ccd5f747f0b7e8b4f16e76b39f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fde1eacfb8fe047f8969ad9a91710c720?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fb9ad0c21260548669ecfc7631f66cd76?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F0c4f84ed0258429586c65699a8da3c51?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F5bc9a82768314b19b05e7d8e5ff8dda4?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fa7dd2fbece3040c59de5fd36451f6c25?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F93f51108792840afa9199f3c2c0bbfff?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc963629711c7444fa7c4bf38d78f88ad?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc2c45ed5677e4ddf9d55f6eea6b99236?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fffe8388a4a0e44809d4b4afd6d5cb6ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F942ae380aad3439d910faedaba6f66e0?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd13e407813c84df9b4c0e232f3c2913a?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F2a995cdcba574e1e81cef3223610ac61?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided public address system for livelihood and community engagement",
+      "Enabled economic activity for cancer survivor and amputee",
+      "Sponsored three months of groceries for family sustenance",
+      "Demonstrated comprehensive community support for survivors",
+      "Recognized dignity and capacity of persons with disabilities",
+      "Combined immediate relief with long-term livelihood opportunity",
+      "Showed corporate responsibility through Pwani Oil partnership",
+    ],
+    testimonials: [
+      {
+        name: "Elias Kurgat",
+        role: "Cancer Survivor & Amputee",
+        quote:
+          "Cancer took my health. Amputation took my mobility. But this community showed me I still have a future. The PA system gives me a way to work again, and the three months of groceries gave my family breathing room. I am grateful and hopeful again.",
+      },
+      {
+        name: "Community Leader",
+        role: "Local Representative",
+        quote:
+          "Elias's situation could have been the end of his story. But we chose differently. By providing him with tools and support, we said: You still belong. You still matter. Your life has value. That's what this project represents.",
+      },
+      {
+        name: "Pwani Oil Representative",
+        role: "Corporate Partner",
+        quote:
+          "Supporting Elias and his family aligned perfectly with our commitment to community care. Cancer survivors and persons with disabilities often face barriers that society creates. We're honored to be part of removing those barriers.",
+      },
+      {
+        name: "Well-wisher",
+        role: "Community Member",
+        quote:
+          "Seeing Elias receive the PA system and the groceries was moving. It shows that when someone faces catastrophic illness and disability, our community steps up. We don't abandon our own.",
+      },
+    ],
+    longTermImpact:
+      "The public address system provides Elias with a sustainable income pathway suited to his current abilities and circumstances. The three-month grocery sponsorship addressed immediate family needs, allowing Elias to focus on recovery and adaptation. This comprehensive approach—combining livelihood tools with essential support—demonstrates that true community care for cancer survivors and persons with disabilities requires multifaceted intervention. Elias's recovery journey is ongoing, but he now has tools, hope, and community backing to rebuild his life with dignity.",
+  },
 ];
