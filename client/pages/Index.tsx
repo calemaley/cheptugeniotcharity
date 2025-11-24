@@ -672,21 +672,25 @@ const Index = () => {
 
       {/* How You Can Help Us */}
       <SectionReveal>
-        <section className="py-20 relative overflow-hidden">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F8d975f746acc4941bfe12ec3f1c5138a?alt=media&token=2e1e0384-83fc-4b15-ae49-a302f7da8126&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="absolute inset-0 bg-charity-orange-600/85" />
+        <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-600 via-charity-orange-600 to-charity-orange-700">
+          <div className="absolute inset-0 opacity-20">
+            <div
+              style={{
+                backgroundImage:
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,50 Q30,30 50,30 T80,50" fill="none" stroke="white" stroke-width="1"/><path d="M20,70 Q30,50 50,50 T80,70" fill="none" stroke="white" stroke-width="1"/></svg>\')',
+                backgroundSize: "100px 100px",
+              }}
+              className="absolute inset-0"
+            ></div>
+          </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
-                How You Can Help Us?
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ways to Support Our Mission
               </h2>
+              <p className="text-lg text-white/90 max-w-3xl mx-auto">
+                Whether you donate, volunteer, or simply share our story, every action creates lasting change
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
