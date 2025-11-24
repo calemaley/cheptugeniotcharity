@@ -308,7 +308,7 @@ export const pastProjects = [
     impact:
       "Built safe shelter for widow-headed household with disabled child",
     fullDescription:
-      "Jane's story is one of courage, vulnerability, and the transformative power of community compassion. As a widow raising a disabled daughter alone, Jane faced daily challenges of providing safe shelter, food, and care for her family in Singorwet.\n\nHer daughter Chepkoech, who developed a condition when she was young, requires special care and a safe, dignified environment. Yet Jane's modest means made it nearly impossible to provide the secure housing her family desperately needed. The family lived in conditions that left them exposed to the elements and vulnerable to further hardship.\n\n**A Community Response**: Word of Jane's struggle reached compassionate well-wishers who believed that every family deserves dignity and safety. They came forward to contribute materials, labor, and resources to build a proper shelter for Jane and Chepkoech.\n\n**Building Hope**: The construction process became a community endeavor, bringing together neighbors, church leaders, and committed individuals who worked side by side. Materials including bricks, cement, corrugated iron, and other building supplies were gathered and utilized. The shelter rose from the ground, not just as a structure of brick and metal, but as a tangible expression of hope and solidarity.\n\n**A Sacred Dedication**: In a beautiful ceremony, Rev. Caleb, director of AGC Church S. Rift, along with community leaders and well-wishers, gathered at Singorwet to dedicate Jane's new home. The event was marked by prayers for Jane's family, blessings for their future, and a renewed commitment to supporting vulnerable families in the community.\n\n**More Than a House**: For Jane and Chepkoech, this shelter means security, protection from harsh weather, and a dignified space to call home. But it also means something deeper—it means they are not forgotten, that their community cares, and that there are people willing to sacrifice to restore dignity to those facing life's hardest circumstances.",
+      "Jane's story is one of courage, vulnerability, and the transformative power of community compassion. As a widow raising a disabled daughter alone, Jane faced daily challenges of providing safe shelter, food, and care for her family in Singorwet.\n\nHer daughter Chepkoech, who developed a condition when she was young, requires special care and a safe, dignified environment. Yet Jane's modest means made it nearly impossible to provide the secure housing her family desperately needed. The family lived in conditions that left them exposed to the elements and vulnerable to further hardship.\n\n**A Community Response**: Word of Jane's struggle reached compassionate well-wishers who believed that every family deserves dignity and safety. They came forward to contribute materials, labor, and resources to build a proper shelter for Jane and Chepkoeth.\n\n**Building Hope**: The construction process became a community endeavor, bringing together neighbors, church leaders, and committed individuals who worked side by side. Materials including bricks, cement, corrugated iron, and other building supplies were gathered and utilized. The shelter rose from the ground, not just as a structure of brick and metal, but as a tangible expression of hope and solidarity.\n\n**A Sacred Dedication**: In a beautiful ceremony, Rev. Caleb, director of AGC Church S. Rift, along with community leaders and well-wishers, gathered at Singorwet to dedicate Jane's new home. The event was marked by prayers for Jane's family, blessings for their future, and a renewed commitment to supporting vulnerable families in the community.\n\n**More Than a House**: For Jane and Chepkoech, this shelter means security, protection from harsh weather, and a dignified space to call home. But it also means something deeper—it means they are not forgotten, that their community cares, and that there are people willing to sacrifice to restore dignity to those facing life's hardest circumstances.",
     gallery: [
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd3a70de1cc6f4a4483f9bb3726ae8555?format=webp&width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F7aa11c9636594517a92479bd4facaea0?format=webp&width=800",
@@ -339,7 +339,7 @@ export const pastProjects = [
         name: "Jane",
         role: "Widow & Beneficiary",
         quote:
-          "I didn't know how I would keep my daughter safe and sheltered. When this community came and built this house, I felt like God was answering my prayers. Now Chepkoech has a safe place, and I can focus on caring for her without worrying about the rain coming through the roof.",
+          "I didn't know how I would keep my daughter safe and sheltered. When this community came and built this house, I felt like God was answering my prayers. Now Chepkoeth has a safe place, and I can focus on caring for her without worrying about the rain coming through the roof.",
       },
       {
         name: "Rev. Caleb",
@@ -351,10 +351,74 @@ export const pastProjects = [
         name: "Community Member",
         role: "Local Resident",
         quote:
-          "Seeing Jane's family get a proper home was beautiful. She's a strong widow caring for her disabled daughter alone. When we came together to build her shelter, we weren't just building a house—we were saying to Jane and Chepkoech: 'You matter. You are loved. You are part of us.'",
+          "Seeing Jane's family get a proper home was beautiful. She's a strong widow caring for her disabled daughter alone. When we came together to build her shelter, we weren't just building a house—we were saying to Jane and Chepkoeth: 'You matter. You are loved. You are part of us.'",
       },
     ],
     longTermImpact:
-      "Jane's shelter continues to provide safe housing and security for her family. The house protects Chepkoech from the elements and provides a dignified space where Jane can offer her daughter proper care. This project demonstrates the lasting impact of shelter provision on vulnerable families and the ongoing commitment of the community to supporting those facing the greatest challenges.",
+      "Jane's shelter continues to provide safe housing and security for her family. The house protects Chepkoeth from the elements and provides a dignified space where Jane can offer her daughter proper care. This project demonstrates the lasting impact of shelter provision on vulnerable families and the ongoing commitment of the community to supporting those facing the greatest challenges.",
+  },
+  {
+    id: "gideon-korir-shelter",
+    title: "Gideon Korir's House Completion",
+    subtitle: "Building Home for a Blind Man in Bomet East",
+    date: "Shelter Completion & Handover",
+    venue: "Bomet East",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F1835f631eff94aa881ff28f70e5a28ad?format=webp&width=800",
+    theme: "Dignity Through Housing: Supporting People with Disabilities",
+    description:
+      "We built and completed a house for Gideon Korir, a blind man from Bomet East, providing him with safe shelter and restored dignity. The community celebrated the house handover, affirming their commitment to supporting people with disabilities.",
+    contact: "+254794107724",
+    impact:
+      "Built complete shelter for a blind man in Bomet East",
+    fullDescription:
+      "Gideon Korir's journey is a powerful testament to the importance of shelter and community support for people facing physical challenges. As a blind man living in Bomet East, Gideon faced extraordinary difficulties in securing safe housing and maintaining independence.\n\nWithout adequate shelter, Gideon's daily life was marked by vulnerability—exposure to harsh weather, difficult living conditions that complicated his navigation and mobility, and the emotional toll of isolation. Despite his disability, Gideon possessed dignity, courage, and a desire to live independently. What he needed was a community willing to stand with him.\n\n**A Building Project of Compassion**: Our organization, alongside community members and well-wishers, came together to build a proper house for Gideon. This wasn't just construction work—it was a declaration that every person, regardless of physical ability, deserves a safe place to call home.\n\n**From Foundation to Completion**: The project involved multiple stages of construction, from laying foundations and building brick walls to installing a solid roof with corrugated iron sheeting. Community members contributed labor, materials including bricks, cement, timber for roofing, and other building supplies. The house rose from the ground as a tangible expression of community solidarity and compassion.\n\n**A Celebration of Dignity**: The house handover ceremony was a significant moment—not just a transfer of property, but a public affirmation that Gideon Korir matters to his community. Leaders, well-wishers, and community members gathered to celebrate the completion of the house and present it to Gideon. The event symbolized a renewed commitment to ensuring that people with disabilities are not left behind.\n\n**Independence & Safety**: For Gideon, this house means independence, safety, and security. It provides a dignified living space designed and built with understanding of his unique needs. Most importantly, it sends a powerful message: that his blindness does not diminish his worth or his right to live with dignity and security.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc7756c30b6824ed8b5321c895ea5142e?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F7a0fae4d220649c4a883711af444159f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fb5484b2f53524efe85a20f79e32f83c1?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F130e7964ced14fceaa89ab7419ec9785?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F28224f897f494a23af67d5c4dd10003b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F9c1f6d83dbf6450da83415f23d12e8d1?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F0a662770892b4c19ba1d1ba834563a28?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F1835f631eff94aa881ff28f70e5a28ad?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Ffaa5f9f8088f46899d3f4e2c0811627e?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F098415ea75864ab4b8dfa46083c3807b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fba47789eded049cfbcc8a8df04894921?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F395a5117df5749f7bf601ff73c3095cc?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F9bde7bc942424891b746a190d3fc46ef?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F513ff44810e04762bb9da4b93c9ccca9?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided safe, independent living space for a blind man",
+      "Protected Gideon from harsh weather and unsafe living conditions",
+      "Affirmed the dignity and worth of people with disabilities",
+      "Demonstrated inclusive community care for marginalized members",
+      "Created secure foundation for Gideon's independence and autonomy",
+      "Inspired community commitment to disability-inclusive development",
+      "Showed that physical disability does not diminish human worth or community value",
+    ],
+    testimonials: [
+      {
+        name: "Gideon Korir",
+        role: "Beneficiary",
+        quote:
+          "I never thought I would have my own house. Being blind, I felt like my community had forgotten me. But when these people came and built this house for me, I realized I was not forgotten. I have a safe place to call home, and that changes everything. Thank you for giving me back my dignity.",
+      },
+      {
+        name: "Community Leader",
+        role: "Local Representative",
+        quote:
+          "Gideon's house is more than just shelter. It's a statement that in our community, nobody is left behind—not even those with disabilities. Building for Gideon showed our young people what real community care looks like. His house reminds us that every person deserves dignity.",
+      },
+      {
+        name: "Community Member",
+        role: "Volunteer & Supporter",
+        quote:
+          "Working on Gideon's house changed me. I realized how much my sight means to me, and I understood his struggles better. Seeing him happy in his new home, celebrating with us at the handover���that's the whole reason we do this work. Gideon matters, and his house proves it.",
+      },
+    ],
+    longTermImpact:
+      "Gideon's house provides him with permanent, safe shelter and a foundation for independent living. More broadly, this project demonstrates the community's commitment to inclusive development and disability rights. Gideon's story serves as an inspiration—showing that with community support, people with disabilities can live with dignity, security, and hope. His house is a standing testimony to the power of compassion.",
   },
 ];
