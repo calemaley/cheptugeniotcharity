@@ -176,4 +176,62 @@ export const pastProjects = [
     longTermImpact:
       "The posho mill continues to provide Beatrice's family with sustainable income and serves multiple community families needing milling services. Sharon's education at AIC Chebisas Girls positions her as a future leader and role model for her community. This initiative demonstrates how targeted support across multiple life areas creates transformational change.",
   },
+  {
+    id: "sharon-university-journey",
+    title: "Sharon's University Journey",
+    subtitle: "Farewell & Celebration as Sharon Joins KIBABII University",
+    date: "University Milestone Celebration",
+    venue: "KIBABII University, Bungoma",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2Fde43de8f422640ee8813f1bac93605cb?format=webp&width=800",
+    theme: "The Beginning of Excellence",
+    description:
+      "A joyful farewell and prayer ceremony celebrating Sharon's admission to KIBABII University to pursue a Bachelor of Education degree—a testament to the power of educational sponsorship.",
+    contact: "+254794107724",
+    impact: "Celebrated Sharon's university admission and prepared her for higher education journey",
+    fullDescription:
+      "Sharon's University Journey marks a pivotal moment in a young woman's life and in the Cheptugeniot Initiative's ongoing commitment to education. This event celebrated Sharon's admission to KIBABII University to pursue a Bachelor of Education degree—a remarkable achievement made possible through the educational sponsorship initiated during the Beatrice's Hope Initiative.\n\nThe farewell and prayers ceremony brought together family, community members, and supporters to:\n\n**Celebrate Excellence**: Recognition of Sharon's hard work and academic achievement in completing her secondary education at AIC Chebisas Girls as a sponsored boarding student.\n\n**Spiritual Preparation**: Community prayers and blessings for Sharon's university journey, her success in her education, and her future as an educator.\n\n**Family Support**: Emotional and spiritual support from her mother Beatrice and extended family, demonstrating how one family's transformation inspires an entire community.\n\n**Vision Building**: Encouraging Sharon to see herself not just as a beneficiary, but as a future educator and leader who will serve her community.\n\n**Hope Multiplication**: Showing other young people in the community that education sponsorship creates real, tangible pathways to tertiary education and professional careers.\n\nThis celebration is more than a farewell—it's a declaration that investment in one child's education creates ripples of hope and possibility for an entire generation. Sharon's journey at KIBABII University represents the fruits of compassionate action and the power of believing in a young person's potential.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2Faf660d1e88964a2e9297c8cee3de5322?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2Fb91d80d451a34ff1a55e0c6aadb9e64b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F8e2622cb97ab48ceb0f17ea02ebefda9?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F8d21679aebe74762b6dcd1edac65a813?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2Fc222ad9e71fd4ce596dd577a3e80b412?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F3424045806fe4cb29a9bf6c9dd117321?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F460a461017af42eeb7bb007d65b13342?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2Fde43de8f422640ee8813f1bac93605cb?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F48b4db1218394ef19b9cee690695888b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F0e24137099894f6597047d75b3c07500%2F9d14f26f0247487c8503df3b206e8d2c?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Celebrated Sharon's successful completion of secondary education with sponsorship",
+      "Facilitated Sharon's admission to KIBABII University for Bachelor of Education degree",
+      "Provided community prayers and spiritual preparation for university journey",
+      "Strengthened family bonds through celebration of educational achievement",
+      "Inspired other young people in the community to pursue higher education",
+      "Demonstrated the long-term impact of educational sponsorship programs",
+    ],
+    testimonials: [
+      {
+        name: "Sharon",
+        role: "University Student at KIBABII",
+        quote:
+          "The farewell ceremony was emotional and beautiful. Seeing my mother smile and pray for me, surrounded by people who believed in me—it confirmed that I must work hard and become an excellent educator. I want to return to my community as a teacher and inspire the next generation like I was inspired.",
+      },
+      {
+        name: "Beatrice",
+        role: "Sharon's Mother",
+        quote:
+          "I never thought my daughter would reach university. When she was sponsored to AIC Chebisas Girls, I was grateful. But seeing her now heading to KIBABII University to study education—I can't even find words. This is what happens when someone believes in you. My daughter will change lives as a teacher.",
+      },
+      {
+        name: "Community Member",
+        role: "Celebration Attendee",
+        quote:
+          "Sharon's journey gives hope to all our children. She came from a family struggling with health and poverty, and now she's going to university. If we invest in our young people's education, they will become our future leaders and teachers. This celebration is a reminder of what's possible.",
+      },
+    ],
+    longTermImpact:
+      "Sharon is now pursuing a Bachelor of Education degree at KIBABII University, positioning herself to become an educator and community leader. Her success serves as a visible testimony to the transformational power of educational sponsorship and continues to inspire her family members, siblings, and community peers to pursue educational excellence. Upon graduation, Sharon will have the knowledge and credentials to teach and uplift her community.",
+  },
 ];
