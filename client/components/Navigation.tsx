@@ -82,14 +82,22 @@ const Navigation = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled || isMenuOpen
-          ? "bg-white/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent",
+          ? "bg-gradient-to-b from-white to-white/95 backdrop-blur-lg shadow-xl border-b border-charity-orange-100"
+          : "bg-gradient-to-b from-black/30 to-transparent",
       )}
     >
+      {/* Animated gradient line */}
+      <div className={cn(
+        "absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-500",
+        isScrolled || isMenuOpen
+          ? "bg-gradient-to-r from-charity-orange-500 via-charity-green-500 to-charity-orange-500 opacity-100"
+          : "bg-gradient-to-r from-charity-orange-400 via-charity-green-400 to-charity-orange-400 opacity-50"
+      )}></div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24 relative">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
