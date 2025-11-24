@@ -88,7 +88,15 @@ export const recentPrograms: Array<{
   description: string;
   date: string;
   venue: string;
-}> = [];
+}> = [
+  {
+    image: featuredEvent.image,
+    title: featuredEvent.title,
+    description: featuredEvent.fullDescription.substring(0, 200) + "...",
+    date: featuredEvent.date,
+    venue: featuredEvent.venue,
+  },
+];
 
 // Past Projects Data
 export const pastProjects = [
