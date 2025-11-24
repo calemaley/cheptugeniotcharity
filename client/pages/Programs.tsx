@@ -61,72 +61,34 @@ const Programs = () => {
     type?: "featured" | "upcoming" | "past";
   }) => (
     <div
-      className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 group cursor-pointer transform hover:-translate-y-2"
+      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-400 group cursor-pointer h-full hover:-translate-y-1 transform"
       onClick={() => {
         setSelectedEvent(event);
         setShowEventModal(true);
       }}
     >
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden h-32">
         <img
           src={event.image}
           alt={event.title}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="absolute bottom-4 left-4 text-white">
-            <span className="text-sm font-medium">
-              {type === "past" ? "View Impact" : "Learn More"}
-            </span>
-          </div>
-        </div>
-        <div
-          className={`absolute top-4 right-4 px-4 py-2 rounded-lg font-bold transform rotate-3 ${
-            type === "past"
-              ? "bg-gray-500"
-              : type === "upcoming"
-                ? "bg-blue-500"
-                : "bg-red-500"
-          } text-white`}
-        >
-          {event.date}
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
       </div>
 
-      <div className="p-6">
-        <h3 className="text-2xl font-bold text-charity-neutral-800 mb-2 group-hover:text-charity-orange-600 transition-colors duration-200">
+      <div className="p-4">
+        <h3 className="text-base font-bold text-charity-neutral-800 line-clamp-2 group-hover:text-charity-orange-600 transition-colors duration-200">
           {event.title}
         </h3>
-        <p className="text-charity-orange-600 font-semibold mb-3 text-lg italic">
+        <p className="text-charity-orange-600 font-semibold text-sm italic mt-2 line-clamp-1">
           {event.subtitle}
         </p>
 
-        <div className="space-y-2 mb-4">
-          <div className="flex items-center text-charity-neutral-600">
-            <Phone className="h-4 w-4 mr-2 text-charity-orange-500" />
-            <span className="text-sm">{event.contact}</span>
+        <div className="mt-3 pt-3 border-t border-charity-neutral-200">
+          <div className="text-charity-orange-600 font-medium text-xs flex items-center group-hover:translate-x-0.5 transition-transform duration-200">
+            View Details
+            <ArrowRight className="ml-1 h-3 w-3" />
           </div>
-          {event.impact && (
-            <div className="flex items-center text-charity-neutral-600">
-              <Users className="h-4 w-4 mr-2 text-charity-green-500" />
-              <span className="text-sm font-medium">{event.impact}</span>
-            </div>
-          )}
-        </div>
-
-        <p className="text-charity-neutral-600 mb-4 text-sm leading-relaxed">
-          {event.description}
-        </p>
-
-        <div className="bg-charity-green-50 p-3 rounded-xl border-l-4 border-charity-green-500 mb-4">
-          <p className="text-charity-green-700 italic font-medium text-sm">
-            "{event.theme}"
-          </p>
-        </div>
-
-        <div className="text-charity-orange-600 font-medium flex items-center group-hover:translate-x-1 transition-transform duration-200">
-          {type === "past" ? "View Impact Story" : "Learn More"}
-          <ArrowRight className="ml-2 h-4 w-4" />
         </div>
       </div>
     </div>
