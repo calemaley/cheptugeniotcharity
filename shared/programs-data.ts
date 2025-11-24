@@ -234,4 +234,63 @@ export const pastProjects = [
     longTermImpact:
       "The posho mill has become a vital community asset, providing Beatrice's family with sustainable income while serving many families in Ndurio. Sharon's success at AIC Chebisas Girls opens pathways for other children in the community. This program demonstrates the transformative power of combining livelihood support with educational opportunity.",
   },
+  {
+    id: "sharon-kibabii-farewell",
+    title: "Sharon's University Farewell & Prayers",
+    subtitle: "Farewell Celebration & Prayers for KIBABII University Journey",
+    date: "10th August 2024",
+    venue: "KIBABII University Main Campus, Bungoma",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fcbdba87acb194f4db1a1717bf50aaed7?format=webp&width=800",
+    theme: "Celebrating Educational Success & New Beginnings",
+    description:
+      "On 10th August 2024, we gathered for a memorable farewell and prayers for Sharon as she joined KIBABII University to pursue a Bachelor of Education degree—a testament to the transformative power of education and community support.",
+    contact: "+254794107724",
+    impact:
+      "Celebrated Sharon's educational achievement and prayed for her success at university",
+    fullDescription:
+      "On the 10th of August 2024, our community came together for a truly special and emotional occasion—a farewell celebration and prayer session for Sharon as she embarked on her university journey at KIBABII University, Bungoma.\n\nThis event represented a milestone not just for Sharon, but for her entire family and our community. After years of dedicated sponsorship and support, Sharon had successfully completed her secondary education and earned admission to KIBABII University to study Bachelor of Education—a path that will eventually allow her to give back to her community as an educator.\n\n**A Community Milestone**: The gathering brought together family members, friends, community leaders, and supporters who had been part of Sharon's educational journey. It was a time to celebrate her achievement, acknowledge the sacrifice of her mother Beatrice and the broader community, and recognize how far Sharon had come.\n\n**Prayers & Blessings**: The event was deeply spiritual in nature, with prayers and blessings offered for Sharon's success at university. Community leaders and pastors prayed for her academic excellence, personal growth, and safe return to serve her community as an educated woman.\n\n**A New Chapter**: As Sharon stepped into this new chapter at KIBABII University, the community's support didn't diminish—instead, it transformed into prayers, encouragement, and continued investment in her future. This farewell was not an ending, but a beautiful beginning of a new season of growth and opportunity.\n\n**The Bigger Picture**: Sharon's journey represents what becomes possible when a community invests in education. From day school sponsorship to boarding school support, and now to university—this is the trajectory of transformation that we believe in and work toward for every child in our care.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fcbdba87acb194f4db1a1717bf50aaed7?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc6be16c21ce342bfa7710378c7bea79f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Ff0ffabb36fa5470bbea21308a709468d?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fbc5ce0fef387410ab62f8807566680ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F07cdcb03492b4b349f521a4352b244cc?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F7d3d3eaf1adf4f9cab1e48780086c14c?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd37e552c828f4d0a8b2537b8040cd2f3?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Feabf4d6cd33244fdb2ed9d02cc191c3d?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F00dea15dfd374e40b978eb07a12b2898?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F0a3c669ad4694bd59db830bacb499729?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Celebrated Sharon's successful transition to university education",
+      "Brought together community, family, and supporters for prayers and blessing",
+      "Strengthened community bonds through shared celebration of achievement",
+      "Demonstrated the fruit of years of educational sponsorship investment",
+      "Inspired other young people in the community about educational possibilities",
+      "Affirmed commitment to supporting Sharon through her university journey",
+    ],
+    testimonials: [
+      {
+        name: "Sharon",
+        role: "KIBABII University Student",
+        quote:
+          "This farewell meant so much to me. Seeing my community come together to pray for me and celebrate my achievement was overwhelming. I know that even though I'm now at university, my community is still with me. This motivates me to work hard and make you all proud.",
+      },
+      {
+        name: "Beatrice",
+        role: "Sharon's Mother",
+        quote:
+          "As I watched my daughter step into university, my heart was full of gratitude. From struggling to pay for school fees to seeing her graduate secondary school and now enter university—this journey has been amazing. The community's support hasn't just changed Sharon's life; it has changed our entire family's future.",
+      },
+      {
+        name: "Community Leader",
+        role: "Local Pastor",
+        quote:
+          "Witnessing Sharon's journey from day school to boarding school to university has been a privilege. This farewell was our opportunity to bless her and commit to praying for her success. Sharon represents what education can do—not just for one person, but for an entire community's future.",
+      },
+    ],
+    longTermImpact:
+      "Sharon's successful admission to KIBABII University to study Bachelor of Education opens doors for both her personal future and her community's future. As an educated woman returning to serve her community as a teacher, Sharon will become a role model and mentor for the next generation. Her journey demonstrates the transformative power of educational sponsorship and community investment in young people.",
+  },
 ];
