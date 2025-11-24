@@ -723,22 +723,30 @@ const Index = () => {
 
       {/* Featured Events */}
       <SectionReveal>
-        <section className="py-20 bg-white">
+        <section className="py-28 bg-gradient-to-br from-white to-charity-green-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center mb-12">
-              <h2 className="text-4xl font-bold text-charity-neutral-800">
-                Featured Events
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-green-100 rounded-full">
+                <span className="text-charity-green-700 font-semibold text-sm tracking-wider">
+                  TRANSFORMATIVE INITIATIVES
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Spotlight Programs
               </h2>
+              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto mb-10">
+                Discover the programs making the greatest impact in our communities
+              </p>
               <Link
-                to="/programs#featured-event"
-                className="flex items-center text-charity-orange-600 hover:text-charity-orange-700 font-medium group"
+                to="/programs"
+                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-charity-green-600 to-charity-green-500 hover:from-charity-green-700 hover:to-charity-green-600 text-white rounded-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                View All Programs
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                Explore All Programs
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
               {recentPrograms.map((program, index) => (
                 <Link
                   key={index}
