@@ -83,30 +83,52 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2021",
-      event: "First Charity",
+      year: "2020",
+      event: "Empowering a Blind Man in Kapkulumben",
       achievement:
-        "Cheptugeniot Initiative was founded with a mission to transform lives",
+        "Our first project marked a significant milestone as we raised funds to purchase a maize miller (posho mill) for a blind man in Kapkulumben, Bomet County. This initiative aimed to provide a sustainable source of income and independence for him.",
+    },
+    {
+      year: "2021",
+      event: "Aid for Displaced People in Narok County",
+      achievement:
+        "In response to displacement caused by unforeseen circumstances, we organized a successful fundraising campaign to provide food and essential supplies for affected families in Narok County.",
+    },
+    {
+      year: "2021",
+      event: "Housing Support for a Blind Artist",
+      achievement:
+        "We constructed a house for a blind artist in Bomet County, ensuring a safe and secure living environment for someone with incredible resilience and talent.",
     },
     {
       year: "2022",
-      event: "- Football tournaments ",
-      achievement: "Mens mental health awareness",
+      event: "Posho Mill and Healthcare Support for an Ill Woman",
+      achievement:
+        "In 2022, we provided a posho mill machine to an ailing woman, empowering her to earn a living. Additionally, we registered her with NHIF, ensuring she had access to medical care and reduced hospital bills.",
     },
     {
       year: "2023",
-      event: "Free Medical Camp",
-      achievement: "Mobile clinic program started",
+      event: "Shelter for a Disabled Woman and Her Children",
+      achievement:
+        "Understanding the dire need for shelter, we built a house for a disabled woman raising two disabled children. This project highlighted our commitment to creating impactful change for vulnerable groups.",
     },
     {
       year: "2024",
-      event: "Charity Work",
-      achievement: "visited Rwai childrens home ",
+      event: "Supporting Education for Vulnerable Children",
+      achievement:
+        "Every year, we dedicate efforts to ensure that children from impoverished backgrounds have access to education, giving them a chance to build a brighter future.",
     },
     {
       year: "2025",
-      event: "Free Medical Camp",
-      achievement: "More smiles were created ",
+      event: "Enhancing Community Livelihoods",
+      achievement:
+        "We are introducing sustainable ways for communities to generate income, including modern farming practices, soap-making, and leveraging online opportunities to earn money.",
+    },
+    {
+      year: "Ongoing",
+      event: "Providing the vulnerable with Medical Help/insurance (SHA)",
+      achievement:
+        "Join our SHA Fund Drive to help vulnerable individuals — including the blind, disabled, and sick — access vital medical insurance and care. Together, we can give hope, health, and dignity to those who need it most.",
     },
   ];
 
@@ -423,64 +445,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-charity-neutral-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Meet Our Team
-              </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Meet our dedicated leadership team who work tirelessly to make
-                our mission a reality. Get to know the passionate individuals
-                behind our impact.
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <AnimatedSection
-                key={index}
-                animation="scaleIn"
-                delay={index * 100}
-              >
-                <div
-                  className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 group cursor-pointer transform hover:-translate-y-2"
-                  onClick={() => setSelectedMember(member)}
-                >
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className={`w-full h-80 object-cover ${member.name === "Philip Muga" ? "object-center" : "object-top"} group-hover:scale-110 transition-transform duration-700`}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <span className="text-sm font-medium">
-                          Click to learn more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-charity-neutral-800 mb-6">
-                      {member.name}
-                    </h3>
-                    <p className="text-charity-neutral-600 text-base leading-relaxed">
-                      {member.bio}
-                    </p>
-                    <div className="mt-6 text-charity-orange-600 text-base font-semibold flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                      Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-20 relative overflow-hidden">
