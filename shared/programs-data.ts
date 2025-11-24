@@ -359,4 +359,74 @@ export const pastProjects = [
     longTermImpact:
       "Jane's shelter provides her family with safe, secure housing and protection from the elements. The experience of community care has restored her hope and sense of belonging. The project demonstrates the importance of supporting caregivers of disabled children—a often-overlooked vulnerable population. For Chepkoech, a safe home provides stability critical to her wellbeing. This initiative shows that widows and families with disabilities deserve not just sympathy, but concrete support and community investment.",
   },
+  {
+    id: "gideon-korir-house",
+    title: "Gideon Korir's Home",
+    subtitle: "Building Dignity for a Blind Man in Bomet East",
+    date: "Community Housing Project",
+    venue: "Bomet East",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd370567394b84b789bd3feda7bd42d43?format=webp&width=800",
+    theme: "Accessibility, Inclusion & Community Care",
+    description:
+      "Gideon Korir, a blind man from Bomet East, received the gift of a home built by compassionate community members who recognized his need for safe, accessible shelter.",
+    contact: "+254794107724",
+    impact:
+      "Provided safe, accessible housing for a blind community member, transforming his living situation",
+    fullDescription:
+      "Gideon Korir's story is one of resilience and the transformative power of inclusion. Living with blindness in Bomet East, Gideon faced daily challenges that extended far beyond what sighted individuals might recognize. Safe shelter—a home designed with his accessibility needs in mind—was not a luxury but a necessity.\n\nFor too long, Gideon lived without adequate housing. The lack of safe, accessible shelter compounded the challenges he already faced as a blind person in a community that may not fully understand his needs. But the community of Bomet East stepped forward.\n\nWell-wishers and community members came together with a singular purpose: to build Gideon a home. This was more than just construction work—it was a declaration that Gideon's life matters, that he belongs in his community, and that accessibility and inclusion are not afterthoughts but essential values.\n\nThe house built for Gideon is a home designed with care and intention. Community members donated labor, materials, and expertise. The construction process itself became a powerful statement: when we see someone in need, we respond not with pity but with action and dignity.\n\nGideon's new home provides him with:\n- Safe, secure shelter from harsh weather\n- An environment designed with accessibility in mind\n- Reduced daily risks and hazards\n- A space that is truly his own\n- Recognition that he is valued by his community\n\nThis project reminds us that inclusion means seeing people with disabilities not as charity cases but as community members whose dignity and comfort matter just as much as anyone else's.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd370567394b84b789bd3feda7bd42d43?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F1eec42f470ed467c9ff5180e7fca3fb0?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fea1ac701f5f044e0827d680ed1084a00?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F05a8dda9ccb1494ab4de515bc3996a25?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F252d2a5c2e404d43979376aedd768dbc?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F78f330c927e045fda070f598a3b85637?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F4298fd3e891e412786985dbd004576ae?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F6c741989068947e49c17575b205061cf?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F1b0846c2c9274e9fba7a52d70f4a97df?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3d905f359cc64a0685af1958d06b66c2?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F430c77784213405cb4db96c29d0b1d31?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F531626d1ebc54fe2b48dc39219945a52?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F85c5b98c27ad4607bb8416af5826b6e5?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3871ebbd977d4bc1aa6fc199adca8c25?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided safe, accessible housing for a blind community member",
+      "Created a home designed with accessibility needs in mind",
+      "Demonstrated community commitment to inclusion",
+      "Recognized the dignity and value of persons with disabilities",
+      "Reduced daily risks and hazards for Gideon",
+      "Provided security, privacy, and independence",
+      "Showed that accessibility matters in community care",
+    ],
+    testimonials: [
+      {
+        name: "Gideon Korir",
+        role: "Direct Beneficiary",
+        quote:
+          "I never thought I would have a home like this. When I was living in unsafe conditions, I felt forgotten. But this community came together and said I matter. Now I have a home that is safe, that I can navigate, that is truly mine. I am grateful beyond words.",
+      },
+      {
+        name: "Community Leader",
+        role: "Local Representative",
+        quote:
+          "Building Gideon's house taught us about real inclusion. It's not about treating people with disabilities as charity cases. It's about recognizing that everyone deserves safe shelter and dignity. Gideon's home is a symbol of what our community values.",
+      },
+      {
+        name: "Community Member",
+        role: "Project Participant",
+        quote:
+          "Working on Gideon's house changed my perspective. I realized that accessibility isn't something extra—it's fundamental. Every person, regardless of ability, deserves a safe place to live. This project made our community stronger.",
+      },
+      {
+        name: "Volunteer Builder",
+        role: "Construction Team",
+        quote:
+          "When we started building, we thought about what Gideon would need to feel safe and independent. We built with care and intention. Seeing Gideon's joy when he first walked through his new home—that's why we do this work.",
+      },
+    ],
+    longTermImpact:
+      "Gideon's home provides him with safe, secure shelter specifically designed for his accessibility needs. The house protects him from the elements and reduces daily hazards. Most importantly, it sends a powerful message: people with disabilities are valued members of the community who deserve dignified, accessible housing. This project demonstrates that inclusion requires intentional action and investment. Gideon's home will serve him for years to come, providing stability and security that was previously impossible.",
+  },
 ];
