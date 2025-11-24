@@ -282,7 +282,7 @@ export const pastProjects = [
     impact:
       "Celebrated Sharon's educational achievement and prayed for her success at university",
     fullDescription:
-      "On the 10th of August 2024, our community came together for a truly special and emotional occasion—a farewell celebration and prayer session for Sharon as she embarked on her university journey at KIBABII University, Bungoma.\n\nThis event represented a milestone not just for Sharon, but for her entire family and our community. After years of dedicated sponsorship and support, Sharon had successfully completed her secondary education and earned admission to KIBABII University to study Bachelor of Education—a path that will eventually allow her to give back to her community as an educator.\n\n**A Community Milestone**: The gathering brought together family members, friends, community leaders, and supporters who had been part of Sharon's educational journey. It was a time to celebrate her achievement, acknowledge the sacrifice of her mother Beatrice and the broader community, and recognize how far Sharon had come.\n\n**Prayers & Blessings**: The event was deeply spiritual in nature, with prayers and blessings offered for Sharon's success at university. Community leaders and pastors prayed for her academic excellence, personal growth, and safe return to serve her community as an educated woman.\n\n**A New Chapter**: As Sharon stepped into this new chapter at KIBABII University, the community's support didn't diminish—instead, it transformed into prayers, encouragement, and continued investment in her future. This farewell was not an ending, but a beautiful beginning of a new season of growth and opportunity.\n\n**The Bigger Picture**: Sharon's journey represents what becomes possible when a community invests in education. From day school sponsorship to boarding school support, and now to university��this is the trajectory of transformation that we believe in and work toward for every child in our care.",
+      "On the 10th of August 2024, our community came together for a truly special and emotional occasion—a farewell celebration and prayer session for Sharon as she embarked on her university journey at KIBABII University, Bungoma.\n\nThis event represented a milestone not just for Sharon, but for her entire family and our community. After years of dedicated sponsorship and support, Sharon had successfully completed her secondary education and earned admission to KIBABII University to study Bachelor of Education—a path that will eventually allow her to give back to her community as an educator.\n\n**A Community Milestone**: The gathering brought together family members, friends, community leaders, and supporters who had been part of Sharon's educational journey. It was a time to celebrate her achievement, acknowledge the sacrifice of her mother Beatrice and the broader community, and recognize how far Sharon had come.\n\n**Prayers & Blessings**: The event was deeply spiritual in nature, with prayers and blessings offered for Sharon's success at university. Community leaders and pastors prayed for her academic excellence, personal growth, and safe return to serve her community as an educated woman.\n\n**A New Chapter**: As Sharon stepped into this new chapter at KIBABII University, the community's support didn't diminish—instead, it transformed into prayers, encouragement, and continued investment in her future. This farewell was not an ending, but a beautiful beginning of a new season of growth and opportunity.\n\n**The Bigger Picture**: Sharon's journey represents what becomes possible when a community invests in education. From day school sponsorship to boarding school support, and now to university—this is the trajectory of transformation that we believe in and work toward for every child in our care.",
     gallery: [
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fcbdba87acb194f4db1a1717bf50aaed7?format=webp&width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc6be16c21ce342bfa7710378c7bea79f?format=webp&width=800",
@@ -453,5 +453,68 @@ export const pastProjects = [
     ],
     longTermImpact:
       "Gideon's house provides him with permanent, safe shelter and a foundation for independent living. More broadly, this project demonstrates the community's commitment to inclusive development and disability rights. Gideon's story serves as an inspiration—showing that with community support, people with disabilities can live with dignity, security, and hope. His house is a standing testimony to the power of compassion.",
+  },
+  {
+    id: "elias-kurgat-empowerment",
+    title: "Elias Kurgat: Empowering a Gospel Artist & Cancer Survivor",
+    subtitle: "PA System & Family Support for a Musical Ministry",
+    date: "Nandi Roadshow Event",
+    venue: "Nandi County, Kenya",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3a168f94bcf64e759004341ec3547f18?format=webp&width=800",
+    theme: "Hope, Faith & Musical Empowerment for Survivors",
+    description:
+      "Elias Kurgat, a gospel artist, cancer survivor, and amputee, was empowered with a professional PA system and family support by the Cheptugeniot Initiative and well-wishers. His powerful ministry of music and testimony continues to inspire communities across Nandi County with messages of faith, resilience, and hope.",
+    contact: "+254794107724",
+    impact:
+      "Provided PA system and family support for a gospel artist cancer survivor",
+    fullDescription:
+      "Elias Kurgat is a gospel artist from Nandi County whose voice carries a message of hope born from his own journey of survival and faith. As both a cancer survivor and an amputee, Elias represents the indomitable human spirit—a person who refuses to be defined by his challenges but instead transforms them into a platform for ministry.\n\nThrough his music and public speaking, Elias shares a powerful testimony of faith, resilience, and hope. His performances inspire communities and challenge us all to recognize the strength within ourselves. Yet, like many artists pursuing ministry in rural Kenya, Elias faced significant barriers—limited access to quality audio equipment that would allow his voice to reach larger audiences and support his family's daily needs.\n\n**Professional Audio Equipment**: The Cheptugeniot Initiative, recognizing Elias's unique calling and platform, came together with well-wishers to provide comprehensive support. We purchased a complete professional public address (PA) system—enabling Elias to amplify his message and reach more people with his gospel ministry. This isn't just equipment; it's an investment in hope itself. With quality audio equipment, Elias can now perform at larger gatherings, reach people in outdoor settings, and share his testimony with greater impact.\n\n**Corporate Partnership & Family Support**: Pwani Oil, who partnered with Berur FM during the Nandi roadshow, demonstrated corporate social responsibility by providing three months of shopping provisions for Elias's family. This comprehensive support includes essential groceries and household items, easing the burden of daily needs. This allows Elias to focus fully on his musical calling and ministry without the constant worry of providing for his family.\n\n**A Platform of Inspiration**: The roadshow event became a celebration of Elias's journey and resilience. Community members, church leaders, and corporate partners gathered to witness the PA system presentation and family support handover. Elias performed, sharing his testimony and music with the community. The event affirmed that people with disabilities and health challenges are not charity cases—they are valued members of society with gifts to share.\n\n**More Than Music**: Elias's story challenges our assumptions about disability and ability. Here is a man who lost a limb yet stands tall on stage sharing faith. Here is a cancer survivor whose song is a testimony to God's faithfulness. Every note he sings, every person he touches with his ministry, represents the power of community care and belief in human potential.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fea5973b061574828a6701b97f3c3c41f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F251079abe3fa4d71ab809edbdc3bc77f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fbc89e90bd3d04ed599f0323b32b78569?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3a168f94bcf64e759004341ec3547f18?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3f06c21e1d4e4c9fb81b6c943b1abd55?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F8c1b913e6ee14f709d0eed20a7fdb2b3?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F1bd64f768c3f41cea511ebd15e4ab318?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F14372a3dcbde4f0fa42fecc14a19843d?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fdbd16f2789da4de2956aff98dddac26b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F89df378751ff48b182e057456337eed6?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F47dc4f5ba2e24fe99f6476cb854bc661?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F4cbc9d3f34954cd192b502d2a01ff142?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F8977fb6071604672b6a0860d15cd0062?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided professional PA system enabling gospel ministry to reach larger audiences",
+      "Supported a cancer survivor in pursuing his artistic calling",
+      "Provided three months of family support through corporate partnership with Pwani Oil",
+      "Demonstrated inclusive community care for people with disabilities and health challenges",
+      "Amplified a powerful message of faith, hope, and resilience",
+      "Created partnership between NGO, business, and community",
+      "Showed that disability does not limit one's ability to minister and inspire",
+    ],
+    testimonials: [
+      {
+        name: "Elias Kurgat",
+        role: "Gospel Artist & Cancer Survivor",
+        quote:
+          "When I was sick, I thought my ministry was over. But God sustained me, and now this community has given me wings to fly. This PA system means I can share my testimony with more people. I can tell them that cancer could not kill my spirit, and neither will any challenge. Thank you for believing in my music and my message.",
+      },
+      {
+        name: "Pwani Oil Representative",
+        role: "Corporate Partner",
+        quote:
+          "Corporate social responsibility isn't just about donations—it's about partnering with communities to create lasting change. When we learned about Elias's story, we knew we had to be part of his journey. Supporting his family demonstrates our commitment to meaningful community development.",
+      },
+      {
+        name: "Community Member",
+        role: "Nandi County Resident",
+        quote:
+          "Elias's music has touched so many of us. He's an amputee and a cancer survivor, yet he stands on that stage with more courage than many of us have. When I see him perform with the new PA system, I remember that our challenges don't define us. His faith defines him, and that inspires me every time.",
+      },
+    ],
+    longTermImpact:
+      "The professional PA system continues to enable Elias to reach larger audiences with his gospel ministry across Nandi County and beyond. His family's support through Pwani Oil's partnership provides stability, allowing Elias to focus on his calling. Elias's story—of a cancer survivor and amputee using his platform for ministry—serves as ongoing inspiration to his community. His music and testimony challenge societal assumptions about disability and demonstrate the power of community investment in individual potential. Through Elias, we see that resilience, faith, and community support can transform personal tragedy into ministry that uplifts many.",
   },
 ];
