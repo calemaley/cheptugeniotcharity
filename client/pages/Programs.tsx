@@ -649,6 +649,77 @@ const Programs = () => {
         </div>
       )}
 
+      {/* Image Lightbox Modal */}
+      {showImageLightbox && selectedEvent && selectedEvent.gallery && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-95 z-50 flex items-center justify-center p-4"
+          onClick={() => setShowImageLightbox(false)}
+        >
+          <button
+            onClick={() => setShowImageLightbox(false)}
+            className="absolute top-4 right-4 z-10 p-2 bg-white rounded-full hover:bg-gray-200 transition-colors duration-200"
+          >
+            <X className="h-6 w-6 text-black" />
+          </button>
+
+          <div
+            className="relative max-w-4xl w-full max-h-[90vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Image Container */}
+            <div className="relative flex-1 flex items-center justify-center bg-black rounded-xl overflow-hidden">
+              <img
+                src={selectedEvent.gallery[selectedImageIndex]}
+                alt={`${selectedEvent.title} photo ${selectedImageIndex + 1}`}
+                className="max-w-full max-h-[85vh] object-contain"
+              />
+            </div>
+
+            {/* Navigation and Info */}
+            <div className="mt-4 flex items-center justify-between bg-white p-4 rounded-xl">
+              {/* Previous Button */}
+              <button
+                onClick={() => {
+                  setSelectedImageIndex((prev) =>
+                    prev > 0 ? prev - 1 : selectedEvent.gallery.length - 1,
+                  );
+                }}
+                className="p-2 hover:bg-gray-200 rounded-lg transition-colors duration-200"
+              >
+                <ChevronLeft className="h-6 w-6 text-charity-orange-600" />
+              </button>
+
+              {/* Image Counter */}
+              <div className="text-center flex-1 mx-4">
+                <p className="text-charity-neutral-800 font-semibold">
+                  {selectedImageIndex + 1} of {selectedEvent.gallery.length}
+                </p>
+                <p className="text-charity-neutral-600 text-sm">
+                  {selectedEvent.title}
+                </p>
+              </div>
+
+              {/* Next Button */}
+              <button
+                onClick={() => {
+                  setSelectedImageIndex((prev) =>
+                    prev < selectedEvent.gallery.length - 1 ? prev + 1 : 0,
+                  );
+                }}
+                className="p-2 hover:bg-gray-200 rounded-lg transition-colors duration-200"
+              >
+                <ChevronRight className="h-6 w-6 text-charity-orange-600" />
+              </button>
+            </div>
+
+            {/* Keyboard Navigation Hint */}
+            <p className="text-white text-center text-xs mt-2 opacity-70">
+              Use arrow keys or click buttons to navigate. Press ESC to close.
+            </p>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </>
   );
