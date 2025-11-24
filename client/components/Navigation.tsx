@@ -88,14 +88,6 @@ const Navigation = () => {
           : "bg-gradient-to-b from-black/30 to-transparent",
       )}
     >
-      {/* Animated gradient line */}
-      <div className={cn(
-        "absolute bottom-0 left-0 right-0 h-0.5 transition-all duration-500",
-        isScrolled || isMenuOpen
-          ? "bg-gradient-to-r from-charity-orange-500 via-charity-green-500 to-charity-orange-500 opacity-100"
-          : "bg-gradient-to-r from-charity-orange-400 via-charity-green-400 to-charity-orange-400 opacity-50"
-      )}></div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24 relative">
           {/* Logo */}
