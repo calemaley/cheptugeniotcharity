@@ -949,78 +949,102 @@ const Volunteer = () => {
         </div>
       )}
 
-      {/* Volunteer Testimonials */}
+      {/* Our Great Volunteers */}
       <section className="py-20 bg-charity-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Volunteer Stories
+                Our Great Team
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Hear from our volunteers about their transformative experiences
-                and the impact they've made in Kenya.
+                Meet the dedicated volunteers and partners making a real difference in our communities.
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                name: "Sarah Johnson",
-                role: "Education Volunteer",
-                duration: "6 months",
-                quote:
-                  "Teaching in Kenya changed my perspective on education and life. The children's enthusiasm despite limited resources was truly inspiring.",
+                name: "Edwin Kwambai",
+                subtitle: "GRM Standard Group",
                 image:
-                  "https://i.ibb.co/vxjcpZjD/Screenshot-from-2025-08-12-23-27-35.png",
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F703f9e45ba2043cf9e41fc9c620c1c8a?format=webp&width=800",
               },
               {
-                name: "Dr. Mark Rodriguez",
-                role: "Healthcare Volunteer",
-                duration: "1 year",
-                quote:
-                  "Working in rural clinics taught me more about medicine and compassion than any textbook ever could. An unforgettable experience.",
+                name: "Rev Anne Chepkwony",
+                subtitle: "Community Leader",
                 image:
-                  "https://i.ibb.co/vxjcpZjD/Screenshot-from-2025-08-12-23-27-35.png",
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F7af3a0aeda934ba3afadac88b2a35e64?format=webp&width=800",
               },
               {
-                name: "Emma Chen",
-                role: "Community Development",
-                duration: "8 months",
-                quote:
-                  "Being part of building a school from the ground up and seeing the community come together was the most rewarding experience of my life.",
+                name: "May Chepkorir",
+                subtitle: "Volunteer Coordinator",
                 image:
-                  "https://i.ibb.co/vxjcpZjD/Screenshot-from-2025-08-12-23-27-35.png",
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F3a4eeb7a48094b76a263f4812f6b0052?format=webp&width=800",
               },
-            ].map((testimonial, index) => (
+              {
+                name: "Ezekiel Kimchul",
+                subtitle: "Field Officer",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F8ce2185dacc74f7d9d8e36950e1fbee1?format=webp&width=800",
+              },
+              {
+                name: "Rev Caleb Langat",
+                subtitle: "Spiritual Guide",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2Fec4085900ffb48af90705a2f272fd818?format=webp&width=800",
+              },
+              {
+                name: "Osoro",
+                subtitle: "Community Champion",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2Fe9d24828756b45b4a43d8b5cfb254c48?format=webp&width=800",
+              },
+              {
+                name: "Nosh, Vivian, Brobox",
+                subtitle: "Volunteer Team",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F7b4bbb31284b4459a3e23b8d18b7ba7c?format=webp&width=800",
+              },
+              {
+                name: "Ann, Kate, Vivian & Susan",
+                subtitle: "Support Team",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F7698c1b0521c4be9bd5fe0956504b3bf?format=webp&width=800",
+              },
+              {
+                name: "Singorwet Community Volunteers",
+                subtitle: "Local Heroes",
+                image:
+                  "https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F90d12e3d18df4d7891f517d03f6f0750?format=webp&width=800",
+              },
+            ].map((volunteer, index) => (
               <AnimatedSection
                 key={index}
                 animation="scaleIn"
-                delay={index * 100}
+                delay={index * 80}
               >
-                <div className="bg-white p-6 rounded-xl shadow-lg">
-                  <div className="flex items-center mb-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover mr-4"
-                    />
-                    <div>
-                      <h4 className="font-bold text-charity-neutral-800">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-sm text-charity-neutral-600">
-                        {testimonial.role}
-                      </p>
-                      <p className="text-xs text-charity-neutral-500">
-                        {testimonial.duration}
-                      </p>
-                    </div>
+                <div className="relative group overflow-hidden rounded-2xl shadow-xl h-80 bg-charity-neutral-200">
+                  {/* Image */}
+                  <img
+                    src={volunteer.image}
+                    alt={volunteer.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+
+                  {/* Overlay - Dark background */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                  {/* Name and subtitle - slides up on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      {volunteer.name}
+                    </h3>
+                    <p className="text-charity-orange-300 font-medium text-sm">
+                      {volunteer.subtitle}
+                    </p>
                   </div>
-                  <p className="text-charity-neutral-700 italic">
-                    "{testimonial.quote}"
-                  </p>
                 </div>
               </AnimatedSection>
             ))}
