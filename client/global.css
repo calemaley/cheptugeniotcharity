@@ -210,3 +210,188 @@
 .animate-progress {
   animation: progress linear forwards;
 }
+
+/* Professional Entrance Animations */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleInSmooth {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover animations */
+@keyframes floatUp {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 90, 95, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 90, 95, 0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility animations */
+.animate-slide-in-down {
+  animation: slideInDown 0.7s ease-out;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.7s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.7s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.7s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleInSmooth 0.6s ease-out;
+}
+
+.animate-fade-in-smooth {
+  animation: fadeInSmooth 0.8s ease-out;
+}
+
+.animate-float {
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  animation: shimmer 3s infinite;
+}
+
+.animate-spin-slow {
+  animation: rotate360 3s linear infinite;
+}
+
+/* Smooth transitions for common elements */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-smooth-lg {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Stagger animation utilities */
+@keyframes stagger {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stagger-1 {
+  animation: stagger 0.6s ease-out 0.1s backwards;
+}
+
+.animate-stagger-2 {
+  animation: stagger 0.6s ease-out 0.2s backwards;
+}
+
+.animate-stagger-3 {
+  animation: stagger 0.6s ease-out 0.3s backwards;
+}
+
+.animate-stagger-4 {
+  animation: stagger 0.6s ease-out 0.4s backwards;
+}
+
+.animate-stagger-5 {
+  animation: stagger 0.6s ease-out 0.5s backwards;
+}
