@@ -472,18 +472,23 @@ const Index = () => {
 
       {/* Popular Projects */}
       <SectionReveal>
-        <section className="py-20 bg-charity-neutral-50">
+        <section className="py-28 bg-gradient-to-b from-white to-charity-neutral-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-sm uppercase tracking-wide bg-gradient-to-r from-charity-purple-600 to-charity-orange-600 bg-clip-text text-transparent font-semibold mb-2">
-                OUR BEST FEATURES
-              </h2>
-              <h3 className="text-4xl font-bold text-charity-neutral-800">
-                We're Popular To Provide Best Projects
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-charity-purple-100 to-charity-orange-100 rounded-full">
+                <span className="text-sm font-semibold bg-gradient-to-r from-charity-purple-700 to-charity-orange-700 bg-clip-text text-transparent tracking-wider">
+                  WAYS TO MAKE AN IMPACT
+                </span>
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold text-charity-neutral-800">
+                How You Can Help
               </h3>
+              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto mt-4">
+                Choose how you'd like to support our mission and transform lives
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
               {popularProjects.map((project, index) => {
                 const IconComponent = project.icon;
                 return (
