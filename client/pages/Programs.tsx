@@ -283,54 +283,26 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Upcoming Events
-              </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Mark your calendars for these exciting upcoming community events
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {upcomingEvents.map((event, index) => (
-              <AnimatedSection
-                key={index}
-                animation="scaleIn"
-                delay={index * 100}
-              >
-                <EventCard event={event} type="upcoming" />
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Past Events */}
-      <section className="py-20 bg-charity-neutral-50">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Past Events
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-4">
+                Our Impact & Success Stories
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Celebrating the success and impact of our previous initiatives
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto">
+                Celebrating the transformative work and lasting impact of our community initiatives
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {pastEvents.map((event, index) => (
               <AnimatedSection
                 key={index}
                 animation="scaleIn"
-                delay={index * 100}
+                delay={index * 80}
               >
                 <EventCard event={event} type="past" />
               </AnimatedSection>
