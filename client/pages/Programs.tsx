@@ -118,15 +118,17 @@ const Programs = () => {
         ></div>
 
         <Navigation />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <AnimatedSection animation="slideUp">
             <div className="text-center text-white">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <div className="mb-8 inline-block px-5 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
+                <span className="text-sm md:text-base font-semibold">OUR INITIATIVES</span>
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Our Programs
               </h1>
-              <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
-                Creating lasting change through community events and initiatives
-                across Kenya
+              <p className="text-lg md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
+                Creating lasting change through community events and initiatives across Kenya
               </p>
             </div>
           </AnimatedSection>
