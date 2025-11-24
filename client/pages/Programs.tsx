@@ -61,33 +61,40 @@ const Programs = () => {
     type?: "featured" | "upcoming" | "past";
   }) => (
     <div
-      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-400 group cursor-pointer h-full hover:-translate-y-1 transform"
+      className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 group cursor-pointer h-full hover:-translate-y-2 transform border border-charity-neutral-100 hover:border-charity-orange-300"
       onClick={() => {
         setSelectedEvent(event);
         setShowEventModal(true);
       }}
     >
-      <div className="relative overflow-hidden h-32">
+      <div className="relative overflow-hidden h-56">
         <img
           src={event.image}
           alt={event.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+        <div className="absolute top-4 right-4 bg-charity-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
+          {event.date}
+        </div>
       </div>
 
-      <div className="p-4">
-        <h3 className="text-base font-bold text-charity-neutral-800 line-clamp-2 group-hover:text-charity-orange-600 transition-colors duration-200">
+      <div className="p-6">
+        <h3 className="text-lg font-bold text-charity-neutral-800 line-clamp-2 group-hover:text-charity-orange-600 transition-colors duration-200 mb-2">
           {event.title}
         </h3>
-        <p className="text-charity-orange-600 font-semibold text-sm italic mt-2 line-clamp-1">
+        <p className="text-charity-orange-600 font-semibold text-sm italic line-clamp-2 mb-4">
           {event.subtitle}
         </p>
 
-        <div className="mt-3 pt-3 border-t border-charity-neutral-200">
-          <div className="text-charity-orange-600 font-medium text-xs flex items-center group-hover:translate-x-0.5 transition-transform duration-200">
+        <p className="text-charity-neutral-600 text-sm line-clamp-2 mb-4 min-h-10">
+          {event.fullDescription || event.achievement}
+        </p>
+
+        <div className="mt-4 pt-4 border-t border-charity-neutral-200">
+          <div className="text-charity-orange-600 font-semibold text-sm flex items-center group-hover:translate-x-1 transition-transform duration-200">
             View Details
-            <ArrowRight className="ml-1 h-3 w-3" />
+            <ArrowRight className="ml-2 h-4 w-4" />
           </div>
         </div>
       </div>
