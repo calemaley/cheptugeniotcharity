@@ -125,8 +125,8 @@ const Contact = () => {
   const handleDownloadBrochure = () => {
     // Create a downloadable PDF link
     const link = document.createElement("a");
-    link.href = "/assets/tabasamu-brochure.pdf"; // You would need to add this file
-    link.download = "Tabasamu-Charity-Brochure.pdf";
+    link.href = "/assets/cheptugeniot-brochure.pdf"; // You would need to add this file
+    link.download = "Cheptugeniot-Initiative-Brochure.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -135,7 +135,7 @@ const Contact = () => {
   const handleSocialShare = (platform: string) => {
     const url = window.location.href;
     const text =
-      "Check out Tabasamu Charity - Making a difference in children's lives";
+      "Check out Cheptugeniot Initiative - Making a difference in children's lives";
 
     switch (platform) {
       case "facebook":

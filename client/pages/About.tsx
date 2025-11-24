@@ -86,7 +86,7 @@ const About = () => {
       year: "2021",
       event: "First Charity",
       achievement:
-        "Tabasamu Charity was founded with a mission to transform lives",
+        "Cheptugeniot Initiative was founded with a mission to transform lives",
     },
     {
       year: "2022",
@@ -604,4 +604,3 @@ const About = () => {
 };
 
 export default About;
-

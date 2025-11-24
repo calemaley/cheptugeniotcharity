@@ -386,7 +386,7 @@ const Index = () => {
                   </h2>
                 </div>
                 <p className="text-lg text-charity-neutral-600 leading-relaxed">
-                  Tabasamu Charity is dedicated to transforming lives and
+                  Cheptugeniot Initiative is dedicated to transforming lives and
                   building stronger communities through education, healthcare,
                   and sustainable development. Since our founding, we've been
                   committed to creating lasting positive change for children and
