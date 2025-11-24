@@ -750,16 +750,16 @@ const Index = () => {
               {recentPrograms.map((program, index) => (
                 <Link
                   key={index}
-                  to="/programs#featured-event"
-                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer group block"
+                  to="/programs"
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-500 cursor-pointer group block border border-green-100 hover:border-charity-green-300"
                 >
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden h-64">
                     <img
                       src={program.image}
                       alt={program.title}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg font-bold transform rotate-3">
+                    <div className="absolute top-6 right-6 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg transform group-hover:scale-110 transition-all duration-300">
                       {program.date}
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
