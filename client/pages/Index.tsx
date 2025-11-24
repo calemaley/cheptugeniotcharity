@@ -791,23 +791,23 @@ const Index = () => {
 
       {/* Impact Statistics */}
       <SectionReveal>
-        <section className="py-20 relative overflow-hidden">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://cdn.builder.io/o/assets%2F80b74e3fdcaa4c0ca29f792322dc0e5f%2F5ab93ce551fe442ba1ad6d5cb267b689?alt=media&token=6c7413b8-90dc-43b0-94ba-f01de3392756&apiKey=80b74e3fdcaa4c0ca29f792322dc0e5f"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="absolute inset-0 bg-charity-green-700/85" />
+        <section className="py-28 relative overflow-hidden bg-gradient-to-br from-charity-green-700 via-charity-green-600 to-charity-green-800">
+          <div className="absolute inset-0 opacity-20">
+            <div
+              style={{
+                backgroundImage:
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white"/></svg>\')',
+                backgroundSize: "40px 40px",
+              }}
+            ></div>
+          </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
-                LET'S SUPPORT US TO HELP THEM
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Our Impact by the Numbers
               </h2>
-              <p className="text-xl text-white/90">
-                Join your hands with us for a better life and future
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+                Join hands with us to create a better future for generations to come
               </p>
             </div>
 
