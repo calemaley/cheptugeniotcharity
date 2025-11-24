@@ -1029,7 +1029,10 @@ const Volunteer = () => {
                 animation="scaleIn"
                 delay={index * 80}
               >
-                <div className="relative group overflow-hidden rounded-2xl shadow-xl h-80 bg-charity-neutral-200">
+                <div
+                  className="relative group overflow-hidden rounded-2xl shadow-xl h-80 bg-charity-neutral-200 cursor-pointer"
+                  onClick={() => setSelectedVolunteer({ name: volunteer.name, image: volunteer.image })}
+                >
                   {/* Image */}
                   <img
                     src={volunteer.image}
