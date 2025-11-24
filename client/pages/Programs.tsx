@@ -148,17 +148,21 @@ const Programs = () => {
       {/* Featured Events */}
       <section
         id="featured-events"
-        className="py-20 bg-gradient-to-br from-charity-orange-50 to-charity-green-50"
+        className="py-24 bg-gradient-to-br from-white via-charity-orange-50 to-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="slideUp">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
-                Featured Events
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4 px-4 py-2 bg-charity-orange-100 rounded-full">
+                <span className="text-charity-orange-700 font-semibold text-sm tracking-wider">
+                  FEATURED PROGRAMS
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-charity-neutral-800 mb-6">
+                Spotlight on Impact
               </h2>
-              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Our spotlight events making the biggest impact in communities
-                across Kenya
+              <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Discover the transformative programs making real change in communities across Kenya
               </p>
             </div>
           </AnimatedSection>
