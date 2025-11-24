@@ -26,6 +26,28 @@ const Programs = () => {
   const [showImageLightbox, setShowImageLightbox] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!showImageLightbox || !selectedEvent) return;
+
+      if (e.key === "Escape") {
+        setShowImageLightbox(false);
+      } else if (e.key === "ArrowLeft") {
+        setSelectedImageIndex((prev) =>
+          prev > 0 ? prev - 1 : selectedEvent.gallery.length - 1,
+        );
+      } else if (e.key === "ArrowRight") {
+        setSelectedImageIndex((prev) =>
+          prev < selectedEvent.gallery.length - 1 ? prev + 1 : 0,
+        );
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [showImageLightbox, selectedEvent, selectedImageIndex]);
+
   // Mock data for upcoming events (can be moved to shared data later)
   const upcomingEvents: any[] = [];
 
