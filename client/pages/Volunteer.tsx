@@ -1056,6 +1056,48 @@ const Volunteer = () => {
         </div>
       </section>
 
+      {/* Volunteer Image Lightbox Modal */}
+      {selectedVolunteer && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+          onClick={() => setSelectedVolunteer(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full max-h-[90vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedVolunteer(null)}
+              className="absolute -top-10 right-0 text-white hover:text-charity-orange-300 transition-colors duration-200 z-10"
+            >
+              <X className="h-8 w-8" />
+            </button>
+
+            {/* Image Container */}
+            <div className="relative flex items-center justify-center">
+              <img
+                src={selectedVolunteer.image}
+                alt={selectedVolunteer.name}
+                className="max-w-full max-h-[85vh] object-contain rounded-lg"
+              />
+            </div>
+
+            {/* Volunteer Name */}
+            <div className="text-center mt-4">
+              <h3 className="text-2xl font-bold text-white">
+                {selectedVolunteer.name}
+              </h3>
+            </div>
+
+            {/* Click to close hint */}
+            <p className="text-center text-gray-300 text-sm mt-4">
+              Click background to close
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Call to Action */}
       <section className="py-20 relative overflow-hidden">
         <video
