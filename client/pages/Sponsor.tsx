@@ -423,22 +423,22 @@ const Sponsor = () => {
                         </div>
 
                         <div className="flex items-center p-2 rounded-lg bg-charity-orange-50 group-hover:bg-charity-orange-100 transition-colors duration-300">
-                          <div className="w-8 h-8 rounded-full bg-charity-orange-500 flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform duration-300">
-                            <GraduationCap className="h-4 w-4 text-white" />
+                          <div className="w-6 h-6 rounded-full bg-charity-orange-500 flex items-center justify-center mr-2 flex-shrink-0">
+                            <GraduationCap className="h-3 w-3 text-white" />
                           </div>
-                          <span className="text-charity-neutral-700 font-medium text-sm truncate">
+                          <span className="text-charity-neutral-700 font-medium text-xs truncate">
                             {child.grade}
                           </span>
                         </div>
                       </div>
 
                       {/* Interests with enhanced styling */}
-                      <div className="mb-6">
-                        <div className="text-sm font-bold text-charity-neutral-700 mb-3 flex items-center">
-                          <Star className="h-4 w-4 text-charity-orange-500 mr-2" />
+                      <div className="mb-4">
+                        <div className="text-xs font-bold text-charity-neutral-700 mb-2 flex items-center">
+                          <Star className="h-3 w-3 text-charity-orange-500 mr-1" />
                           Interests:
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-1">
                           {child.interests.map((interest, i) => (
                             <span
                               key={i}
