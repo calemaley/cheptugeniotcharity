@@ -293,4 +293,70 @@ export const pastProjects = [
     longTermImpact:
       "Sharon's enrollment at Kibabii University represents a significant achievement not just for her, but for her entire community. Her success story will inspire other children to pursue higher education. As she studies to become an educator, Sharon is positioned to return to her community as a teacher and leader, creating a multiplier effect of positive change for generations to come.",
   },
+  {
+    id: "jane-shelter-project",
+    title: "Jane's Shelter Initiative",
+    subtitle: "Building Hope for a Widow and Her Disabled Child",
+    date: "2023",
+    venue: "Singorwet",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F72206cf17956498489cd23662dcc1778?format=webp&width=800",
+    theme: "Shelter, Dignity & Community Care",
+    description:
+      "Jane, a widow caring for her disabled daughter Chepkoech, received a new shelter built by compassionate well-wishers. Rev Caleb and Simion Titany visited to celebrate this life-changing gift in 2023.",
+    contact: "+254794107724",
+    impact:
+      "Provided safe shelter for vulnerable widow and disabled child, restoring dignity and security",
+    fullDescription:
+      "Jane's story is one of resilience, pain, and ultimately, grace. As a widow, Jane faces the daily challenges of single parenthood while caring for her daughter Chepkoech, who developed a condition while still young that has left her with significant disabilities. Managing both the emotional weight of loss and the physical demands of caring for a disabled child has been an overwhelming burden.\n\nFor too long, Jane's family lived in inadequate shelter—unsafe, exposed to the elements, and a constant reminder of their vulnerability. But in 2023, a remarkable community response transformed their lives.\n\nWell-wishers came forward with resources and labor. Community members worked tirelessly to construct a proper shelter for Jane's family—a safe haven built with brick, proper roofing, and sturdy materials. It was not just the physical structure that changed; it was Jane's sense of hope and dignity.\n\nRev Caleb, Director of the Agc Church in South Rift, and Simion Titany made a special visit to Jane's home at Singorwet to see the family and celebrate their new beginning. Their visit represented more than charity—it was a declaration to Jane that she was seen, valued, and cared for by her community.\n\nThis shelter project demonstrates that true compassion shows up. It comes with willing hands, generous hearts, and the presence of leaders who know that everyone deserves safe shelter and dignity. Jane's story is a testament to the power of community coming together to lift up its most vulnerable members.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F72206cf17956498489cd23662dcc1778?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F40db8620a4ad4c7fae4bbffde982981c?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F98a0d0d56f2f48478313341fcd660c85?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F187c1f9a216c4ec39910acb126303b64?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F0ddaa3c9125d4750bcf4d3ceed4407c0?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F33c56a5c395b4532ae6582648dcd153e?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fe2b9ede08099401da526e8d62c38e13b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F6b4f8bd8dafb4fc48fccf8886e17df96?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F32a256aeab0441a0be06a099c6fc821a?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd07f2d5eac304519a3b2aa2943d55b7a?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F87fe3635655b4047af27d8a5bba8e201?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided safe, adequate shelter for vulnerable widow and disabled child",
+      "Restored dignity and security to Jane's family",
+      "Demonstrated community solidarity with vulnerable populations",
+      "Ensured protection from harsh weather and unsafe living conditions",
+      "Recognized the needs of caregivers of disabled children",
+      "Showed leadership commitment through visits and support",
+    ],
+    testimonials: [
+      {
+        name: "Jane",
+        role: "Direct Beneficiary",
+        quote:
+          "When I was widowed, I thought life was over. Caring for my daughter alone, without a safe home... I was losing hope. But when this community came together to build this shelter, they gave me back my dignity. Now I have a safe place for my daughter, and I can breathe again.",
+      },
+      {
+        name: "Rev Caleb",
+        role: "Director, Agc Church South Rift",
+        quote:
+          "Jane's situation broke my heart. A widow caring for a disabled child, living in an unsafe shelter—this is exactly why we exist as a church community. When I visited after the shelter was built, I saw tears of joy. That's the impact of genuine care.",
+      },
+      {
+        name: "Simion Titany",
+        role: "Community Leader",
+        quote:
+          "Visiting Jane's home to see her new shelter was humbling. She welcomed us with such gratitude. This project shows that our community hasn't forgotten her. This is what we're called to do—lift up the vulnerable.",
+      },
+      {
+        name: "Community Member",
+        role: "Well-wisher",
+        quote:
+          "Building Jane's shelter taught me about real giving. It wasn't about charity from far away—it was about neighbors caring for neighbors. Every brick laid was a declaration that Jane matters to us.",
+      },
+    ],
+    longTermImpact:
+      "Jane's shelter provides her family with safe, secure housing and protection from the elements. The experience of community care has restored her hope and sense of belonging. The project demonstrates the importance of supporting caregivers of disabled children—a often-overlooked vulnerable population. For Chepkoech, a safe home provides stability critical to her wellbeing. This initiative shows that widows and families with disabilities deserve not just sympathy, but concrete support and community investment.",
+  },
 ];
