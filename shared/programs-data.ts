@@ -293,4 +293,68 @@ export const pastProjects = [
     longTermImpact:
       "Sharon's successful admission to KIBABII University to study Bachelor of Education opens doors for both her personal future and her community's future. As an educated woman returning to serve her community as a teacher, Sharon will become a role model and mentor for the next generation. Her journey demonstrates the transformative power of educational sponsorship and community investment in young people.",
   },
+  {
+    id: "jane-shelter-singorwet",
+    title: "Jane's Shelter & House Dedication",
+    subtitle: "Providing Safe Housing for a Widow & Her Disabled Child",
+    date: "2023",
+    venue: "Singorwet",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Feffeb03f25094afb82063eb09efe1659?format=webp&width=800",
+    theme: "Shelter, Dignity & Care for Vulnerable Families",
+    description:
+      "In 2023, well-wishers came together to build a safe shelter for Jane, a widow caring for her disabled daughter Chepkoech. Rev. Caleb and community leaders dedicated the house, offering prayers and support for the family.",
+    contact: "+254794107724",
+    impact:
+      "Built safe shelter for widow-headed household with disabled child",
+    fullDescription:
+      "Jane's story is one of courage, vulnerability, and the transformative power of community compassion. As a widow raising a disabled daughter alone, Jane faced daily challenges of providing safe shelter, food, and care for her family in Singorwet.\n\nHer daughter Chepkoech, who developed a condition when she was young, requires special care and a safe, dignified environment. Yet Jane's modest means made it nearly impossible to provide the secure housing her family desperately needed. The family lived in conditions that left them exposed to the elements and vulnerable to further hardship.\n\n**A Community Response**: Word of Jane's struggle reached compassionate well-wishers who believed that every family deserves dignity and safety. They came forward to contribute materials, labor, and resources to build a proper shelter for Jane and Chepkoech.\n\n**Building Hope**: The construction process became a community endeavor, bringing together neighbors, church leaders, and committed individuals who worked side by side. Materials including bricks, cement, corrugated iron, and other building supplies were gathered and utilized. The shelter rose from the ground, not just as a structure of brick and metal, but as a tangible expression of hope and solidarity.\n\n**A Sacred Dedication**: In a beautiful ceremony, Rev. Caleb, director of AGC Church S. Rift, along with community leaders and well-wishers, gathered at Singorwet to dedicate Jane's new home. The event was marked by prayers for Jane's family, blessings for their future, and a renewed commitment to supporting vulnerable families in the community.\n\n**More Than a House**: For Jane and Chepkoech, this shelter means security, protection from harsh weather, and a dignified space to call home. But it also means something deeper—it means they are not forgotten, that their community cares, and that there are people willing to sacrifice to restore dignity to those facing life's hardest circumstances.",
+    gallery: [
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fd3a70de1cc6f4a4483f9bb3726ae8555?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F7aa11c9636594517a92479bd4facaea0?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F4f1eceefceee46bfad7718964d2180ba?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F6d65c1f4bcde4c4cacc5ebfb618dcd98?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc70867817dfb41da8349ccf525e54d5d?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F14d39f4490214be5a5e4210469eaa37c?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F64db7ca8045c456dbfbc4e33692008f8?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F34eabeb6b3b84e6891b65e7e82f6e4e7?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Ff958293a810f4a34bba7928a4745bf2f?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Feffeb03f25094afb82063eb09efe1659?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fdbb8dae58567402e9f6968af7d7b8a3b?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F450af2bedf444cffbae455b9b629871a?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Ffef88fc4204b497d830f5024bd75f360?format=webp&width=800",
+      "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F368baf77b2304bedad3d73e88670a0ca?format=webp&width=800",
+    ],
+    actualImpact: [
+      "Provided safe, dignified shelter for a widow and her disabled child",
+      "Protected vulnerable family from exposure to harsh weather",
+      "Demonstrated community solidarity with most vulnerable households",
+      "Created secure space for Chepkoech to receive care with dignity",
+      "Strengthened Jane's ability to focus on caregiving",
+      "Inspired other community members to support vulnerable families",
+      "Affirmed the value and dignity of every person, regardless of circumstance",
+    ],
+    testimonials: [
+      {
+        name: "Jane",
+        role: "Widow & Beneficiary",
+        quote:
+          "I didn't know how I would keep my daughter safe and sheltered. When this community came and built this house, I felt like God was answering my prayers. Now Chepkoech has a safe place, and I can focus on caring for her without worrying about the rain coming through the roof.",
+      },
+      {
+        name: "Rev. Caleb",
+        role: "Director, AGC Church S. Rift",
+        quote:
+          "When we visited Jane and saw her living conditions, we knew we had to act. Building this shelter was an act of faith and compassion. In dedicating this house, we dedicated ourselves to standing with the most vulnerable in our community. Jane's story is a reminder of why we do this work.",
+      },
+      {
+        name: "Community Member",
+        role: "Local Resident",
+        quote:
+          "Seeing Jane's family get a proper home was beautiful. She's a strong widow caring for her disabled daughter alone. When we came together to build her shelter, we weren't just building a house—we were saying to Jane and Chepkoech: 'You matter. You are loved. You are part of us.'",
+      },
+    ],
+    longTermImpact:
+      "Jane's shelter continues to provide safe housing and security for her family. The house protects Chepkoech from the elements and provides a dignified space where Jane can offer her daughter proper care. This project demonstrates the lasting impact of shelter provision on vulnerable families and the ongoing commitment of the community to supporting those facing the greatest challenges.",
+  },
 ];
