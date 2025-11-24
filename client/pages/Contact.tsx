@@ -424,7 +424,7 @@ const Contact = () => {
                     </p>
 
                     <div className="text-charity-neutral-800 font-semibold mb-6 text-lg">
-                      {method.info.split('\n').map((line, i) => (
+                      {method.info.split("\n").map((line, i) => (
                         <p key={i}>{line}</p>
                       ))}
                     </div>

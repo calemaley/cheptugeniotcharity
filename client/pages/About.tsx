@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Heart,
-  Target,
-  Globe,
-  Lightbulb,
-  ArrowRight,
-} from "lucide-react";
+import { Heart, Target, Globe, Lightbulb, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -16,7 +10,6 @@ import { cn } from "@/lib/utils";
 const About = () => {
   const [isFounderLiked, setIsFounderLiked] = useState(false);
   const [founderLikeCount, setFounderLikeCount] = useState(0);
-
 
   const values = [
     {
@@ -117,8 +110,8 @@ const About = () => {
                 About Cheptugeniot Initiative
               </h1>
               <p className="text-xl md:text-2xl max-w-3xl mx-auto text-charity-neutral-600">
-                Building stronger communities through education, empowerment, and
-                sustainable development since 2019
+                Building stronger communities through education, empowerment,
+                and sustainable development since 2019
               </p>
             </div>
           </AnimatedSection>
@@ -139,22 +132,24 @@ const About = () => {
                         src="/vivian3.jpg"
                         alt="Vivian Kurui - Founder"
                         className="w-full h-96 object-cover rounded-2xl shadow-lg"
-                        style={{ objectPosition: 'center 30%' }}
+                        style={{ objectPosition: "center 30%" }}
                       />
                     </div>
                     <button
                       onClick={() => {
                         setIsFounderLiked(!isFounderLiked);
-                        setFounderLikeCount(prev => isFounderLiked ? prev - 1 : prev + 1);
+                        setFounderLikeCount((prev) =>
+                          isFounderLiked ? prev - 1 : prev + 1,
+                        );
                       }}
                       className="absolute -bottom-4 -right-4 bg-white p-4 rounded-full shadow-xl hover:scale-110 transition-all duration-300 cursor-pointer group"
                       aria-label="Like founder photo"
                     >
-                      <Heart 
+                      <Heart
                         className={`h-8 w-8 transition-all duration-300 ${
-                          isFounderLiked 
-                            ? 'text-red-500 fill-current' 
-                            : 'text-charity-orange-600 group-hover:text-red-400'
+                          isFounderLiked
+                            ? "text-red-500 fill-current"
+                            : "text-charity-orange-600 group-hover:text-red-400"
                         }`}
                       />
                       {founderLikeCount > 0 && (
@@ -178,21 +173,31 @@ const About = () => {
                   </h2>
                   <div className="text-lg text-charity-neutral-600 leading-relaxed space-y-4">
                     <p>
-                      Welcome to the Cheptugeniot Initiative, a movement born from compassion and faith. What began in 2019 with a simple act of kindness—helping a blind man acquire a posho mill—has grown into a mission to uplift the vulnerable and transform lives.
+                      Welcome to the Cheptugeniot Initiative, a movement born
+                      from compassion and faith. What began in 2019 with a
+                      simple act of kindness—helping a blind man acquire a posho
+                      mill—has grown into a mission to uplift the vulnerable and
+                      transform lives.
                     </p>
                     <p>
-                      Our focus is to support women, children, and marginalized communities through:
+                      Our focus is to support women, children, and marginalized
+                      communities through:
                     </p>
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li>Feeding 1,000 families annually</li>
                       <li>Educating 10 children every year</li>
                       <li>Building homes for the needy</li>
-                      <li>Setting up 10 posho mills yearly for economic empowerment</li>
+                      <li>
+                        Setting up 10 posho mills yearly for economic
+                        empowerment
+                      </li>
                       <li>Equipping youth and widows with skills</li>
                       <li>Promoting sustainable farming and tree planting</li>
                     </ul>
                     <p>
-                      Together, we can bring hope, dignity, and opportunity to those in need. Join us in making a lasting impact—one act of kindness at a time.
+                      Together, we can bring hope, dignity, and opportunity to
+                      those in need. Join us in making a lasting impact—one act
+                      of kindness at a time.
                     </p>
                   </div>
                 </div>
@@ -202,12 +207,12 @@ const About = () => {
                   <div className="space-y-4">
                     {/* Professional Signature */}
                     <div className="mb-6">
-                      <div 
+                      <div
                         className="text-4xl font-bold text-charity-primary-900 mb-2"
-                        style={{ 
-                          fontFamily: 'serif',
-                          letterSpacing: '0.05em',
-                          fontStyle: 'italic'
+                        style={{
+                          fontFamily: "serif",
+                          letterSpacing: "0.05em",
+                          fontStyle: "italic",
                         }}
                       >
                         Vivian Kurui
@@ -320,20 +325,30 @@ const About = () => {
                   delay={index * 100}
                 >
                   <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 text-center group">
-                    <div className={cn(
-                      "w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-colors duration-300",
-                      index % 4 === 0 ? "bg-charity-orange-100 group-hover:bg-charity-orange-200" :
-                      index % 4 === 1 ? "bg-charity-purple-100 group-hover:bg-charity-purple-200" :
-                      index % 4 === 2 ? "bg-charity-green-100 group-hover:bg-charity-green-200" :
-                      "bg-charity-primary-100 group-hover:bg-charity-primary-200"
-                    )}>
-                      <IconComponent className={cn(
-                        "h-8 w-8 group-hover:scale-110 transition-transform duration-300",
-                        index % 4 === 0 ? "text-charity-orange-600" :
-                        index % 4 === 1 ? "text-charity-purple-600" :
-                        index % 4 === 2 ? "text-charity-green-600" :
-                        "text-charity-primary-600"
-                      )} />
+                    <div
+                      className={cn(
+                        "w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-colors duration-300",
+                        index % 4 === 0
+                          ? "bg-charity-orange-100 group-hover:bg-charity-orange-200"
+                          : index % 4 === 1
+                            ? "bg-charity-purple-100 group-hover:bg-charity-purple-200"
+                            : index % 4 === 2
+                              ? "bg-charity-green-100 group-hover:bg-charity-green-200"
+                              : "bg-charity-primary-100 group-hover:bg-charity-primary-200",
+                      )}
+                    >
+                      <IconComponent
+                        className={cn(
+                          "h-8 w-8 group-hover:scale-110 transition-transform duration-300",
+                          index % 4 === 0
+                            ? "text-charity-orange-600"
+                            : index % 4 === 1
+                              ? "text-charity-purple-600"
+                              : index % 4 === 2
+                                ? "text-charity-green-600"
+                                : "text-charity-primary-600",
+                        )}
+                      />
                     </div>
                     <h3 className="text-xl font-bold text-charity-neutral-800 mb-3">
                       {value.title}
@@ -409,7 +424,6 @@ const About = () => {
         </div>
       </section>
 
-
       {/* Call to Action */}
       <section className="py-20 relative overflow-hidden">
         <video
@@ -456,7 +470,6 @@ const About = () => {
           </AnimatedSection>
         </div>
       </section>
-
 
       <Footer />
     </>

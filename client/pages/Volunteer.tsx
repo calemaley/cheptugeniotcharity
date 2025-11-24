@@ -962,7 +962,8 @@ const Volunteer = () => {
                 Our Great Team
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Meet the dedicated volunteers and partners making a real difference in our communities.
+                Meet the dedicated volunteers and partners making a real
+                difference in our communities.
               </p>
             </div>
           </AnimatedSection>
@@ -1031,7 +1032,12 @@ const Volunteer = () => {
               >
                 <div
                   className="relative group overflow-hidden rounded-2xl shadow-xl h-80 bg-charity-neutral-200 cursor-pointer"
-                  onClick={() => setSelectedVolunteer({ name: volunteer.name, image: volunteer.image })}
+                  onClick={() =>
+                    setSelectedVolunteer({
+                      name: volunteer.name,
+                      image: volunteer.image,
+                    })
+                  }
                 >
                   {/* Image */}
                   <img
