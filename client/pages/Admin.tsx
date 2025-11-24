@@ -45,7 +45,7 @@ const Login: React.FC<{ onLogin: () => void }> = ({ onLogin }) => {
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8">
         <div className="text-center mb-6">
           <h1 className="text-3xl font-bold text-charity-neutral-800">
-            Tabasamu Admin
+            Cheptugeniot Admin
           </h1>
           <p className="text-charity-neutral-600">Sign in to /samu dashboard</p>
         </div>
@@ -255,7 +255,7 @@ const AdminDashboard: React.FC<{ onLogout: () => void }> = ({ onLogout }) => {
     <div className="min-h-screen bg-charity-neutral-50">
       <div className="bg-white border-b sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-bold">Tabasamu Admin Dashboard</h1>
+          <h1 className="text-xl font-bold">Cheptugeniot Admin Dashboard</h1>
           <div className="flex items-center gap-3">
             <Link
               to="/"
