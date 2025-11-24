@@ -173,7 +173,7 @@ const Programs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Main Featured Event - Full Layout */}
               <div className="md:col-span-2">
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:shadow-3xl hover:scale-[1.02] transition-all duration-500 border border-charity-orange-100">
                   <div className="relative">
                     <img
                       src={featuredEvent.image}
