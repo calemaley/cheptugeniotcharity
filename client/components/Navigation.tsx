@@ -123,40 +123,63 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
-            {menuItems.map((item) => {
+          <div className="hidden md:flex items-center space-x-1">
+            {menuItems.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <div key={item.label} className="relative group">
+                <div key={item.label} className="relative">
                   {item.subItems ? (
                     <>
                       <button
                         className={cn(
-                          "flex items-center space-x-1.5 transition-all duration-300 font-medium px-2 py-1.5 rounded-lg group",
+                          "flex items-center space-x-1.5 font-medium px-4 py-2.5 rounded-xl transition-all duration-400 relative group overflow-hidden",
                           isScrolled || isMenuOpen
-                            ? "text-charity-neutral-800 hover:text-charity-purple-600 hover:bg-charity-purple-50"
-                            : "text-white hover:text-charity-purple-200 hover:bg-white/10",
+                            ? "text-charity-neutral-700 hover:text-charity-orange-700"
+                            : "text-white hover:text-charity-orange-100",
                         )}
                         onClick={() => toggleDropdown(item.label)}
                       >
-                        <IconComponent className="h-3.5 w-3.5 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="group-hover:translate-x-0.5 transition-transform duration-200 text-sm">
+                        {/* Animated background */}
+                        <div className={cn(
+                          "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                          activeDropdown === item.label
+                            ? isScrolled || isMenuOpen
+                              ? "bg-charity-orange-100"
+                              : "bg-white/20 backdrop-blur-sm"
+                            : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5"
+                        )}></div>
+
+                        {/* Animated underline */}
+                        <div className={cn(
+                          "absolute bottom-0 left-0 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transition-all duration-500 transform origin-left",
+                          activeDropdown === item.label ? "w-full" : "w-0 group-hover:w-full"
+                        )}></div>
+
+                        <IconComponent className={cn(
+                          "h-4 w-4 transition-all duration-300",
+                          activeDropdown === item.label ? "rotate-0" : "group-hover:scale-110"
+                        )} />
+                        <span className={cn(
+                          "text-sm font-medium transition-all duration-300",
+                          activeDropdown === item.label ? "scale-100" : "group-hover:scale-105"
+                        )}>
                           {item.label}
                         </span>
                         <ChevronDown
                           className={cn(
-                            "h-3.5 w-3.5 transition-all duration-200",
+                            "h-4 w-4 transition-all duration-300",
                             activeDropdown === item.label
-                              ? "rotate-180" +
-                                  (isScrolled || isMenuOpen
-                                    ? " text-charity-orange-600"
-                                    : " text-charity-orange-200")
-                              : "group-hover:rotate-12",
+                              ? "rotate-180 scale-110"
+                              : "group-hover:rotate-12"
                           )}
                         />
                       </button>
+
                       {activeDropdown === item.label && (
-                        <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 animate-in slide-in-from-top-2 duration-200">
+                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-charity-orange-100 py-3 z-50 animate-in fade-in zoom-in-95 duration-300">
+                          {/* Decorator top */}
+                          <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-4 h-2 bg-white rounded-b-full border-l border-r border-charity-orange-100"></div>
+
                           {item.subItems.map((subItem) =>
                             subItem.isPayment ? (
                               <button
@@ -170,18 +193,26 @@ const Navigation = () => {
                                   });
                                   setActiveDropdown(null);
                                 }}
-                                className="block w-full text-left px-4 py-3 text-charity-neutral-600 hover:text-charity-purple-600 hover:bg-charity-purple-50 hover:translate-x-1 transition-all duration-200 mx-2 rounded-lg"
+                                className="block w-full text-left px-5 py-3 text-charity-neutral-700 hover:text-charity-orange-700 font-medium transition-all duration-300 group/sub relative overflow-hidden mx-2 rounded-lg hover:bg-gradient-to-r hover:from-charity-orange-50 to-transparent"
                               >
-                                {subItem.label}
+                                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
+                                <span className="flex items-center group-hover/sub:translate-x-1 transition-transform duration-300">
+                                  <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover/sub:opacity-100 transition-all duration-300 -translate-x-2 group-hover/sub:translate-x-0" />
+                                  {subItem.label}
+                                </span>
                               </button>
                             ) : (
                               <Link
                                 key={subItem.label}
                                 to={subItem.href}
-                                className="block px-4 py-3 text-charity-neutral-600 hover:text-charity-orange-600 hover:bg-charity-orange-50 hover:translate-x-1 transition-all duration-200 mx-2 rounded-lg"
+                                className="block px-5 py-3 text-charity-neutral-700 hover:text-charity-orange-700 font-medium transition-all duration-300 group/sub relative overflow-hidden mx-2 rounded-lg hover:bg-gradient-to-r hover:from-charity-orange-50 to-transparent"
                                 onClick={() => setActiveDropdown(null)}
                               >
-                                {subItem.label}
+                                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
+                                <span className="flex items-center group-hover/sub:translate-x-1 transition-transform duration-300">
+                                  <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover/sub:opacity-100 transition-all duration-300 -translate-x-2 group-hover/sub:translate-x-0" />
+                                  {subItem.label}
+                                </span>
                               </Link>
                             ),
                           )}
@@ -192,17 +223,33 @@ const Navigation = () => {
                     <Link
                       to={item.href}
                       className={cn(
-                        "flex items-center space-x-1.5 transition-all duration-300 font-medium px-2 py-1.5 rounded-lg group",
+                        "flex items-center space-x-1.5 font-medium px-4 py-2.5 rounded-xl transition-all duration-400 relative group overflow-hidden",
                         isScrolled || isMenuOpen
-                          ? "text-charity-neutral-800 hover:text-charity-orange-600 hover:bg-charity-orange-50"
-                          : "text-white hover:text-charity-orange-200 hover:bg-white/10",
+                          ? "text-charity-neutral-700 hover:text-charity-orange-700"
+                          : "text-white hover:text-charity-orange-100",
                       )}
                     >
-                      <IconComponent className="h-3.5 w-3.5 group-hover:scale-110 transition-transform duration-200" />
-                      <span className="group-hover:translate-x-0.5 transition-transform duration-200 text-sm">
+                      {/* Animated background */}
+                      <div className={cn(
+                        "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                        isScrolled || isMenuOpen
+                          ? "bg-transparent group-hover:bg-charity-orange-100"
+                          : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5"
+                      )}></div>
+
+                      {/* Animated underline */}
+                      <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transition-all duration-500 transform origin-left w-0 group-hover:w-full"></div>
+
+                      <IconComponent className="h-4 w-4 transition-all duration-300 group-hover:scale-110" />
+                      <span className="text-sm font-medium transition-all duration-300 group-hover:scale-105">
                         {item.label}
                       </span>
                     </Link>
+                  )}
+
+                  {/* Separator between items */}
+                  {index < menuItems.length - 1 && !isScrolled && !isMenuOpen && (
+                    <div className="absolute right-0 h-4 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
                   )}
                 </div>
               );
