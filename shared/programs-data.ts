@@ -11,7 +11,8 @@ export interface FeaturedEvent {
   paymentLink: string;
   fullDescription: string;
   schedule: Array<{ time: string; activity: string }>;
-  impactGoals: string[];
+  impactGoals?: string[];
+  expectedImpact?: string[];
   gallery?: string[];
 }
 
