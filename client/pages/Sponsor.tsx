@@ -393,10 +393,10 @@ const Sponsor = () => {
                     </div>
 
                     {/* Enhanced Content Section */}
-                    <div className="p-6 flex-grow flex flex-col relative">
+                    <div className="p-4 flex-grow flex flex-col relative">
                       {/* Name with special styling */}
-                      <div className="mb-4">
-                        <h3 className="text-2xl font-bold text-charity-neutral-800 mb-1 group-hover:text-charity-orange-600 transition-colors duration-300 transform group-hover:scale-105">
+                      <div className="mb-3">
+                        <h3 className="text-xl font-bold text-charity-neutral-800 mb-1 group-hover:text-charity-orange-600 transition-colors duration-300">
                           {child.name}
                         </h3>
                         <div className="w-12 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transform origin-left group-hover:scale-x-150 transition-transform duration-500"></div>
