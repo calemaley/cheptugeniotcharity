@@ -22,6 +22,8 @@ import { featuredEvent, pastProjects } from "@shared/programs-data";
 const Programs = () => {
   const [showEventModal, setShowEventModal] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState<any>(null);
+  const [showImageLightbox, setShowImageLightbox] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Mock data for upcoming events (can be moved to shared data later)
   const upcomingEvents: any[] = [];
