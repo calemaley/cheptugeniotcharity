@@ -95,7 +95,8 @@ const Index = () => {
       src: "/hero-community-gathering.jpg",
       title: "Unity in Action",
       subtitle: "Strong communities, brighter futures",
-      description: "Together we build stronger foundations for generations to come",
+      description:
+        "Together we build stronger foundations for generations to come",
       objectPosition: "center 45%", // Position to show speakers' faces
     },
     {
@@ -177,14 +178,13 @@ const Index = () => {
     return () => clearInterval(timer);
   }, [heroImages.length, isTransitioning]);
 
-
   return (
     <>
       {/* Hero Background Carousel */}
       <SectionReveal>
         <section className="relative h-screen overflow-hidden">
           <Navigation />
-          
+
           {/* Background Image Carousel */}
           <div className="absolute inset-0">
             {heroImages.map((image, index) => (
@@ -208,7 +208,8 @@ const Index = () => {
                     className="w-full h-full object-cover"
                     style={{
                       objectPosition: image.objectPosition || "center center",
-                      transform: index === currentSlide ? "scale(1.05)" : "scale(1.08)",
+                      transform:
+                        index === currentSlide ? "scale(1.05)" : "scale(1.08)",
                       transition: "transform 20s ease-out",
                     }}
                   />
@@ -222,12 +223,15 @@ const Index = () => {
                 </div>
 
                 {/* Animated Pattern Overlay */}
-                <div 
+                <div
                   className="absolute inset-0 opacity-10"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-                    backgroundSize: '200px 200px',
-                    animation: index === currentSlide ? 'patternMove 30s linear infinite' : 'none',
+                    backgroundSize: "200px 200px",
+                    animation:
+                      index === currentSlide
+                        ? "patternMove 30s linear infinite"
+                        : "none",
                   }}
                 />
               </div>
@@ -250,33 +254,37 @@ const Index = () => {
                 {/* Main Title with Animation */}
                 <div className="space-y-4">
                   <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight min-h-[1.2em] drop-shadow-2xl">
-                    <span 
+                    <span
                       key={currentSlide}
                       className="block animate-fade-in-up"
-                      style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.7)' }}
+                      style={{
+                        textShadow:
+                          "0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.7)",
+                      }}
                     >
                       {heroImages[currentSlide].title}
                     </span>
                   </h1>
                   <p className="text-xl md:text-2xl lg:text-3xl text-white font-medium max-w-3xl mx-auto min-h-[1.5em] drop-shadow-lg">
-                    <span 
+                    <span
                       key={`subtitle-${currentSlide}`}
                       className="inline-block animate-fade-in-up"
-                      style={{ 
-                        animationDelay: '0.2s',
-                        textShadow: '0 2px 12px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.8)' 
+                      style={{
+                        animationDelay: "0.2s",
+                        textShadow:
+                          "0 2px 12px rgba(0,0,0,0.6), 0 1px 4px rgba(0,0,0,0.8)",
                       }}
                     >
                       {heroImages[currentSlide].subtitle}
                     </span>
                   </p>
                   <p className="text-base md:text-lg text-white/95 max-w-2xl mx-auto pt-2 min-h-[2.5em] drop-shadow-md">
-                    <span 
+                    <span
                       key={`desc-${currentSlide}`}
                       className="inline-block animate-fade-in-up px-4 py-2 bg-black/20 backdrop-blur-sm rounded-lg"
-                      style={{ 
-                        animationDelay: '0.4s',
-                        textShadow: '0 1px 6px rgba(0,0,0,0.7)' 
+                      style={{
+                        animationDelay: "0.4s",
+                        textShadow: "0 1px 6px rgba(0,0,0,0.7)",
                       }}
                     >
                       {heroImages[currentSlide].description}
@@ -290,7 +298,7 @@ const Index = () => {
                     to="/get-involved/volunteer"
                     key={`btn1-${currentSlide}`}
                     className="px-8 py-4 bg-charity-orange-500 hover:bg-charity-orange-600 text-white rounded-xl transition-all duration-300 font-semibold text-lg shadow-2xl hover:shadow-charity-orange-500/50 hover:scale-105 flex items-center justify-center group backdrop-blur-sm animate-fade-in-up"
-                    style={{ animationDelay: '0.6s' }}
+                    style={{ animationDelay: "0.6s" }}
                   >
                     Join Us Today
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -304,7 +312,7 @@ const Index = () => {
                     }
                     key={`btn2-${currentSlide}`}
                     className="px-8 py-4 border-2 border-white/90 text-white hover:bg-white/10 hover:border-white rounded-xl transition-all duration-300 font-semibold text-lg backdrop-blur-sm hover:scale-105 animate-fade-in-up"
-                    style={{ animationDelay: '0.7s' }}
+                    style={{ animationDelay: "0.7s" }}
                   >
                     Donate Now
                   </button>
@@ -328,16 +336,16 @@ const Index = () => {
                   }}
                   className={cn(
                     "relative transition-all duration-500",
-                    index === currentSlide ? "w-12" : "w-3"
+                    index === currentSlide ? "w-12" : "w-3",
                   )}
                 >
                   <div
-                      className={cn(
-                        "h-3 rounded-full transition-all duration-500",
-                        index === currentSlide
-                          ? "bg-gradient-to-r from-charity-purple-500 to-charity-orange-400 shadow-lg shadow-charity-purple-500/50"
-                          : "bg-white/50 hover:bg-charity-purple-200/70"
-                      )}
+                    className={cn(
+                      "h-3 rounded-full transition-all duration-500",
+                      index === currentSlide
+                        ? "bg-gradient-to-r from-charity-purple-500 to-charity-orange-400 shadow-lg shadow-charity-purple-500/50"
+                        : "bg-white/50 hover:bg-charity-purple-200/70",
+                    )}
                   />
                   {index === currentSlide && (
                     <div className="absolute inset-0 bg-gradient-to-r from-charity-purple-400 to-charity-orange-400 rounded-full animate-ping opacity-20" />
@@ -349,10 +357,13 @@ const Index = () => {
 
           {/* Auto-play Progress Bar */}
           <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10 z-20">
-            <div 
+            <div
               key={currentSlide}
               className="h-full bg-gradient-to-r from-charity-purple-500 via-charity-orange-400 to-charity-green-400 animate-progress"
-              style={{ animationDuration: "6s", animationTimingFunction: "linear" }}
+              style={{
+                animationDuration: "6s",
+                animationTimingFunction: "linear",
+              }}
             />
           </div>
         </section>
@@ -375,10 +386,18 @@ const Index = () => {
                   </h2>
                 </div>
                 <p className="text-lg text-charity-neutral-600 leading-relaxed">
-                  Tabasamu Charity is dedicated to transforming lives and building stronger communities through education, healthcare, and sustainable development. Since our founding, we've been committed to creating lasting positive change for children and families across Kenya.
+                  Tabasamu Charity is dedicated to transforming lives and
+                  building stronger communities through education, healthcare,
+                  and sustainable development. Since our founding, we've been
+                  committed to creating lasting positive change for children and
+                  families across Kenya.
                 </p>
                 <p className="text-charity-neutral-600 leading-relaxed">
-                  Our comprehensive programs focus on providing quality education, essential healthcare services, and opportunities for community development. Together with our volunteers and supporters, we're building a brighter future for the next generation.
+                  Our comprehensive programs focus on providing quality
+                  education, essential healthcare services, and opportunities
+                  for community development. Together with our volunteers and
+                  supporters, we're building a brighter future for the next
+                  generation.
                 </p>
                 <Link
                   to="/about"
@@ -394,7 +413,7 @@ const Index = () => {
                     src="/children-school-group.jpg"
                     alt="Cheptugeniot Initiative - Children in School"
                     className="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-700"
-                    style={{ objectPosition: 'center 50%' }}
+                    style={{ objectPosition: "center 50%" }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent group-hover:from-black/40 transition-all duration-300" />
                 </div>
@@ -414,7 +433,7 @@ const Index = () => {
                 src="/children-school-group.jpg"
                 alt="Children in School - Volunteer with Us"
                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
-                style={{ objectPosition: 'center 50%' }}
+                style={{ objectPosition: "center 50%" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-charity-orange-600/80 to-charity-orange-500/80 group-hover:from-charity-orange-700/90 group-hover:to-charity-orange-600/90 transition-all duration-500" />
               <div className="relative text-center text-white px-8 group-hover:scale-105 transition-transform duration-500">
@@ -441,7 +460,7 @@ const Index = () => {
                 src="/children-school-group.jpg"
                 alt="Children in School - Support Our Cause"
                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500"
-                style={{ objectPosition: 'center 50%' }}
+                style={{ objectPosition: "center 50%" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-charity-green-700/80 to-charity-green-600/80 group-hover:from-charity-green-800/90 group-hover:to-charity-green-700/90 transition-all duration-500" />
               <div className="relative text-center text-white px-8 group-hover:scale-105 transition-transform duration-500">
@@ -509,10 +528,16 @@ const Index = () => {
                         )}
                       />
                     </div>
-                    <h4 className={cn(
-                      "text-xl font-bold text-charity-neutral-800 mb-4 group-hover:scale-105 transition-all duration-300",
-                      index === 0 ? "group-hover:text-charity-orange-600" : index === 1 ? "group-hover:text-charity-purple-600" : "group-hover:text-charity-green-600"
-                    )}>
+                    <h4
+                      className={cn(
+                        "text-xl font-bold text-charity-neutral-800 mb-4 group-hover:scale-105 transition-all duration-300",
+                        index === 0
+                          ? "group-hover:text-charity-orange-600"
+                          : index === 1
+                            ? "group-hover:text-charity-purple-600"
+                            : "group-hover:text-charity-green-600",
+                      )}
+                    >
                       {project.title}
                     </h4>
                     <p className="text-charity-neutral-600 group-hover:text-charity-neutral-700 transition-colors duration-300">
@@ -569,7 +594,9 @@ const Index = () => {
                 Children Making a Difference
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
-                Every child has a unique story and dreams waiting to be fulfilled. Meet some of the amazing children who are transforming their lives through our programs.
+                Every child has a unique story and dreams waiting to be
+                fulfilled. Meet some of the amazing children who are
+                transforming their lives through our programs.
               </p>
             </div>
 
@@ -620,9 +647,9 @@ const Index = () => {
                             key={i}
                             className={cn(
                               "px-3 py-1 text-sm rounded-full font-medium transition-all duration-300",
-                              i % 2 === 0 
+                              i % 2 === 0
                                 ? "bg-charity-green-100 text-charity-green-700 hover:bg-charity-green-200"
-                                : "bg-charity-purple-100 text-charity-purple-700 hover:bg-charity-purple-200"
+                                : "bg-charity-purple-100 text-charity-purple-700 hover:bg-charity-purple-200",
                             )}
                           >
                             {interest}
@@ -689,7 +716,8 @@ const Index = () => {
                 Ways to Support Our Mission
               </h2>
               <p className="text-lg text-white/90 max-w-3xl mx-auto">
-                Whether you donate, volunteer, or simply share our story, every action creates lasting change
+                Whether you donate, volunteer, or simply share our story, every
+                action creates lasting change
               </p>
             </div>
 
@@ -735,7 +763,8 @@ const Index = () => {
                 Spotlight Programs
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto mb-10">
-                Discover the programs making the greatest impact in our communities
+                Discover the programs making the greatest impact in our
+                communities
               </p>
               <Link
                 to="/programs"
@@ -807,7 +836,8 @@ const Index = () => {
                 Our Impact by the Numbers
               </h2>
               <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
-                Join hands with us to create a better future for generations to come
+                Join hands with us to create a better future for generations to
+                come
               </p>
             </div>
 

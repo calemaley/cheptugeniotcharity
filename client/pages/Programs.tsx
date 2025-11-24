@@ -122,13 +122,16 @@ const Programs = () => {
           <AnimatedSection animation="slideUp">
             <div className="text-center text-white">
               <div className="mb-8 inline-block px-5 py-2 bg-white/20 backdrop-blur-md rounded-full border border-white/30">
-                <span className="text-sm md:text-base font-semibold">OUR INITIATIVES</span>
+                <span className="text-sm md:text-base font-semibold">
+                  OUR INITIATIVES
+                </span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Our Programs
               </h1>
               <p className="text-lg md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
-                Creating lasting change through community events and initiatives across Kenya
+                Creating lasting change through community events and initiatives
+                across Kenya
               </p>
             </div>
           </AnimatedSection>
@@ -164,7 +167,8 @@ const Programs = () => {
                 Spotlight on Impact
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
-                Discover the transformative programs making real change in communities across Kenya
+                Discover the transformative programs making real change in
+                communities across Kenya
               </p>
             </div>
           </AnimatedSection>
@@ -303,7 +307,8 @@ const Programs = () => {
                 Stories of Transformation
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-3xl mx-auto leading-relaxed">
-                Celebrating the transformative work and lasting impact of our community initiatives
+                Celebrating the transformative work and lasting impact of our
+                community initiatives
               </p>
             </div>
           </AnimatedSection>
@@ -341,7 +346,9 @@ const Programs = () => {
                 Be Part of Our Mission
               </h2>
               <p className="text-lg md:text-xl mb-10 opacity-95 max-w-2xl mx-auto leading-relaxed">
-                Every contribution—whether time, resources, or expertise—helps us create lasting change in communities across Kenya. Join us today.
+                Every contribution—whether time, resources, or expertise—helps
+                us create lasting change in communities across Kenya. Join us
+                today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

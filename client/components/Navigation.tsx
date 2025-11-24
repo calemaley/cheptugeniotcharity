@@ -103,12 +103,13 @@ const Navigation = () => {
                   "w-auto transition-all duration-500 object-contain relative",
                   isScrolled || isMenuOpen
                     ? "h-16 md:h-20 drop-shadow-md"
-                    : "h-20 md:h-24 drop-shadow-lg group-hover:drop-shadow-2xl"
+                    : "h-20 md:h-24 drop-shadow-lg group-hover:drop-shadow-2xl",
                 )}
                 style={{
-                  filter: isScrolled || isMenuOpen
-                    ? 'drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08))'
-                    : 'drop-shadow(0 2px 12px rgba(255, 90, 95, 0.15))',
+                  filter:
+                    isScrolled || isMenuOpen
+                      ? "drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08))"
+                      : "drop-shadow(0 2px 12px rgba(255, 90, 95, 0.15))",
                 }}
               />
             </Link>
@@ -132,29 +133,43 @@ const Navigation = () => {
                         onClick={() => toggleDropdown(item.label)}
                       >
                         {/* Animated background */}
-                        <div className={cn(
-                          "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
-                          activeDropdown === item.label
-                            ? isScrolled || isMenuOpen
-                              ? "bg-charity-orange-100"
-                              : "bg-white/20 backdrop-blur-sm"
-                            : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5"
-                        )}></div>
+                        <div
+                          className={cn(
+                            "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                            activeDropdown === item.label
+                              ? isScrolled || isMenuOpen
+                                ? "bg-charity-orange-100"
+                                : "bg-white/20 backdrop-blur-sm"
+                              : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5",
+                          )}
+                        ></div>
 
                         {/* Animated underline */}
-                        <div className={cn(
-                          "absolute bottom-0 left-0 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transition-all duration-500 transform origin-left",
-                          activeDropdown === item.label ? "w-full" : "w-0 group-hover:w-full"
-                        )}></div>
+                        <div
+                          className={cn(
+                            "absolute bottom-0 left-0 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transition-all duration-500 transform origin-left",
+                            activeDropdown === item.label
+                              ? "w-full"
+                              : "w-0 group-hover:w-full",
+                          )}
+                        ></div>
 
-                        <IconComponent className={cn(
-                          "h-4 w-4 transition-all duration-300",
-                          activeDropdown === item.label ? "rotate-0" : "group-hover:scale-110"
-                        )} />
-                        <span className={cn(
-                          "text-sm font-medium transition-all duration-300",
-                          activeDropdown === item.label ? "scale-100" : "group-hover:scale-105"
-                        )}>
+                        <IconComponent
+                          className={cn(
+                            "h-4 w-4 transition-all duration-300",
+                            activeDropdown === item.label
+                              ? "rotate-0"
+                              : "group-hover:scale-110",
+                          )}
+                        />
+                        <span
+                          className={cn(
+                            "text-sm font-medium transition-all duration-300",
+                            activeDropdown === item.label
+                              ? "scale-100"
+                              : "group-hover:scale-105",
+                          )}
+                        >
                           {item.label}
                         </span>
                         <ChevronDown
@@ -162,7 +177,7 @@ const Navigation = () => {
                             "h-4 w-4 transition-all duration-300",
                             activeDropdown === item.label
                               ? "rotate-180 scale-110"
-                              : "group-hover:rotate-12"
+                              : "group-hover:rotate-12",
                           )}
                         />
                       </button>
@@ -222,12 +237,14 @@ const Navigation = () => {
                       )}
                     >
                       {/* Animated background */}
-                      <div className={cn(
-                        "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
-                        isScrolled || isMenuOpen
-                          ? "bg-transparent group-hover:bg-charity-orange-100"
-                          : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5"
-                      )}></div>
+                      <div
+                        className={cn(
+                          "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                          isScrolled || isMenuOpen
+                            ? "bg-transparent group-hover:bg-charity-orange-100"
+                            : "bg-transparent group-hover:bg-white/10 dark:group-hover:bg-white/5",
+                        )}
+                      ></div>
 
                       {/* Animated underline */}
                       <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-charity-orange-500 to-charity-green-500 rounded-full transition-all duration-500 transform origin-left w-0 group-hover:w-full"></div>
@@ -240,9 +257,11 @@ const Navigation = () => {
                   )}
 
                   {/* Separator between items */}
-                  {index < menuItems.length - 1 && !isScrolled && !isMenuOpen && (
-                    <div className="absolute right-0 h-4 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
-                  )}
+                  {index < menuItems.length - 1 &&
+                    !isScrolled &&
+                    !isMenuOpen && (
+                      <div className="absolute right-0 h-4 w-px bg-gradient-to-b from-transparent via-white/30 to-transparent"></div>
+                    )}
                 </div>
               );
             })}
@@ -260,12 +279,14 @@ const Navigation = () => {
               )}
             >
               {/* Animated background */}
-              <div className={cn(
-                "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
-                isScrolled || isMenuOpen
-                  ? "bg-charity-orange-100 group-hover:bg-charity-orange-150"
-                  : "bg-white/10 group-hover:bg-white/20"
-              )}></div>
+              <div
+                className={cn(
+                  "absolute inset-0 rounded-xl transition-all duration-500 -z-10",
+                  isScrolled || isMenuOpen
+                    ? "bg-charity-orange-100 group-hover:bg-charity-orange-150"
+                    : "bg-white/10 group-hover:bg-white/20",
+                )}
+              ></div>
 
               {/* Animated underline */}
               <div className="absolute bottom-1 left-2 right-2 h-0.5 bg-gradient-to-r from-charity-orange-400 to-charity-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
@@ -301,7 +322,7 @@ const Navigation = () => {
                     <div
                       key={item.label}
                       style={{
-                        animation: `slideInLeft 0.5s ease-out ${index * 50}ms both`
+                        animation: `slideInLeft 0.5s ease-out ${index * 50}ms both`,
                       }}
                     >
                       {item.subItems ? (
@@ -314,16 +335,23 @@ const Navigation = () => {
                             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
 
                             <div className="flex items-center space-x-3">
-                              <IconComponent className={cn(
-                                "h-4 w-4 transition-all duration-300",
-                                activeDropdown === item.label ? "scale-110 text-charity-orange-600" : "group-hover:scale-110"
-                              )} />
-                              <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
+                              <IconComponent
+                                className={cn(
+                                  "h-4 w-4 transition-all duration-300",
+                                  activeDropdown === item.label
+                                    ? "scale-110 text-charity-orange-600"
+                                    : "group-hover:scale-110",
+                                )}
+                              />
+                              <span className="group-hover:translate-x-1 transition-transform duration-300">
+                                {item.label}
+                              </span>
                             </div>
                             <ChevronDown
                               className={cn(
                                 "h-4 w-4 transition-transform duration-300",
-                                activeDropdown === item.label && "rotate-180 text-charity-orange-600",
+                                activeDropdown === item.label &&
+                                  "rotate-180 text-charity-orange-600",
                               )}
                             />
                           </button>
@@ -345,7 +373,7 @@ const Navigation = () => {
                                     }}
                                     className="block w-full text-left text-charity-neutral-700 hover:text-charity-orange-700 transition-all duration-300 px-4 py-2.5 rounded-lg hover:bg-charity-orange-100 group/sub relative overflow-hidden font-medium"
                                     style={{
-                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`
+                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`,
                                     }}
                                   >
                                     <div className="absolute left-0 top-0 h-full w-0.5 bg-charity-orange-500 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
@@ -364,7 +392,7 @@ const Navigation = () => {
                                       setActiveDropdown(null);
                                     }}
                                     style={{
-                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`
+                                      animation: `slideInLeft 0.3s ease-out ${subIndex * 30}ms both`,
                                     }}
                                   >
                                     <div className="absolute left-0 top-0 h-full w-0.5 bg-charity-orange-500 transform scale-y-0 group-hover/sub:scale-y-100 transition-transform duration-500 origin-top"></div>
@@ -388,7 +416,9 @@ const Navigation = () => {
                           <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-charity-orange-400 to-charity-green-400 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
 
                           <IconComponent className="h-4 w-4 transition-all duration-300 group-hover:scale-110" />
-                          <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
+                          <span className="group-hover:translate-x-1 transition-transform duration-300">
+                            {item.label}
+                          </span>
                         </Link>
                       )}
                     </div>
