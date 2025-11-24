@@ -494,7 +494,7 @@ const Index = () => {
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-500 text-center cursor-pointer group border-2 border-transparent hover:border-charity-purple-200"
+                    className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-500 text-center cursor-pointer group border-2 border-transparent hover:border-charity-orange-200"
                   >
                     <div
                       className={cn(
