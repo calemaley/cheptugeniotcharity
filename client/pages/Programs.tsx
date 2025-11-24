@@ -174,13 +174,13 @@ const Programs = () => {
               {/* Main Featured Event - Full Layout */}
               <div className="md:col-span-2">
                 <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:shadow-3xl hover:scale-[1.02] transition-all duration-500 border border-charity-orange-100">
-                  <div className="relative">
+                  <div className="relative group overflow-hidden">
                     <img
                       src={featuredEvent.image}
                       alt={featuredEvent.title}
-                      className="w-full h-80 object-cover"
+                      className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-6 right-6 bg-red-500 text-white px-4 py-2 rounded-lg font-bold transform rotate-3">
+                    <div className="absolute top-8 right-8 bg-gradient-to-r from-charity-orange-600 to-charity-orange-500 text-white px-5 py-2.5 rounded-xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                       {featuredEvent.date}
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
