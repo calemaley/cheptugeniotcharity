@@ -11,6 +11,8 @@ import {
   Gift,
   CheckCircle,
   Users,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
