@@ -442,7 +442,7 @@ const Sponsor = () => {
                           {child.interests.map((interest, i) => (
                             <span
                               key={i}
-                              className="px-3 py-1 bg-gradient-to-r from-charity-green-100 to-charity-green-200 text-charity-green-800 text-xs rounded-full font-medium border border-charity-green-300 transform hover:scale-110 transition-all duration-300 shadow-sm"
+                              className="px-2 py-0.5 bg-gradient-to-r from-charity-green-100 to-charity-green-200 text-charity-green-800 text-xs rounded-full font-medium border border-charity-green-300"
                               style={{ animationDelay: `${i * 100}ms` }}
                             >
                               {interest}
@@ -452,19 +452,16 @@ const Sponsor = () => {
                       </div>
 
                       {/* Enhanced pricing section */}
-                      <div className="border-t-2 border-charity-neutral-100 pt-4 mt-auto">
-                        <div className="bg-gradient-to-r from-charity-orange-50 to-charity-green-50 p-4 rounded-xl mb-4 group-hover:shadow-lg transition-shadow duration-300">
+                      <div className="border-t border-charity-neutral-100 pt-3 mt-auto">
+                        <div className="bg-gradient-to-r from-charity-orange-50 to-charity-green-50 p-3 rounded-lg mb-3">
                           <div className="flex items-center justify-between">
-                            <span className="text-charity-neutral-700 font-medium">
-                              Monthly Support:
+                            <span className="text-charity-neutral-700 font-medium text-sm">
+                              Monthly:
                             </span>
                             <div className="text-right">
-                              <span className="text-2xl font-bold text-charity-orange-600 group-hover:scale-110 transition-transform duration-300 inline-block">
+                              <span className="text-lg font-bold text-charity-orange-600 inline-block">
                                 KES {child.monthlyNeed.toLocaleString()}
                               </span>
-                              <div className="text-xs text-charity-neutral-500">
-                                per month
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -472,13 +469,12 @@ const Sponsor = () => {
                         {/* Enhanced button */}
                         <button
                           onClick={() => setSelectedChild(child.id)}
-                          className="w-full relative px-6 py-4 bg-gradient-to-r from-charity-orange-600 to-charity-orange-700 hover:from-charity-orange-700 hover:to-charity-orange-800 text-white rounded-2xl transition-all duration-500 font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 group-hover:animate-pulse overflow-hidden"
+                          className="w-full relative px-4 py-2.5 bg-gradient-to-r from-charity-orange-600 to-charity-orange-700 hover:from-charity-orange-700 hover:to-charity-orange-800 text-white rounded-xl transition-all duration-300 font-bold text-sm shadow-lg hover:shadow-xl transform hover:scale-105 overflow-hidden"
                         >
                           <div className="absolute inset-0 bg-gradient-to-r from-charity-orange-400 to-charity-green-400 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
                           <div className="relative z-10 flex items-center justify-center">
-                            <Heart className="h-5 w-5 mr-2 animate-bounce" />
+                            <Heart className="h-4 w-4 mr-1" />
                             Sponsor {child.name.split(" ")[0]}
-                            <Star className="h-4 w-4 ml-2 text-yellow-300" />
                           </div>
                           <div className="absolute inset-0 rounded-2xl bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
                         </button>
