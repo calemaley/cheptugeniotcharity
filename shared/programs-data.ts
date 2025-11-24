@@ -15,21 +15,54 @@ export interface FeaturedEvent {
 }
 
 export const featuredEvent: FeaturedEvent = {
-  title: "Upcoming Featured Program",
-  subtitle: "Coming Soon",
-  date: "TBD",
-  venue: "TBD",
+  title: "Elias Kurgat: Empowering a Gospel Artist & Cancer Survivor",
+  subtitle: "PA System & Family Support for a Musical Ministry",
+  date: "Nandi Roadshow Event",
+  venue: "Nandi County, Kenya",
   image:
-    "https://via.placeholder.com/800x600?text=Featured+Program+Coming+Soon",
-  theme: "Building a Better Future Together",
-  message: "Stay tuned for our next featured program announcement!",
-  itemsNeeded: [],
+    "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2F3a168f94bcf64e759004341ec3547f18?format=webp&width=800",
+  theme: "Hope, Faith & Musical Empowerment for Survivors",
+  message:
+    "Elias Kurgat's story is one of extraordinary courage. As a gospel artist, cancer survivor, and amputee, he demonstrates that physical challenges cannot silence a spirit devoted to sharing hope through music. In partnership with well-wishers and Pwani Oil, we provided him with professional audio equipment and family support to continue his powerful ministry.",
+  itemsNeeded: [
+    "Music equipment & amplification systems",
+    "Family provisions & groceries",
+    "Transportation support",
+    "Community sponsorship",
+  ],
   contact: "+254794107724",
   paymentLink: "#",
   fullDescription:
-    "We're preparing exciting new programs to serve our communities. Check back soon for details about our upcoming initiatives and how you can get involved!",
-  schedule: [],
-  impactGoals: [],
+    "Elias Kurgat is a gospel artist from Nandi County whose voice carries a message of hope born from his own journey of survival and faith. As both a cancer survivor and an amputee, Elias represents the indomitable human spirit—a person who refuses to be defined by his challenges but instead transforms them into a platform for ministry.\n\nThrough his music and public speaking, Elias shares a powerful testimony of faith, resilience, and hope. His performances inspire communities and challenge us all to recognize the strength within ourselves. Yet, like many artists pursuing ministry in rural Kenya, Elias faced significant barriers—limited access to quality audio equipment that would allow his voice to reach larger audiences and support his family's daily needs.\n\n**A Partnership of Compassion**: The Cheptugeniot Initiative, recognizing Elias's unique calling and platform, came together with well-wishers to provide comprehensive support. We purchased a complete professional public address (PA) system—enabling Elias to amplify his message and reach more people with his gospel ministry. This isn't just equipment; it's an investment in hope itself.\n\n**Community Partnership**: Pwani Oil, who partnered with Berur FM during the Nandi roadshow, demonstrated corporate social responsibility by providing three months of shopping provisions for Elias's family. This support eases the burden of daily needs, allowing Elias to focus fully on his musical calling and ministry.\n\n**More Than Music**: Elias's story challenges our assumptions about disability and ability. Here is a man who lost a limb yet stands tall on stage sharing faith. Here is a cancer survivor whose song is a testimony to God's faithfulness. Every note he sings, every person he touches with his ministry, represents the power of community care and belief in human potential.",
+  schedule: [
+    {
+      time: "Arrival",
+      activity: "Community gathering and welcome",
+    },
+    {
+      time: "Opening",
+      activity: "Introductions and testimonies from community leaders",
+    },
+    {
+      time: "Main Event",
+      activity: "Elias Kurgat's musical performance and faith testimony",
+    },
+    {
+      time: "Celebration",
+      activity: "PA system presentation and family support handover",
+    },
+    {
+      time: "Closing",
+      activity: "Prayers and community celebration",
+    },
+  ],
+  impactGoals: [
+    "Enable Elias to reach larger audiences with his gospel ministry",
+    "Support a cancer survivor in pursuing his calling",
+    "Demonstrate inclusive community care for people with disabilities",
+    "Empower gospel music as a tool for spiritual transformation",
+    "Partner with businesses in community development initiatives",
+  ],
 };
 
 // For homepage - recent programs (showing the featured event)
@@ -249,7 +282,7 @@ export const pastProjects = [
     impact:
       "Celebrated Sharon's educational achievement and prayed for her success at university",
     fullDescription:
-      "On the 10th of August 2024, our community came together for a truly special and emotional occasion—a farewell celebration and prayer session for Sharon as she embarked on her university journey at KIBABII University, Bungoma.\n\nThis event represented a milestone not just for Sharon, but for her entire family and our community. After years of dedicated sponsorship and support, Sharon had successfully completed her secondary education and earned admission to KIBABII University to study Bachelor of Education—a path that will eventually allow her to give back to her community as an educator.\n\n**A Community Milestone**: The gathering brought together family members, friends, community leaders, and supporters who had been part of Sharon's educational journey. It was a time to celebrate her achievement, acknowledge the sacrifice of her mother Beatrice and the broader community, and recognize how far Sharon had come.\n\n**Prayers & Blessings**: The event was deeply spiritual in nature, with prayers and blessings offered for Sharon's success at university. Community leaders and pastors prayed for her academic excellence, personal growth, and safe return to serve her community as an educated woman.\n\n**A New Chapter**: As Sharon stepped into this new chapter at KIBABII University, the community's support didn't diminish—instead, it transformed into prayers, encouragement, and continued investment in her future. This farewell was not an ending, but a beautiful beginning of a new season of growth and opportunity.\n\n**The Bigger Picture**: Sharon's journey represents what becomes possible when a community invests in education. From day school sponsorship to boarding school support, and now to university—this is the trajectory of transformation that we believe in and work toward for every child in our care.",
+      "On the 10th of August 2024, our community came together for a truly special and emotional occasion—a farewell celebration and prayer session for Sharon as she embarked on her university journey at KIBABII University, Bungoma.\n\nThis event represented a milestone not just for Sharon, but for her entire family and our community. After years of dedicated sponsorship and support, Sharon had successfully completed her secondary education and earned admission to KIBABII University to study Bachelor of Education—a path that will eventually allow her to give back to her community as an educator.\n\n**A Community Milestone**: The gathering brought together family members, friends, community leaders, and supporters who had been part of Sharon's educational journey. It was a time to celebrate her achievement, acknowledge the sacrifice of her mother Beatrice and the broader community, and recognize how far Sharon had come.\n\n**Prayers & Blessings**: The event was deeply spiritual in nature, with prayers and blessings offered for Sharon's success at university. Community leaders and pastors prayed for her academic excellence, personal growth, and safe return to serve her community as an educated woman.\n\n**A New Chapter**: As Sharon stepped into this new chapter at KIBABII University, the community's support didn't diminish—instead, it transformed into prayers, encouragement, and continued investment in her future. This farewell was not an ending, but a beautiful beginning of a new season of growth and opportunity.\n\n**The Bigger Picture**: Sharon's journey represents what becomes possible when a community invests in education. From day school sponsorship to boarding school support, and now to university��this is the trajectory of transformation that we believe in and work toward for every child in our care.",
     gallery: [
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fcbdba87acb194f4db1a1717bf50aaed7?format=webp&width=800",
       "https://cdn.builder.io/api/v1/image/assets%2F6c62c97f0da04d299dadc1c272b8ab76%2Fc6be16c21ce342bfa7710378c7bea79f?format=webp&width=800",
@@ -415,7 +448,7 @@ export const pastProjects = [
         name: "Community Member",
         role: "Volunteer & Supporter",
         quote:
-          "Working on Gideon's house changed me. I realized how much my sight means to me, and I understood his struggles better. Seeing him happy in his new home, celebrating with us at the handover���that's the whole reason we do this work. Gideon matters, and his house proves it.",
+          "Working on Gideon's house changed me. I realized how much my sight means to me, and I understood his struggles better. Seeing him happy in his new home, celebrating with us at the handover—that's the whole reason we do this work. Gideon matters, and his house proves it.",
       },
     ],
     longTermImpact:
