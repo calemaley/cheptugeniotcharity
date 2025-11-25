@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="space-y-4">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F37c22b8b58fc48e7a2936a8117e2e504?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F09e4a5804ac0412aaab0e26138d619ba?format=webp&width=800"
               alt="Cheptugeniot Initiative"
               className="h-32 md:h-40 w-auto object-contain"
             />
