@@ -184,7 +184,6 @@ const Index = () => {
       {/* Hero Background Carousel */}
       <SectionReveal>
         <section className="relative h-screen overflow-hidden">
-
           {/* Background Image Carousel */}
           <div className="absolute inset-0">
             {heroImages.map((image, index) => (

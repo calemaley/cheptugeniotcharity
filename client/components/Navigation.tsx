@@ -101,9 +101,7 @@ const Navigation = () => {
                 alt="Cheptugeniot Initiative"
                 className={cn(
                   "w-auto transition-all duration-500 object-contain relative",
-                  isScrolled || isMenuOpen
-                    ? "h-24 md:h-28"
-                    : "h-32 md:h-40",
+                  isScrolled || isMenuOpen ? "h-24 md:h-28" : "h-32 md:h-40",
                 )}
               />
             </Link>
