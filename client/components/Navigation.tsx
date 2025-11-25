@@ -84,7 +84,7 @@ const Navigation = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled || isMenuOpen
-          ? "bg-gradient-to-b from-white to-white/95 backdrop-blur-lg shadow-xl border-b border-charity-orange-100"
+          ? "bg-transparent backdrop-blur-lg"
           : "bg-gradient-to-b from-black/30 to-transparent",
       )}
     >
