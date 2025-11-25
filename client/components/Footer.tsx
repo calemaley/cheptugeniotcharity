@@ -18,9 +18,9 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="space-y-4">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F1e1538007ac1466196cdecc4ba36b24b?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F6e0eb0bca7364d19b9e5427a421f8c83?format=webp&width=800"
               alt="Cheptugeniot Initiative"
-              className="h-28 md:h-32 w-auto object-contain"
+              className="h-20 md:h-24 w-auto object-contain"
             />
             <p className="text-charity-neutral-300 text-sm leading-relaxed">
               Cheptugeniot Initiative – touching lives through sustainable development and empowerment.
