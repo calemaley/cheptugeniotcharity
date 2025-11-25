@@ -102,8 +102,8 @@ const Navigation = () => {
                 className={cn(
                   "w-auto transition-all duration-500 object-contain relative",
                   isScrolled || isMenuOpen
-                    ? "h-20 md:h-24"
-                    : "h-24 md:h-32",
+                    ? "h-24 md:h-28"
+                    : "h-32 md:h-40",
                 )}
               />
             </Link>
