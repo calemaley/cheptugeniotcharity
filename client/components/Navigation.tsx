@@ -97,7 +97,7 @@ const Navigation = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-charity-orange-400/20 to-charity-green-400/20 rounded-lg blur-lg group-hover:blur-xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
 
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F37c22b8b58fc48e7a2936a8117e2e504?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F09e4a5804ac0412aaab0e26138d619ba?format=webp&width=800"
                 alt="Cheptugeniot Initiative"
                 className={cn(
                   "w-auto transition-all duration-500 object-contain relative",
