@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
-
   return (
     <footer className="bg-charity-neutral-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -18,12 +17,13 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="space-y-4">
             <img
-              src="/cheptugeniot-logo.png"
+              src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F6e0eb0bca7364d19b9e5427a421f8c83?format=webp&width=800"
               alt="Cheptugeniot Initiative"
-              className="h-28 md:h-32 w-auto object-contain"
+              className="h-32 md:h-40 w-auto object-contain"
             />
             <p className="text-charity-neutral-300 text-sm leading-relaxed">
-              Cheptugeniot Initiative – touching lives through sustainable development and empowerment.
+              Cheptugeniot Initiative – touching lives through sustainable
+              development and empowerment.
             </p>
             <div className="flex space-x-4">
               <a
@@ -184,4 +184,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
