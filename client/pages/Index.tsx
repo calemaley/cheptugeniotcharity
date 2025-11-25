@@ -180,11 +180,10 @@ const Index = () => {
 
   return (
     <>
+      <Navigation />
       {/* Hero Background Carousel */}
       <SectionReveal>
         <section className="relative h-screen overflow-hidden">
-          <Navigation />
-
           {/* Background Image Carousel */}
           <div className="absolute inset-0">
             {heroImages.map((image, index) => (

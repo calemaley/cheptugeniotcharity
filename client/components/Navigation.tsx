@@ -84,7 +84,7 @@ const Navigation = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled || isMenuOpen
-          ? "bg-gradient-to-b from-white to-white/95 backdrop-blur-lg shadow-xl border-b border-charity-orange-100"
+          ? "bg-transparent backdrop-blur-lg"
           : "bg-gradient-to-b from-black/30 to-transparent",
       )}
     >
@@ -97,20 +97,12 @@ const Navigation = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-charity-orange-400/20 to-charity-green-400/20 rounded-lg blur-lg group-hover:blur-xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
 
               <img
-                src="/cheptugeniot-logo.png"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fe1924878cede46d7bcef650c923a1cb1%2F6e0eb0bca7364d19b9e5427a421f8c83?format=webp&width=800"
                 alt="Cheptugeniot Initiative"
                 className={cn(
                   "w-auto transition-all duration-500 object-contain relative",
-                  isScrolled || isMenuOpen
-                    ? "h-16 md:h-20 drop-shadow-md"
-                    : "h-20 md:h-24 drop-shadow-lg group-hover:drop-shadow-2xl",
+                  isScrolled || isMenuOpen ? "h-24 md:h-28" : "h-32 md:h-40",
                 )}
-                style={{
-                  filter:
-                    isScrolled || isMenuOpen
-                      ? "drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08))"
-                      : "drop-shadow(0 2px 12px rgba(255, 90, 95, 0.15))",
-                }}
               />
             </Link>
           </div>
