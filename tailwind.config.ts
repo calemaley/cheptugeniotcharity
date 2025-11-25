@@ -57,7 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Tabasamu Charity Colors
+        // Cheptugeniot Initiative Colors
         charity: {
           orange: {
             50: "hsl(var(--charity-orange-50))",
