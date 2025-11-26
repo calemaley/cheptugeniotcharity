@@ -212,13 +212,6 @@ const Index = () => {
                       transition: "transform 20s ease-out",
                     }}
                   />
-                  {/* Gradient Overlays - Lighter for better image visibility */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-charity-primary-900/65 via-charity-primary-800/55 to-charity-green-900/65" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/20 to-transparent" />
-                  {/* Side vignettes to keep focus on center faces */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-                  {/* Top gradient to reduce sky brightness */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
                 </div>
 
                 {/* Animated Pattern Overlay */}
@@ -240,8 +233,6 @@ const Index = () => {
           {/* Content Overlay */}
           <div className="relative z-10 h-full flex items-center justify-center">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              {/* Darker backdrop behind content for better readability */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40 pointer-events-none" />
               <div className="relative space-y-8">
                 {/* Animated Badge */}
                 <div className="inline-block px-6 py-2.5 bg-gradient-to-r from-white/20 via-charity-purple-500/20 to-white/20 backdrop-blur-xl rounded-full border border-white/30 shadow-xl">
