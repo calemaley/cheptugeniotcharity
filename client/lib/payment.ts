@@ -9,16 +9,16 @@ export interface PaymentConfig {
 // Payment URLs - Using Zenlipa payment processor
 export const PAYMENT_URLS: PaymentConfig = {
   // Main donation page - for general donations
-  donationUrl: "https://zenlipa.co.ke/c/uKowYx",
+  donationUrl: "https://zenlipa.co.ke/c/ZhGrXc",
 
   // Child sponsorship payments
-  sponsorshipUrl: "https://zenlipa.co.ke/c/uKowYx",
+  sponsorshipUrl: "https://zenlipa.co.ke/c/ZhGrXc",
 
   // General support payments
-  generalUrl: "https://zenlipa.co.ke/c/uKowYx",
+  generalUrl: "https://zenlipa.co.ke/c/ZhGrXc",
 
   // Volunteer program support
-  volunteerUrl: "https://zenlipa.co.ke/c/uKowYx",
+  volunteerUrl: "https://zenlipa.co.ke/c/ZhGrXc",
 };
 
 // Payment redirection function
