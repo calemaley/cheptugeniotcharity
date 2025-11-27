@@ -76,12 +76,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/donate"
-                  className="text-charity-neutral-300 hover:text-charity-purple-400 transition-colors duration-200"
+                {/* TODO: Enable donate button when payment system is ready */}
+                <button
+                  disabled
+                  className="text-charity-neutral-500 cursor-not-allowed"
+                  aria-label="Donate button - coming soon"
                 >
                   Donate
-                </Link>
+                </button>
               </li>
               <li>
                 <Link
