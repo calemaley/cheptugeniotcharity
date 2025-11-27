@@ -229,6 +229,7 @@ const Children = () => {
                         src={child.image}
                         alt={child.name}
                         className="w-full h-72 object-cover group-hover:scale-125 transition-transform duration-1000"
+                        style={{ objectPosition: "center 30%" }}
                       />
 
                       {/* Multiple overlays for depth */}
