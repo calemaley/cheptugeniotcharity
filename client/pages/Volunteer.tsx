@@ -408,7 +408,7 @@ const Volunteer = () => {
                     src="https://www.youtube.com/embed/C6WYMZ2zCmI"
                     title="Cheptugeniot Initiative Success Stories"
                     frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
                 </div>
