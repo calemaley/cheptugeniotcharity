@@ -34,7 +34,7 @@ const ScrollToTop = () => {
   return null;
 };
 
-const App = () => (
+const AppContent = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -74,4 +74,11 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+const rootElement = document.getElementById("root");
+if (rootElement && !rootElement._reactRoot) {
+  const root = createRoot(rootElement);
+  root.render(<AppContent />);
+  (rootElement as any)._reactRoot = root;
+}
+
+export default AppContent;
