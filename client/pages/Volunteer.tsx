@@ -400,16 +400,18 @@ const Volunteer = () => {
           </AnimatedSection>
 
           <AnimatedSection animation="scaleIn">
-            <div className="max-w-4xl mx-auto">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full rounded-2xl shadow-xl"
-                  src="https://www.youtube.com/embed/C6WYMZ2zCmI"
-                  title="Cheptugeniot Initiative Success Stories"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            <div className="w-full flex justify-center">
+              <div className="w-full max-w-6xl">
+                <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/C6WYMZ2zCmI"
+                    title="Cheptugeniot Initiative Success Stories"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </div>
           </AnimatedSection>
