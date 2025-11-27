@@ -393,8 +393,8 @@ const Volunteer = () => {
                 Success Stories
               </h2>
               <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
-                Hear directly from our volunteers and community members about the
-                impact they've made and the lives they've touched.
+                Hear directly from our volunteers and community members about
+                the impact they've made and the lives they've touched.
               </p>
             </div>
           </AnimatedSection>
@@ -402,7 +402,10 @@ const Volunteer = () => {
           <AnimatedSection animation="scaleIn">
             <div className="w-full flex justify-center">
               <div className="w-full max-w-6xl">
-                <div className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style={{ paddingBottom: "56.25%" }}>
+                <div
+                  className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl"
+                  style={{ paddingBottom: "56.25%" }}
+                >
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
                     src="https://www.youtube.com/embed/C6WYMZ2zCmI"
