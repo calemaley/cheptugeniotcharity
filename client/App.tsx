@@ -2,7 +2,7 @@ import "./global.css";
 
 import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
-import { createRoot } from "react-dom/client";
+import { createRoot, Root } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -75,10 +75,17 @@ const AppContent = () => (
 );
 
 const rootElement = document.getElementById("root");
-if (rootElement && !rootElement._reactRoot) {
-  const root = createRoot(rootElement);
-  root.render(<AppContent />);
-  (rootElement as any)._reactRoot = root;
+if (rootElement) {
+  const reactRoot = (rootElement as any)._reactRootContainer as Root | undefined;
+  
+  if (reactRoot) {
+    // Root already exists, just render the new content
+    reactRoot.render(<AppContent />);
+  } else {
+    // Create new root
+    const root = createRoot(rootElement);
+    root.render(<AppContent />);
+  }
 }
 
 export default AppContent;
