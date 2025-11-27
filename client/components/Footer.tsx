@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Mail,
-  Phone,
-  MapPin,
-  Youtube,
-} from "lucide-react";
+import { Facebook, Twitter, Mail, Phone, MapPin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,25 +19,22 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/viviankuruicheptugeniot"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-charity-orange-600 rounded-full hover:bg-charity-orange-700 transition-colors duration-200"
                 aria-label="Facebook"
               >
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="#"
-                className="p-2 bg-charity-purple-600 rounded-full hover:bg-charity-purple-700 transition-colors duration-200"
-                aria-label="Twitter"
+                href="https://www.youtube.com/@viviankurui9890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-red-600 rounded-full hover:bg-red-700 transition-colors duration-200"
+                aria-label="YouTube"
               >
-                <Twitter className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                className="p-2 bg-charity-green-600 rounded-full hover:bg-charity-green-700 transition-colors duration-200"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-4 w-4" />
+                <Youtube className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -140,28 +129,18 @@ const Footer = () => {
               </h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/viviankuruicheptugeniot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-charity-orange-600 rounded-full hover:bg-charity-orange-700 transition-colors duration-200"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-4 w-4" />
                 </a>
                 <a
-                  href="#"
-                  className="p-2 bg-charity-green-600 rounded-full hover:bg-charity-green-700 transition-colors duration-200"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-4 w-4" />
-                </a>
-                <a
-                  href="#"
-                  className="p-2 bg-charity-purple-600 rounded-full hover:bg-charity-purple-700 transition-colors duration-200"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-4 w-4" />
-                </a>
-                <a
-                  href="#"
+                  href="https://www.youtube.com/@viviankurui9890"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 bg-red-600 rounded-full hover:bg-red-700 transition-colors duration-200"
                   aria-label="YouTube"
                 >
