@@ -308,7 +308,7 @@ const Volunteer = () => {
 
   const impactStats = [
     { number: "35+", label: "Volunteers Placed" },
-    { number: "1000+", label: "Lives Impacted" },
+    { number: "600+", label: "Lives Impacted" },
     { number: "95%", label: "Volunteer Satisfaction" },
     { number: "25", label: "Partner Organizations" },
   ];
