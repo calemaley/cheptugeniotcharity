@@ -182,7 +182,7 @@ const Contact = () => {
       icon: Phone,
       title: "Call / WhatsApp",
       subtitle: "Chat or call us directly",
-      info: "+254 704 268 226",
+      info: "",
       action: "WhatsApp Us",
       handler: handleWhatsApp,
       gradient: "from-green-500 to-emerald-500",
@@ -260,7 +260,7 @@ const Contact = () => {
   ];
 
   const branches = [
-    { location: "Head Office", address: "Nairobi, Embakasi East" },
+    { location: "Head Office", address: "Kenya house" },
     { location: "Bomet Branch", address: "Bomet, Kenya" },
     { location: "Mulot Branch", address: "Mulot, Kenya" },
     { location: "Eldoret Branch", address: "Eldoret, Kenya" },
@@ -423,11 +423,13 @@ const Contact = () => {
                       {method.subtitle}
                     </p>
 
-                    <div className="text-charity-neutral-800 font-semibold mb-6 text-lg">
-                      {method.info.split("\n").map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-                    </div>
+                    {method.info && (
+                      <div className="text-charity-neutral-800 font-semibold mb-6 text-lg">
+                        {method.info.split("\n").map((line, i) => (
+                          <p key={i}>{line}</p>
+                        ))}
+                      </div>
+                    )}
 
                     <button
                       onClick={method.handler}

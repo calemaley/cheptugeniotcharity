@@ -261,11 +261,11 @@ const Programs = () => {
                               For more info contact us:
                             </p>
                             <div className="flex items-center justify-center space-x-2">
-                              <Phone className="h-4 w-4 text-charity-orange-600" />
-                              <span className="font-bold text-charity-neutral-800">
-                                {featuredEvent.contact}
-                              </span>
-                            </div>
+                            <Phone className="h-4 w-4 text-charity-orange-600" />
+                            <span className="font-bold text-charity-neutral-800">
+                              +254 704 268 226
+                            </span>
+                          </div>
                           </div>
 
                           <div className="space-y-3">
@@ -566,7 +566,7 @@ const Programs = () => {
                     <div className="flex items-center space-x-2">
                       <Phone className="h-4 w-4 text-charity-orange-600" />
                       <span className="text-charity-neutral-700">
-                        {selectedEvent.contact}
+                        +254 704 268 226
                       </span>
                     </div>
                   </div>
