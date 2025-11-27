@@ -74,18 +74,32 @@ const App = () => (
   </QueryClientProvider>
 );
 
-const renderApp = () => {
+// Guard against multiple createRoot calls during HMR
+let appRoot: ReturnType<typeof createRoot> | null = null;
+
+const initializeApp = () => {
   const rootElement = document.getElementById("root");
-  if (rootElement) {
-    const root = createRoot(rootElement);
-    root.render(<App />);
+  if (!rootElement) return;
+
+  if (!appRoot) {
+    appRoot = createRoot(rootElement);
   }
+
+  appRoot.render(<App />);
 };
 
+// Initialize on DOM ready
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", renderApp);
+  document.addEventListener("DOMContentLoaded", initializeApp);
 } else {
-  renderApp();
+  initializeApp();
+}
+
+// Handle Vite HMR updates
+if (import.meta.hot) {
+  import.meta.hot.accept(() => {
+    initializeApp();
+  });
 }
 
 export default App;
