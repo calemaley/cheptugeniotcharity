@@ -32,7 +32,7 @@ export const featuredEvent: FeaturedEvent = {
     "Transportation support",
     "Community sponsorship",
   ],
-  contact: "+254794107724",
+  contact: "+254 704 268 226",
   paymentLink: "#",
   fullDescription:
     "Elias Kurgat is a gospel artist from Nandi County whose voice carries a message of hope born from his own journey of survival and faith. As both a cancer survivor and an amputee, Elias represents the indomitable human spirit—a person who refuses to be defined by his challenges but instead transforms them into a platform for ministry.\n\nThrough his music and public speaking, Elias shares a powerful testimony of faith, resilience, and hope. His performances inspire communities and challenge us all to recognize the strength within ourselves. Yet, like many artists pursuing ministry in rural Kenya, Elias faced significant barriers—limited access to quality audio equipment that would allow his voice to reach larger audiences and support his family's daily needs.\n\n**A Partnership of Compassion**: The Cheptugeniot Initiative, recognizing Elias's unique calling and platform, came together with well-wishers to provide comprehensive support. We purchased a complete professional public address (PA) system—enabling Elias to amplify his message and reach more people with his gospel ministry. This isn't just equipment; it's an investment in hope itself.\n\n**Community Partnership**: Pwani Oil, who partnered with Berur FM during the Nandi roadshow, demonstrated corporate social responsibility by providing three months of shopping provisions for Elias's family. This support eases the burden of daily needs, allowing Elias to focus fully on his musical calling and ministry.\n\n**More Than Music**: Elias's story challenges our assumptions about disability and ability. Here is a man who lost a limb yet stands tall on stage sharing faith. Here is a cancer survivor whose song is a testimony to God's faithfulness. Every note he sings, every person he touches with his ministry, represents the power of community care and belief in human potential.",
@@ -112,7 +112,7 @@ export const pastProjects = [
     theme: "Compassion in Action: Building Shelter, Restoring Dignity",
     description:
       "A heartfelt journey to visit Simion Kosgei, a community member fighting cancer, where our team built a shelter for his family and provided a posho mill to empower the community.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact:
       "Supported multiple family members and community members with housing and livelihood",
     fullDescription:
@@ -190,7 +190,7 @@ export const pastProjects = [
     theme: "Healthcare, Livelihood & Education",
     description:
       "Supporting Beatrice, a community member facing health challenges, with a posho mill for livelihood and sponsoring her children's education at AIC Chebisas Girls.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact:
       "Supported Beatrice's family with livelihood tools and educational opportunities for children",
     fullDescription:
@@ -245,7 +245,7 @@ export const pastProjects = [
     theme: "Empowerment Through Livelihood & Education",
     description:
       "Ndurio Nandi county empowered Beatrice, who is facing a liver condition, with a posho mill. Well-wishers sponsored education for her children, with Sharon receiving sponsorship at AIC Chebisas Girls.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact:
       "Provided livelihood support and sponsored children's education transition from day school to boarding",
     fullDescription:
@@ -303,7 +303,7 @@ export const pastProjects = [
     theme: "Celebrating Educational Success & New Beginnings",
     description:
       "On 10th August 2024, we gathered for a memorable farewell and prayers for Sharon as she joined KIBABII University to pursue a Bachelor of Education degree—a testament to the transformative power of education and community support.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact:
       "Celebrated Sharon's educational achievement and prayed for her success at university",
     fullDescription:
@@ -362,7 +362,7 @@ export const pastProjects = [
     theme: "Shelter, Dignity & Care for Vulnerable Families",
     description:
       "In 2023, well-wishers came together to build a safe shelter for Jane, a widow caring for her disabled daughter Chepkoech. Rev. Caleb and community leaders dedicated the house, offering prayers and support for the family.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact: "Built safe shelter for widow-headed household with disabled child",
     fullDescription:
       "Jane's story is one of courage, vulnerability, and the transformative power of community compassion. As a widow raising a disabled daughter alone, Jane faced daily challenges of providing safe shelter, food, and care for her family in Singorwet.\n\nHer daughter Chepkoech, who developed a condition when she was young, requires special care and a safe, dignified environment. Yet Jane's modest means made it nearly impossible to provide the secure housing her family desperately needed. The family lived in conditions that left them exposed to the elements and vulnerable to further hardship.\n\n**A Community Response**: Word of Jane's struggle reached compassionate well-wishers who believed that every family deserves dignity and safety. They came forward to contribute materials, labor, and resources to build a proper shelter for Jane and Chepkoeth.\n\n**Building Hope**: The construction process became a community endeavor, bringing together neighbors, church leaders, and committed individuals who worked side by side. Materials including bricks, cement, corrugated iron, and other building supplies were gathered and utilized. The shelter rose from the ground, not just as a structure of brick and metal, but as a tangible expression of hope and solidarity.\n\n**A Sacred Dedication**: In a beautiful ceremony, Rev. Caleb, director of AGC Church S. Rift, along with community leaders and well-wishers, gathered at Singorwet to dedicate Jane's new home. The event was marked by prayers for Jane's family, blessings for their future, and a renewed commitment to supporting vulnerable families in the community.\n\n**More Than a House**: For Jane and Chepkoech, this shelter means security, protection from harsh weather, and a dignified space to call home. But it also means something deeper—it means they are not forgotten, that their community cares, and that there are people willing to sacrifice to restore dignity to those facing life's hardest circumstances.",
@@ -425,7 +425,7 @@ export const pastProjects = [
     theme: "Dignity Through Housing: Supporting People with Disabilities",
     description:
       "We built and completed a house for Gideon Korir, a blind man from Bomet East, providing him with safe shelter and restored dignity. The community celebrated the house handover, affirming their commitment to supporting people with disabilities.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact: "Built complete shelter for a blind man in Bomet East",
     fullDescription:
       "Gideon Korir's journey is a powerful testament to the importance of shelter and community support for people facing physical challenges. As a blind man living in Bomet East, Gideon faced extraordinary difficulties in securing safe housing and maintaining independence.\n\nWithout adequate shelter, Gideon's daily life was marked by vulnerability—exposure to harsh weather, difficult living conditions that complicated his navigation and mobility, and the emotional toll of isolation. Despite his disability, Gideon possessed dignity, courage, and a desire to live independently. What he needed was a community willing to stand with him.\n\n**A Building Project of Compassion**: Our organization, alongside community members and well-wishers, came together to build a proper house for Gideon. This wasn't just construction work—it was a declaration that every person, regardless of physical ability, deserves a safe place to call home.\n\n**From Foundation to Completion**: The project involved multiple stages of construction, from laying foundations and building brick walls to installing a solid roof with corrugated iron sheeting. Community members contributed labor, materials including bricks, cement, timber for roofing, and other building supplies. The house rose from the ground as a tangible expression of community solidarity and compassion.\n\n**A Celebration of Dignity**: The house handover ceremony was a significant moment—not just a transfer of property, but a public affirmation that Gideon Korir matters to his community. Leaders, well-wishers, and community members gathered to celebrate the completion of the house and present it to Gideon. The event symbolized a renewed commitment to ensuring that people with disabilities are not left behind.\n\n**Independence & Safety**: For Gideon, this house means independence, safety, and security. It provides a dignified living space designed and built with understanding of his unique needs. Most importantly, it sends a powerful message: that his blindness does not diminish his worth or his right to live with dignity and security.",
@@ -488,7 +488,7 @@ export const pastProjects = [
     theme: "Hope, Faith & Musical Empowerment for Survivors",
     description:
       "Elias Kurgat, a gospel artist, cancer survivor, and amputee, was empowered with a professional PA system and family support by the Cheptugeniot Initiative and well-wishers. His powerful ministry of music and testimony continues to inspire communities across Nandi County with messages of faith, resilience, and hope.",
-    contact: "+254794107724",
+    contact: "+254 704 268 226",
     impact:
       "Provided PA system and family support for a gospel artist cancer survivor",
     fullDescription:
