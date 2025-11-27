@@ -384,6 +384,43 @@ const Volunteer = () => {
         </div>
       </section>
 
+      {/* Success Stories */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection animation="slideUp">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-charity-neutral-800 mb-4">
+                Success Stories
+              </h2>
+              <p className="text-lg text-charity-neutral-600 max-w-2xl mx-auto">
+                Hear directly from our volunteers and community members about
+                the impact they've made and the lives they've touched.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="scaleIn">
+            <div className="w-full flex justify-center">
+              <div className="w-full max-w-6xl">
+                <div
+                  className="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl"
+                  style={{ paddingBottom: "56.25%" }}
+                >
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/C6WYMZ2zCmI"
+                    title="Cheptugeniot Initiative Success Stories"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* Volunteer Opportunities */}
       <section className="py-20 bg-charity-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
